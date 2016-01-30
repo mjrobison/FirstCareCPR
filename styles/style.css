@@ -1,0 +1,98 @@
+/************** global *****************/
+a {
+	text-decoration: none;
+	color: #AAA;
+}
+
+/************** header *****************/
+header {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: 10;
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 3px #AAA;
+    -moz-box-shadow: 0px 0px 3px #AAA;
+    -o-box-shadow: 0px 0px 3px #AAA;
+    box-shadow: 0px 0px 3px #AAA;
+}
+
+.logo {
+	float: left;
+	margin-left: 30px;
+}
+
+nav {
+	float: right;
+}
+
+nav li {
+	display: block;
+	list-style-type: none;
+    float: left;
+    padding: 60px 15px;
+    font-size: 18px;
+    position: relative;
+    right: 0;
+	line-height: 100%;
+}
+
+
+
+
+
+/*************** main *****************/
+main {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.bg-photo {
+    background-image: url('../images/hero.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+	}
+    
+.hero {
+	height: 95vh;
+    margin-top: 184px;
+}
+
+.training {
+    text-align: center;
+}
+
+.available {
+    text-align: center;
+    background-color: #898989;
+}
+
+
+
+
+
+/************** footer *****************/
+.footer {
+	background-color: red;
+    width: 100%;
+}
+
+.contact-contain {
+	float: right;
+	width: 100%;
+}
+
+.contact li {
+	list-style-type: none;
+}
+
+.robros {
+	text-align: center;
+}
+
