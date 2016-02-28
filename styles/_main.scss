@@ -1,0 +1,30 @@
+/*************** main *****************/
+main {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    
+    .bg-photo {
+        background-image: url('../images/hero.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width:100%;
+        }
+    
+    .hero {
+        height: 95vh;
+        margin-top: 87px;
+    }
+
+    .welcome {
+        text-align: center;
+        line-height: 1.2em;
+    }
+
+    .available {
+        text-align: center;
+        background-color: #898989;
+    }
+}

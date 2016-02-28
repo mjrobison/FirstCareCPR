@@ -1,0 +1,18 @@
+// style.scss
+// ==============
+//Compass imports
+@import "compass";
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/css3/box-shadow";
+@import "compass/css3/text-shadow";
+@import 'compass/css3/filter';
+@import "compass/css3/flexbox";
+@import "compass/css3/transition";
+
+// Partials
+@import "global";
+@import "variables";
+@import "header";
+@import "main";
+@import "footer";
