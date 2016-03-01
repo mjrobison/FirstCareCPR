@@ -1,0 +1,24 @@
+/****  Colors ****/
+$blue 			: #bfe1f1;
+$grayContent 	: #dbdbdb;
+$red  			: #a32431;
+$navText 		: #c0c0c0;
+$text  			: #343333;
+
+/**** Fonts ****/
+@font-face {
+	font-family: coves;
+	src: url('../covesTypeface/CovesLight.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: coves;
+	src: url('../covesTypeface/CovesBold.otf') format('opentype');
+	font-weight: bold;
+	font-style: normal;
+} 
+
+
+

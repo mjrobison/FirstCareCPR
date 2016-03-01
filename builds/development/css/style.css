@@ -1,0 +1,177 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/************** global *****************/
+html {
+  font-family: 'coves', Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #AAA;
+}
+
+h1 {
+  font-size: 34px;
+  font-weight: bold;
+  margin: 23px;
+  font-family: 'coves', Arial, Helvetica, sans-serif;
+}
+
+p {
+  margin: 10px 0 15px;
+  line-height: 1.2em;
+  font-size: 16px;
+  font-family: 'coves', Arial, Helvetica, sans-serif;
+}
+
+/****  Colors ****/
+/**** Fonts ****/
+@font-face {
+  font-family: coves;
+  src: url("../covesTypeface/CovesLight.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: coves;
+  src: url("../covesTypeface/CovesBold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+header {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: 10;
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 3px #AAA;
+  -moz-box-shadow: 0px 0px 3px #AAA;
+  -o-box-shadow: 0px 0px 3px #AAA;
+  box-shadow: 0px 0px 3px #AAA;
+}
+header .logo {
+  float: left;
+  margin-left: 50px;
+  width: 30%;
+  position: absolute;
+  left: 40px;
+}
+header .logo img {
+  width: 64%;
+  padding-top: 10px;
+}
+header .nav {
+  float: right;
+}
+header .nav li {
+  display: block;
+  list-style-type: none;
+  float: left;
+  padding: 30px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #c0c0c0;
+  right: 0;
+  line-height: 100%;
+}
+header .nav li a {
+  padding: 0;
+}
+
+/*************** main *****************/
+main {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+main .bg-photo {
+  background-image: url("../images/hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+main .hero {
+  height: 95vh;
+  margin-top: 87px;
+}
+main .welcome {
+  text-align: center;
+  line-height: 1.2em;
+}
+main .available {
+  text-align: center;
+  background-color: #898989;
+}
+
+.footer {
+  background-color: red;
+  width: 100%;
+}
+.footer .contact-contain {
+  float: right;
+  width: 100%;
+}
+.footer .contact-contain li {
+  list-style-type: none;
+}
+.footer .contact-contain .robros {
+  text-align: center;
+}
