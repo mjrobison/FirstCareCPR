@@ -1,19 +1,22 @@
 header {
-	background: #fff;
+	//background: #fff;
+	background: transparent;
     position: fixed;
     top: 0;
     left: 0;
     display: block;
     z-index: 10;
 	width: 100%;
-	 -webkit-box-shadow: 0px 0px 3px #AAA;
-    -moz-box-shadow: 0px 0px 3px #AAA;
-    -o-box-shadow: 0px 0px 3px #AAA;
-    box-shadow: 0px 0px 3px #AAA;
+	height: 87px;
+	//  -webkit-box-shadow: 0px 0px 3px #AAA;
+    // -moz-box-shadow: 0px 0px 3px #AAA;
+    // -o-box-shadow: 0px 0px 3px #AAA;
+    // box-shadow: 0px 0px 3px #AAA;
+	transition-duration: 1s;
 	
 	.logo {
 		float: left;
-		margin-left: 50px;
+		margin-left: 70px;
    	 	width: 30%;
 		position: absolute;
 		left: 40px;
@@ -26,6 +29,7 @@ header {
 	}
 	.nav {
 		float: right;
+		
 		
 		li{
 			display: block;
@@ -40,6 +44,17 @@ header {
 			
 			a {
 				padding: 0;
+				color: #272727;
+				text-decoration: none;
+				transition: .25s;
+				font-weight: bold;
+				
+				&:hover {
+					color: #fff;
+					background-color: $blue;
+					//padding: 10px 25px;
+					
+				}
 			}
 		}
 	}

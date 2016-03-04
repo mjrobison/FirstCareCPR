@@ -14,17 +14,63 @@ main {
         }
     
     .hero {
-        height: 95vh;
-        margin-top: 87px;
+        height: 90vh;
+     //   margin-top: 87px;
     }
 
     .welcome {
         text-align: center;
         line-height: 1.2em;
+        margin: 20px 0;
     }
 
     .available {
         text-align: center;
-        background-color: #898989;
+        background-color: $grayContent;
+        margin: 20px 0 0;
+    }
+    .courseCon {
+        
+        .firstAid{
+            text-align: left;
+            
+             .btnFirstAid {
+                width: 82px;
+                padding: 10px 25px;
+                border: 2px solid $red;
+                border-radius: 3px;
+                transition: .25s;
+            }
+        } //firstAid
+        
+        .cpr{
+            text-align: right;
+            background-color: #fff;
+            
+            .btnCpr {
+                width: 82px;
+                padding: 10px 25px;
+                border: 2px solid $red;
+                border-radius: 3px;
+                transition: .25s;
+            }
+        }
+    
+        .pathogens{
+            text-align: left;
+            background-color: $grayContent;
+            
+             .btnPath {
+                width: 82px;
+                padding: 10px 25px;
+                border: 2px solid $red;
+                border-radius: 3px;
+                transition: .25s;
+            }
+        }
+    }
+    
+    .picCon{
+        width: 100%;
     }
 }
