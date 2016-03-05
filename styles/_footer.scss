@@ -1,17 +1,25 @@
 .footer {
-	background-color: $blue;
+	background-color: #272727;
     width: 100%;
+	padding: 20px;
+	
+	.footNav{
+		float:left;
+		
+		.nav{
+			display: inline-block;
+			
+			a{
+				padding: 4px 15px;
+			} 
+		}
+	}
 
-	.contact-contain {
+	.contain-contact {
 		float: right;
-		width: 100%;
 		 
 		li {
 			list-style-type: none;
-		}
-		
-		.robros {
-			text-align: center;
 		}
 	}
 }
@@ -21,4 +29,17 @@
 	background-color: #272727;
 	text-align: center;
 	color: #565656;
+	
+	.robros {
+		text-align: center;
+		
+		&:before {
+			content: '';
+			display: table;
+		}
+		
+		&:after {
+			border: 1px solid $blue;
+		}
+	}
 }
