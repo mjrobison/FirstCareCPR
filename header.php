@@ -3,14 +3,14 @@
 <html lang="en-US">
 <head>
 	  <meta charset="utf-8">
-	  <title>Nashville CPR Certification | A Life Saving Education</title>
+	  <title><?php wp_title(); bloginfo('name') ?>Nashville CPR Certification | A Life Saving Education</title>
 	  
-      <link rel="stylesheet" href="styles/style.css">
+      <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>"><!-- styles/style.css"-->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	  
       <meta name="viewport" content="width=device-width">
 	  <meta name="viewport" content="width=100%, initial-scale=1, user-scalable=no">
-	
+	  <?php wp_head(); ?>
 </head>
 <body>
 	<header>
