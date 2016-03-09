@@ -15,17 +15,7 @@ $recipient = "baseballrocks0412@gmail.com";
 //$subject = "New Client Registration";
 //$mailheader = "From: $email \r\n";
 //mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
-echo ('<main><section><br /><br /><br /><br /><br /><br /><br /><p>');
-for ($i=0; $i < count($class); $i++)
-{
-    echo $class[$i] . '<br />';
-}
- 
-echo ('</p><p>'.$formcontent.'</p></section></main>');
-
-echo '<br /><br /><br /><br /><br /><br /><br />  <br /><br /><br /><br /> <br /> <br /> <br />';
-echo '<br /><br /><br /><br /><br /><br /><br /><br />';
-
+header("Location:https://squareup.com/market/first-care-cpr/cpr-class-registration-fee?square_lead=item_embed");
 require_once('footer.html');
-//window.open("https://squareup.com/market/first-care-cpr/cpr-class-registration-fee?square_lead=item_embed", "_blank");
+//window.open("", "_blank");
 ?>

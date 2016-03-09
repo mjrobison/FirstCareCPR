@@ -18,25 +18,5 @@
         <input type="Submit"></input>
     </form>	
     </main>
-    <br />
-        <br />
-            <br />
-                <br />
-                    <br />
-                        <br />    <br />
-        <br />
-            <br />
-                <br />
-                    <br />
-                        <br />    <br />
-        <br />
-            <br />
-                <br />    
-    <br />
-        <br />
-            <br />
-                <br />
-                    <br />
-                        <br />
-    
+   
 <?php require_once('footer.html'); ?>
