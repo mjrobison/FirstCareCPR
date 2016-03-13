@@ -54,6 +54,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+/****  Colors ****/
+/**** Fonts ****/
+@font-face {
+  font-family: coves;
+  src: url("../covesTypeface/CovesLight.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: coves;
+  src: url("../covesTypeface/CovesBold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
 /************** global *****************/
 html {
   font-family: 'coves', Arial, Helvetica, sans-serif;
@@ -71,6 +85,20 @@ h1 {
   font-family: 'coves', Arial, Helvetica, sans-serif;
 }
 
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 23px;
+  font-family: 'coves', Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  font-size: 21px;
+  font-weight: bold;
+  margin: 23px;
+  font-family: 'coves', Arial, Helvetica, sans-serif;
+}
+
 p {
   margin: 10px 0 15px;
   line-height: 1.2em;
@@ -78,36 +106,74 @@ p {
   font-family: 'coves', Arial, Helvetica, sans-serif;
 }
 
-/****  Colors ****/
-/**** Fonts ****/
-@font-face {
-  font-family: coves;
-  src: url("../covesTypeface/CovesLight.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
+.firstAid, .cpr, .pathogens, .footer {
+  box-shadow: 0px 3px 4px 1px #272727;
 }
-@font-face {
-  font-family: coves;
-  src: url("../covesTypeface/CovesBold.otf") format("opentype");
+
+.btnAvail {
+  background-color: #a32431;
+  width: 165px;
+  padding: 10px 25px;
+  border: 2px solid #a32431;
+  border-radius: 3px;
+  transition: .25s;
+  margin: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0px 3px 4px 0px #272727;
+}
+.btnAvail:hover {
+  box-shadow: 0px 3px 5px 2px #272727;
+}
+.btnAvail a {
+  text-decoration: none;
   font-weight: bold;
-  font-style: normal;
 }
+
+.diagonalBarThinTop {
+  -ms-transform: rotate(27deg);
+  /* IE 9 */
+  -webkit-transform: rotate(27deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(27deg);
+  background-color: #bfe1f1;
+  width: 4px;
+  height: 500px;
+  position: absolute;
+  top: -100px;
+  left: -15px;
+  z-index: -1;
+}
+
+.diagonalBarFatTop {
+  -ms-transform: rotate(27deg);
+  /* IE 9 */
+  -webkit-transform: rotate(27deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(27deg);
+  background-color: #bfe1f1;
+  width: 25px;
+  height: 500px;
+  position: absolute;
+  top: -100px;
+  left: 1px;
+  z-index: -1;
+}
+
 header {
-  background: #fff;
+  background: transparent;
   position: fixed;
   top: 0;
   left: 0;
   display: block;
   z-index: 10;
   width: 100%;
-  -webkit-box-shadow: 0px 0px 3px #AAA;
-  -moz-box-shadow: 0px 0px 3px #AAA;
-  -o-box-shadow: 0px 0px 3px #AAA;
-  box-shadow: 0px 0px 3px #AAA;
+  height: 87px;
+  overflow: hidden;
+  transition-duration: 1s;
 }
 header .logo {
   float: left;
-  margin-left: 50px;
+  margin-left: 70px;
   width: 30%;
   position: absolute;
   left: 40px;
@@ -123,15 +189,22 @@ header .nav li {
   display: block;
   list-style-type: none;
   float: left;
-  padding: 30px 15px;
+  padding: 30px 9px;
   text-decoration: none;
-  font-size: 18px;
-  color: #c0c0c0;
-  right: 0;
+  font-size: 16px;
   line-height: 100%;
+  background-color: transparent;
 }
 header .nav li a {
   padding: 0;
+  color: #272727;
+  text-decoration: none;
+  transition: .25s;
+  font-weight: bold;
+}
+header .nav li a:hover {
+  color: #a32431;
+  background-color: transparent;
 }
 
 /*************** main *****************/
@@ -149,29 +222,117 @@ main .bg-photo {
   width: 100%;
 }
 main .hero {
-  height: 95vh;
-  margin-top: 87px;
+  height: 90vh;
+}
+main .hero .headlineCon blockquote {
+  border-top: 2px solid #272727;
+  border-bottom: 2px solid #272727;
+  position: absolute;
+  top: 266px;
+  left: 222px;
+  text-align: center;
+  padding: 21px;
+  font-weight: bold;
+  -ms-transform: rotate(-15deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-15deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-15deg);
+}
+main .hero .headlineCon blockquote h1 {
+  margin: 0;
+  font-size: 48px;
+  font-family: 'Fredericka the Great', cursive;
+}
+main .hero .headlineCon blockquote p {
+  margin: -5px 0 0 0;
+  font-size: 20px;
+  font-family: 'Fredericka the Great', cursive;
 }
 main .welcome {
   text-align: center;
   line-height: 1.2em;
+  margin: 20px 0;
 }
 main .available {
   text-align: center;
-  background-color: #898989;
+  background-color: #dbdbdb;
+  margin: 20px 0 0;
+}
+main .courseCon .firstAid {
+  text-align: left;
+}
+main .courseCon .firstAid .btnFirstAid {
+  width: 82px;
+  padding: 10px 25px;
+  border: 2px solid #a32431;
+  border-radius: 3px;
+  transition: .25s;
+}
+main .courseCon .cpr {
+  text-align: right;
+  background-color: #fff;
+}
+main .courseCon .cpr #center {
+  position: relative;
+  left: 332px;
+}
+main .courseCon .cpr .btnCpr {
+  width: 82px;
+  padding: 10px 25px;
+  border: 2px solid #a32431;
+  border-radius: 3px;
+  transition: .25s;
+}
+main .courseCon .pathogens {
+  text-align: left;
+  background-color: #dbdbdb;
+}
+main .courseCon .pathogens .btnPath {
+  width: 82px;
+  padding: 10px 25px;
+  border: 2px solid #a32431;
+  border-radius: 3px;
+  transition: .25s;
+}
+main .picCon {
+  width: 100%;
 }
 
 .footer {
-  background-color: red;
+  background-color: #272727;
   width: 100%;
+  padding: 20px;
 }
-.footer .contact-contain {
+.footer .footNav {
+  float: left;
+}
+.footer .footNav .nav {
+  display: inline-block;
+}
+.footer .footNav .nav a {
+  padding: 4px 15px;
+}
+.footer .contain-contact {
   float: right;
-  width: 100%;
 }
-.footer .contact-contain li {
+.footer .contain-contact li {
   list-style-type: none;
 }
-.footer .contact-contain .robros {
+
+.sub-footer {
+  width: 100%;
+  background-color: #272727;
   text-align: center;
+  color: #565656;
+}
+.sub-footer .robros {
+  text-align: center;
+}
+.sub-footer .robros:before {
+  content: '';
+  display: table;
+}
+.sub-footer .robros:after {
+  border: 1px solid #bfe1f1;
 }

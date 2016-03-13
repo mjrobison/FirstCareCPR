@@ -14,17 +14,97 @@ main {
         }
     
     .hero {
-        height: 95vh;
-        margin-top: 87px;
+        height: 90vh;
+     //   margin-top: 87px;
+     
+        .headlineCon{
+            blockquote {
+                border-top: 2px solid #272727;
+                border-bottom: 2px solid #272727;
+                position: absolute;
+                top: 266px;
+                left: 222px;
+                text-align: center;
+                padding: 21px;
+                font-weight: bold;
+                -ms-transform: rotate(-15deg); /* IE 9 */
+                -webkit-transform: rotate(-15deg); /* Chrome, Safari, Opera */
+                transform: rotate(-15deg);
+                
+                
+                h1{
+                    margin: 0;
+                    font-size: 48px;
+                    font-family: 'Fredericka the Great', cursive;	
+                }
+                
+                p{
+                    margin: -5px 0 0 0;
+                    font-size: 20px;
+                    font-family: 'Fredericka the Great', cursive;
+                }
+            } 
+        }
     }
 
     .welcome {
         text-align: center;
         line-height: 1.2em;
+        margin: 20px 0;
     }
 
     .available {
         text-align: center;
-        background-color: #898989;
+        background-color: $grayContent;
+        margin: 20px 0 0;
+    }
+    .courseCon {
+        
+        .firstAid{
+            text-align: left;
+            
+             .btnFirstAid {
+                width: 82px;
+                padding: 10px 25px;
+                border: 2px solid $red;
+                border-radius: 3px;
+                transition: .25s;
+            }
+        } //firstAid
+        
+        .cpr{
+            text-align: right;
+            background-color: #fff;
+             
+             #center{
+                position: relative;
+                left: 332px;
+             }
+            
+            .btnCpr {
+                width: 82px;
+                padding: 10px 25px;
+                border: 2px solid $red;
+                border-radius: 3px;
+                transition: .25s;
+            }
+        }
+    
+        .pathogens{
+            text-align: left;
+            background-color: $grayContent;
+            
+             .btnPath {
+                width: 82px;
+                padding: 10px 25px;
+                border: 2px solid $red;
+                border-radius: 3px;
+                transition: .25s;
+            }
+        }
+    }
+    
+    .picCon{
+        width: 100%;
     }
 }
