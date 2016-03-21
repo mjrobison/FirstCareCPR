@@ -106,10 +106,6 @@ p {
   font-family: 'coves', Arial, Helvetica, sans-serif;
 }
 
-.firstAid, .cpr, .pathogens, .footer {
-  box-shadow: 0px 3px 4px 1px #272727;
-}
-
 .btnAvail {
   background-color: #a32431;
   width: 165px;
@@ -129,34 +125,48 @@ p {
   font-weight: bold;
 }
 
-.diagonalBarThinTop {
-  -ms-transform: rotate(27deg);
-  /* IE 9 */
-  -webkit-transform: rotate(27deg);
-  /* Chrome, Safari, Opera */
-  transform: rotate(27deg);
-  background-color: #bfe1f1;
-  width: 4px;
-  height: 500px;
-  position: absolute;
-  top: -100px;
-  left: -15px;
-  z-index: -1;
+.background-image {
+  background: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-.diagonalBarFatTop {
-  -ms-transform: rotate(27deg);
-  /* IE 9 */
-  -webkit-transform: rotate(27deg);
-  /* Chrome, Safari, Opera */
-  transform: rotate(27deg);
-  background-color: #bfe1f1;
-  width: 25px;
-  height: 500px;
-  position: absolute;
-  top: -100px;
-  left: 1px;
-  z-index: -1;
+.pathPic:hover:after {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.pathPic:hover .content {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.textCon {
+  -webkit-transform: skewX(155deg);
+  -ms-transform: skewX(155deg);
+  transform: skewX(155deg);
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
 }
 
 header {
@@ -170,6 +180,10 @@ header {
   height: 87px;
   overflow: hidden;
   transition-duration: 1s;
+}
+header .contentCon {
+  width: 88%;
+  margin: auto;
 }
 header .logo {
   float: left;
@@ -209,10 +223,8 @@ header .nav li a:hover {
 
 /*************** main *****************/
 main {
-  position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
+  overflow: hidden;
 }
 main .bg-photo {
   background-image: url("../images/hero.png");
@@ -249,18 +261,46 @@ main .hero .headlineCon blockquote p {
   font-size: 20px;
   font-family: 'Fredericka the Great', cursive;
 }
-main .welcome {
+main .container {
+  width: 90%;
+  margin: auto;
+}
+main .container .welcome {
   text-align: center;
   line-height: 1.2em;
   margin: 20px 0;
 }
 main .available {
   text-align: center;
-  background-color: #dbdbdb;
-  margin: 20px 0 0;
+  margin: 30px auto;
+  content: '';
+  display: table;
+  width: 960px;
 }
-main .courseCon .firstAid {
-  text-align: left;
+main .courseCon {
+  width: 360px;
+  height: 360px;
+  background-color: #e4e4e4;
+  border: 1px solid #a32431;
+  float: left;
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+main .courseCon .classTitle {
+  padding: 7px;
+}
+main .courseCon .firstAid .firstAidPic {
+  overflow: hidden;
+  background-image: url("../images/firstAidPic.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60% bottom;
+  height: 280px;
+  width: 100%;
 }
 main .courseCon .firstAid .btnFirstAid {
   width: 82px;
@@ -268,10 +308,6 @@ main .courseCon .firstAid .btnFirstAid {
   border: 2px solid #a32431;
   border-radius: 3px;
   transition: .25s;
-}
-main .courseCon .cpr {
-  text-align: right;
-  background-color: #fff;
 }
 main .courseCon .cpr #center {
   position: relative;
@@ -284,9 +320,23 @@ main .courseCon .cpr .btnCpr {
   border-radius: 3px;
   transition: .25s;
 }
-main .courseCon .pathogens {
-  text-align: left;
-  background-color: #dbdbdb;
+main .courseCon .cpr .cprPic {
+  overflow: hidden;
+  background-image: url("../images/cprPic.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60% bottom;
+  height: 280px;
+  width: 100%;
+}
+main .courseCon .pathogens .pathPic {
+  background-image: url("../images/pathPic.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60% bottom;
+  overflow: hidden;
+  height: 280px;
+  width: 100%;
 }
 main .courseCon .pathogens .btnPath {
   width: 82px;
@@ -295,44 +345,51 @@ main .courseCon .pathogens .btnPath {
   border-radius: 3px;
   transition: .25s;
 }
+main .courseCon .survivalPic {
+  background-image: url("../images/wilderness.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60% bottom;
+  height: 280px;
+  width: 100%;
+}
 main .picCon {
   width: 100%;
 }
 
-.footer {
+footer {
   background-color: #272727;
   width: 100%;
-  padding: 20px;
-}
-.footer .footNav {
-  float: left;
-}
-.footer .footNav .nav {
   display: inline-block;
 }
-.footer .footNav .nav a {
+footer .footNav {
+  float: left;
+}
+footer .footNav .nav {
+  display: inline-block;
+}
+footer .footNav .nav a {
   padding: 4px 15px;
 }
-.footer .contain-contact {
+footer .contain-contact {
   float: right;
 }
-.footer .contain-contact li {
+footer .contain-contact li {
   list-style-type: none;
 }
-
-.sub-footer {
+footer .sub-footer {
   width: 100%;
   background-color: #272727;
   text-align: center;
   color: #565656;
 }
-.sub-footer .robros {
+footer .sub-footer .robros {
   text-align: center;
 }
-.sub-footer .robros:before {
+footer .sub-footer .robros:before {
   content: '';
   display: table;
 }
-.sub-footer .robros:after {
+footer .sub-footer .robros:after {
   border: 1px solid #bfe1f1;
 }

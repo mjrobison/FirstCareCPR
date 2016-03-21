@@ -35,9 +35,9 @@ p {
     font-size: 16px;
     font-family: 'coves', Arial, Helvetica, sans-serif;
 }
-.firstAid, .cpr, .pathogens, .footer {
-    box-shadow: 0px 3px 4px 1px #272727;
-}
+// .firstAid, .cpr, .pathogens, .footer {
+//     box-shadow: 0px 3px 4px 1px #272727;
+// }
 
 .btnAvail {
     background-color: $red;
@@ -59,28 +59,51 @@ p {
         font-weight: bold;
     } 
 }
-.diagonalBarThinTop {
-    -ms-transform: rotate(27deg); /* IE 9 */
-    -webkit-transform: rotate(27deg); /* Chrome, Safari, Opera */
-    transform: rotate(27deg);
-    background-color: $blue;
-    width: 4px;
-    height: 500px;
-    position: absolute;
-    top: -100px;
-    left: -15px;
-    z-index: -1;
+
+
+.background-image {
+    background: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-.diagonalBarFatTop {
-    -ms-transform: rotate(27deg); /* IE 9 */
-    -webkit-transform: rotate(27deg); /* Chrome, Safari, Opera */
-    transform: rotate(27deg);
-    background-color: $blue;
-    width: 25px;
-    height: 500px;
-    position: absolute;
-    top: -100px;
-    left: 1px;
-    z-index: -1;
+.pathPic:hover:after {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.pathPic:hover .content {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.textCon{
+    -webkit-transform:skewX(155deg);
+    -ms-transform:skewX(155deg);
+    transform:skewX(155deg);  
+}
+
+.clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    // Fixes Opera/contenteditable bug:
+    // http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
 }

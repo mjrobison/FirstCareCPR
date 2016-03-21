@@ -1,9 +1,7 @@
 /*************** main *****************/
 main {
-    position: absolute;
-    left: 0;
-    top: 0;
     width: 100%;
+    overflow: hidden;
     
     .bg-photo {
         background-image: url('../images/hero.png');
@@ -47,22 +45,53 @@ main {
         }
     }
 
+.container {
+    width: 90%;
+    margin: auto;
+    
     .welcome {
         text-align: center;
         line-height: 1.2em;
         margin: 20px 0;
     }
+}
 
     .available {
         text-align: center;
-        background-color: $grayContent;
-        margin: 20px 0 0;
+        //background-color: $grayContent;
+        margin: 30px auto;
+        content: '';
+        display: table;
+        width: 960px;   
     }
     .courseCon {
-        
+        width: 360px;
+        height: 360px;
+        background-color: #e4e4e4;
+        border: 1px solid #a32431;
+        float: left;
+        margin-left: 6%;
+        margin-right: 6%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 2px;
+        overflow: hidden;
+       
+       .classTitle{
+           padding: 7px;
+       }
+
         .firstAid{
-            text-align: left;
-            
+           // text-align: left;
+           .firstAidPic{
+                 overflow: hidden;
+                 background-image: url('../images/firstAidPic.png');
+                 background-size: cover;
+                 background-repeat: no-repeat;
+                 background-position: 60% bottom;
+                 height: 280px;
+                 width: 100%;    
+           }
              .btnFirstAid {
                 width: 82px;
                 padding: 10px 25px;
@@ -73,9 +102,7 @@ main {
         } //firstAid
         
         .cpr{
-            text-align: right;
-            background-color: #fff;
-             
+         
              #center{
                 position: relative;
                 left: 332px;
@@ -88,12 +115,129 @@ main {
                 border-radius: 3px;
                 transition: .25s;
             }
+            
+           // .classDes{
+            //     position: relative;
+            //     transform: skewX(20deg);
+            //    // &:after {
+            //         content: '';
+                   
+            //         overflow: visible;
+            //         background: #fff;
+            //         z-index: 1;
+            //         -webkit-transform-origin:100% 100%;
+            //         -ms-transform-origin:100% 100%;
+            //         transform-origin:100% 100%;
+                    
+            //         -webkit-transform:skewX(155deg);
+            //         -ms-transform:skewX(155deg);
+            //         transform:skewX(155deg); 
+                    
+            //    // }
+            // }
+             .cprPic {
+                 overflow: hidden;
+                 background-image: url('../images/cprPic.png');
+                 background-size: cover;
+                 background-repeat: no-repeat;
+                 background-position: 60% bottom;
+                 height: 280px;
+                 width: 100%;    
+                
+            //     height: 300px;
+            // //    overflow: hidden;
+            // //     -webkit-backface-visibility: hidden;
+            // //     &:before {
+            // //         content:'';
+            // //         position:absolute;
+            // //         top:0; 
+            // //         right:0;
+            // //         width:100%; 
+            // //         height:100%;
+            // //         background-color: rgba(90, 74, 199, .8);
+            // //         border-right:40px solid rgba(173, 96, 223, .8);
+                    
+            // //         -webkit-transform-origin:100% 100%;
+            // //         -ms-transform-origin:100% 100%;
+            // //         transform-origin:100% 100%;
+                    
+            // //         -webkit-transform:skewX(155deg);
+            // //         -ms-transform:skewX(155deg);
+            // //         transform:skewX(155deg); 
+                     
+            //     }
+            }
         }
     
         .pathogens{
-            text-align: left;
-            background-color: $grayContent;
-            
+                    
+             .pathPic {
+                 
+                background-image: url('../images/pathPic.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: 60% bottom;
+                 overflow: hidden;
+                //  position: relative;
+                //  box-sizing: border-box;
+                //  padding: 25px;
+                 height: 280px;
+                 width: 100%;
+                 
+                 
+                //  &:before{
+                //     content: '';
+                //     display: block;
+                //     width: 50px;
+                //     height: 50px;
+                //     top: 0;
+                //     left: 0;
+                //     position: absolute;
+                //     background-color: rgba(0, 0, 0, 0.2);
+                //     z-index: 10;
+                //  }
+                 
+                //  .content{
+                //     display: block;
+                //     background-color: rgba(255, 255, 255, 0.9);
+                //     height: 100%;
+                //     text-align: center;
+                //     min-height: 220px;
+                //     z-index: 5;
+                //     position: relative;
+                //     -webkit-transform: scale(1.2);
+                //     -moz-transform: scale(1.2);
+                //     -ms-transform: scale(1.2);
+                //     -o-transform: scale(1.2);
+                //     transform: scale(1.2);
+                //     -webkit-transition: 0.5s;
+                //     -moz-transition: 0.5s;
+                //     -o-transition: 0.5s;
+                //     -ms-transition: 0.5s;
+                //     transition: 0.5s;
+                //     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                //     filter: alpha(opacity=(0));
+                //     opacity: 0;
+                // }
+                 
+                //  &:after {
+                //     content: '';
+                //     position: absolute;
+                //     top: 5px;
+                //     left: 5px;
+                //     background: url(../images/svg/plus.svg) 0 0 repeat;
+                //     -webkit-transform: rotate(0deg);
+                //     -moz-transform: rotate(0deg);
+                //     -ms-transform: rotate(0deg);
+                //     -o-transform: rotate(0deg);
+                //     transform: rotate(0deg);
+                //     z-index: 11;
+                //     height: 40px;
+                //     width: 40px;
+                //     transition: .5s;
+                // }
+             }
+             
              .btnPath {
                 width: 82px;
                 padding: 10px 25px;
@@ -102,9 +246,20 @@ main {
                 transition: .25s;
             }
         }
+        .survivalPic{
+            background-image: url('../images/wilderness.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 60% bottom;
+            height: 280px;
+            width: 100%;
+        }
+        
     }
     
     .picCon{
-        width: 100%;
+        width: 100%; 
     }
 }
+
+
