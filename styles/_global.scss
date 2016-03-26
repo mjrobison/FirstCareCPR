@@ -2,6 +2,27 @@
 html {
     font-family: 'coves', Arial, Helvetica, sans-serif;
 }
+body{
+   background:
+        linear-gradient(-90deg, rgba(0, 0, 0, .1) 1px, transparent 1px),
+        linear-gradient(rgba(0, 0, 0, .1) 1px, transparent 1px),
+        linear-gradient(-90deg, rgba(0, 0, 0, .05) 1px, transparent 1px),
+        linear-gradient(rgba(0, 0, 0, .05) 1px, transparent 1px),
+        linear-gradient(transparent 3px, transparent 3px, transparent 78px, transparent 78px),
+        linear-gradient(-90deg, transparent 1px, transparent 1px),
+        linear-gradient(-90deg, transparent 3px, transparent 3px, transparent 78px, transparent 78px),
+        linear-gradient(transparent 1px, transparent 1px), transparent;
+    background-size:
+        30px 30px,
+        30px 30px,
+        10px 10px,
+        10px 10px,
+        10px 10px,
+        10px 10px,
+        10px 10px,
+        10px 10px;
+}
+
 
 a {
 	text-decoration: none;
@@ -13,6 +34,7 @@ h1 {
     font-weight: bold;
     margin: 23px;
     font-family: 'coves', Arial, Helvetica, sans-serif;
+    
 }
 
  h2 {
@@ -42,16 +64,17 @@ p {
 .btnAvail {
     background-color: $red;
     width: 165px;
-    padding: 10px 25px;
+    padding: 10px 0px;
     border: 2px solid $red;
     border-radius: 3px;
     transition: .25s;
-    margin: 10px; 
+    margin: auto; 
     margin-bottom: 15px;
-    box-shadow: 0px 3px 4px 0px #272727; 
+    box-shadow: 1px 2px 2px 0px #272727; 
     
     &:hover {
        box-shadow: 0px 3px 5px 2px #272727;
+       
     }
     
     a {
@@ -107,3 +130,26 @@ p {
     clear: both;
   }
 }
+
+.classIcon {
+    width: 75px;
+    margin-top: 100px;
+    transition: .5s;
+ }
+ 
+ .row {
+     position: relative;
+     display: block;
+     
+       &:before,
+        &:after {
+            display: table;
+            content: "";
+            // Fixes Opera/contenteditable bug:
+            // http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
+            line-height: 0;
+        }
+        &:after {
+            clear: both;
+        }
+ }

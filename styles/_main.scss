@@ -48,11 +48,26 @@ main {
 .container {
     width: 90%;
     margin: auto;
+    background-color: #eee;
+    padding: 20px 5px;
     
     .welcome {
         text-align: center;
         line-height: 1.2em;
         margin: 20px 0;
+         background-color: #eee;
+         padding: 10px;
+        
+        h1{
+            border-bottom: 3px solid #a32431;
+            display: table;
+            text-transform: uppercase;
+            padding-bottom: 15px;
+            text-align: center;
+            position: relative;
+            margin: 10px auto 35px;
+            text-shadow: 2px 2px #ccc;   
+        }
     }
 }
 
@@ -60,29 +75,100 @@ main {
         text-align: center;
         //background-color: $grayContent;
         margin: 30px auto;
-        content: '';
-        display: table;
-        width: 960px;   
+        
     }
     .courseCon {
-        width: 360px;
-        height: 360px;
+        width: calc(49% - 16px);
+        height: 280px;
         background-color: #e4e4e4;
-        border: 1px solid #a32431;
-        float: left;
-        margin-left: 6%;
-        margin-right: 6%;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin: 20px 10px;
         border-radius: 2px;
         overflow: hidden;
+        box-shadow: 2px 2px 7px $text;
+        display: inline-block;
+        position: relative;
+        vertical-align: top;
+        transition: .5s;
+        
+        span{
+            display: none;
+            text-transform: none;
+        }
+        
+        &:before{
+                    content: '';
+                    position: absolute;
+                    left: 5%;
+                    top: 5%;
+                    width: 0%;
+                    height: 0%;
+                    display: block;
+                    background-color: rgba(255, 255, 255, 0.7);
+                    z-index: 7;
+                    transform: rotate(45deg);
+                    transition: width .5s length .5s;
+                }
+         &:hover{
+                h2 {
+                    font-size: 18px;
+                    text-transform: none;
+                }
+                span{
+                    display: inline-block;
+                }
+            }
+        
+                 &:after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    background-color: rgba(0, 0, 0, 0.2);
+                    z-index: 5;
+                    
+                 }
+               .classIcon{
+                   position: relative;
+                   z-index: 10;
+               }
+               &:hover{
+                    .classIcon{
+                        margin-top: 25px; 
+                        width: 50px;
+                    }  
+                }
+                
+                &:hover:before{
+                    content: '';
+                    position: absolute;
+                    left: 5%;
+                    top: 5%;
+                    width: 90%;
+                    height: 90%;
+                    display: block;
+                    background-color: rgba(255, 255, 255, 0.7);
+                    z-index: 7;
+                   transform: rotate(0deg);
+                    transition: .5s;
+                }
+        
        
        .classTitle{
-           padding: 7px;
-       }
+            padding: 7px;
+            margin-top: -30px;
+            text-transform: lowercase;
+            color: $red;
+            font-weight: bold;
+            position: relative;
+            z-index: 10;
+         }
 
         .firstAid{
            // text-align: left;
+           
            .firstAidPic{
                  overflow: hidden;
                  background-image: url('../images/firstAidPic.png');
@@ -90,7 +176,12 @@ main {
                  background-repeat: no-repeat;
                  background-position: 60% bottom;
                  height: 280px;
-                 width: 100%;    
+                 width: 100%;  
+                   
+                
+       
+           
+           
            }
              .btnFirstAid {
                 width: 82px;
@@ -185,17 +276,7 @@ main {
                  width: 100%;
                  
                  
-                //  &:before{
-                //     content: '';
-                //     display: block;
-                //     width: 50px;
-                //     height: 50px;
-                //     top: 0;
-                //     left: 0;
-                //     position: absolute;
-                //     background-color: rgba(0, 0, 0, 0.2);
-                //     z-index: 10;
-                //  }
+               
                  
                 //  .content{
                 //     display: block;
@@ -218,7 +299,19 @@ main {
                 //     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
                 //     filter: alpha(opacity=(0));
                 //     opacity: 0;
-                // }
+                //
+                 //  &:before{
+                //     content: '';
+                //     display: block;
+                //     width: 50px;
+                //     height: 50px;
+                //     top: 0;
+                //     left: 0;
+                //     position: absolute;
+                //     background-color: rgba(0, 0, 0, 0.2);
+                //     z-index: 10;
+                //  }
+                 }
                  
                 //  &:after {
                 //     content: '';
@@ -253,6 +346,7 @@ main {
             background-position: 60% bottom;
             height: 280px;
             width: 100%;
+            position: relative;  
         }
         
     }
@@ -260,6 +354,6 @@ main {
     .picCon{
         width: 100%; 
     }
-}
+
 
 

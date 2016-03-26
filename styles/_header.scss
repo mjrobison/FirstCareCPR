@@ -14,6 +14,7 @@ header {
     // -o-box-shadow: 0px 0px 3px #AAA;
     // box-shadow: 0px 0px 3px #AAA;
 	transition-duration: 1s;
+	z-index: 100;
 	
 	.contentCon{
     	width: 88%;
@@ -41,11 +42,22 @@ header {
 			display: block;
 			list-style-type: none;
 			float: left;
-			padding: 30px 9px;
+			margin: 15px 5px;
+			padding: 15px 5px;
 			text-decoration: none;
 			font-size: 16px;
 			line-height: 100%;
 			background-color: transparent;
+			
+				&:hover {
+					a{
+					color: $red;
+					background-color: transparent;
+					font-size: 20px;
+					margin: -6px;
+					}
+					
+				}
 			
 			a {
 				padding: 0;
@@ -54,12 +66,7 @@ header {
 				transition: .25s;
 				font-weight: bold;
 				
-				&:hover {
-					color: $red;
-					background-color: transparent;
-					
-					
-				}
+			
 			}
 		}
 	}
