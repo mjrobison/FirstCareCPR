@@ -90,6 +90,11 @@ h2 {
   font-weight: bold;
   margin: 23px;
   font-family: 'coves', Arial, Helvetica, sans-serif;
+  border-bottom: 3px solid #a32431;
+  display: table;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  position: relative;
 }
 
 h3 {
@@ -106,20 +111,16 @@ p {
   font-family: 'coves', Arial, Helvetica, sans-serif;
 }
 
-.firstAid, .cpr, .pathogens, .footer {
-  box-shadow: 0px 3px 4px 1px #272727;
-}
-
 .btnAvail {
   background-color: #a32431;
   width: 165px;
-  padding: 10px 25px;
+  padding: 10px 0px;
   border: 2px solid #a32431;
   border-radius: 3px;
   transition: .25s;
-  margin: 10px;
+  margin: auto;
   margin-bottom: 15px;
-  box-shadow: 0px 3px 4px 0px #272727;
+  box-shadow: 1px 2px 2px 0px #272727;
 }
 .btnAvail:hover {
   box-shadow: 0px 3px 5px 2px #272727;
@@ -129,138 +130,369 @@ p {
   font-weight: bold;
 }
 
-.diagonalBarThinTop {
-  -ms-transform: rotate(27deg);
-  /* IE 9 */
-  -webkit-transform: rotate(27deg);
-  /* Chrome, Safari, Opera */
-  transform: rotate(27deg);
-  background-color: #bfe1f1;
-  width: 4px;
-  height: 500px;
-  position: absolute;
-  top: -100px;
-  left: -15px;
-  z-index: -1;
+.background-image {
+  background: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-.diagonalBarFatTop {
-  -ms-transform: rotate(27deg);
-  /* IE 9 */
-  -webkit-transform: rotate(27deg);
-  /* Chrome, Safari, Opera */
-  transform: rotate(27deg);
-  background-color: #bfe1f1;
-  width: 25px;
-  height: 500px;
+.textCon {
+  -webkit-transform: skewX(155deg);
+  -ms-transform: skewX(155deg);
+  transform: skewX(155deg);
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+
+.classIcon {
+  width: 75px;
+  margin-top: 100px;
+  transition: .5s;
+}
+
+.row {
+  position: relative;
+  display: block;
+}
+.row:before, .row:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.row:after {
+  clear: both;
+}
+
+.overlay:after {
+  content: '';
   position: absolute;
-  top: -100px;
-  left: 1px;
-  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 5;
+  transition: .25s;
+  overflow: hidden;
+}
+
+.firstAidPic {
+  overflow: hidden;
+  background-image: url("../images/firstAid3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60% bottom;
+  height: 280px;
+  width: 100%;
+}
+
+.cprPic {
+  overflow: hidden;
+  background-image: url("../images/no-ppl-cpr.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60% 0%;
+  height: 280px;
+  width: 100%;
+}
+
+.pathPic {
+  background-image: url("../images/pathPic.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60% bottom;
+  overflow: hidden;
+  height: 280px;
+  width: 100%;
+}
+
+.survivalPic {
+  background-image: url("../images/wilderness.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60% bottom;
+  height: 280px;
+  width: 100%;
+  position: relative;
 }
 
 header {
-  background: transparent;
+  background: #fff;
   position: fixed;
   top: 0;
   left: 0;
   display: block;
   z-index: 10;
   width: 100%;
-  height: 87px;
-  overflow: hidden;
+  height: 65px;
   transition-duration: 1s;
+  z-index: 100;
+  border-bottom: 2px solid #777;
+}
+header .contentCon {
+  width: 88%;
+  margin: auto;
 }
 header .logo {
-  float: left;
   margin-left: 70px;
-  width: 30%;
   position: absolute;
-  left: 40px;
+  left: 100px;
 }
 header .logo img {
-  width: 64%;
-  padding-top: 10px;
+  height: 60px;
+  padding-top: 4px;
+}
+header .logo h1 {
+  width: 450px;
+  position: absolute;
+  top: -4px;
+  left: 16px;
 }
 header .nav {
   float: right;
 }
-header .nav li {
+header .nav .menuItem {
   display: block;
   list-style-type: none;
   float: left;
-  padding: 30px 9px;
+  margin-top: 10px;
+  padding-left: 10px;
   text-decoration: none;
   font-size: 16px;
   line-height: 100%;
   background-color: transparent;
 }
-header .nav li a {
-  padding: 0;
-  color: #272727;
-  text-decoration: none;
-  transition: .25s;
-  font-weight: bold;
-}
-header .nav li a:hover {
+header .nav .menuItem:hover a {
   color: #a32431;
   background-color: transparent;
+}
+header .nav .menuItem a {
+  color: #272727;
+  text-decoration: none;
+  transition: .15s;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  padding: 17px 16px;
+  text-decoration: none;
+}
+header .nav .dropbtn {
+  display: inline-block;
+  text-align: center;
+  padding: 17px 16px;
+  text-decoration: none;
+}
+header .nav .menuItem a, header .nav .dropdown .dropbtn {
+  display: inline-block;
+}
+header .nav .menuItem a:after, header .nav .dropdown .dropbtn:after {
+  content: '';
+  display: block;
+  margin-top: 10px;
+  margin-bottom: -10px;
+  height: 2px;
+  width: 0;
+  background: transparent;
+  transition: width .3s ease, background-color .5s ease;
+}
+header .nav .menuItem a:hover:after, header .nav .dropdown .dropbtn:hover:after {
+  width: 100%;
+  background: #a32431;
+}
+header .nav menuItem.dropdown {
+  display: inline-block;
+}
+header .nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #dbdbdb;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  left: 0;
+  width: 100%;
+}
+header .nav .dropdown-content:hover {
+  width: 100%;
+}
+header .nav .dropdown-content .itemCon {
+  width: 90%;
+  margin: auto;
+}
+header .nav .dropdown-content .dropdownItem {
+  float: left;
+  padding: 10px 0;
+  width: 25%;
+  color: #373737;
+}
+header .nav .dropdown-content .dropdownItem .menuPicCon {
+  text-align: center;
+  width: 75%;
+  margin: auto;
+  width: 250px;
+  height: 150px;
+}
+header .nav .dropdown-content a {
+  color: black;
+  text-decoration: none;
+}
+header .nav .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+header .nav .dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /*************** main *****************/
 main {
-  position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
+  overflow: hidden;
+  box-shadow: 0, -5px, 14px, 1px #373333;
 }
 main .bg-photo {
-  background-image: url("../images/hero.png");
+  background-image: url("../images/firstCareHero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
 }
 main .hero {
-  height: 90vh;
+  height: 80vh;
 }
-main .hero .headlineCon blockquote {
-  border-top: 2px solid #272727;
-  border-bottom: 2px solid #272727;
+main .hero:before {
+  content: '';
   position: absolute;
-  top: 266px;
-  left: 222px;
-  text-align: center;
-  padding: 21px;
-  font-weight: bold;
-  -ms-transform: rotate(-15deg);
-  /* IE 9 */
-  -webkit-transform: rotate(-15deg);
-  /* Chrome, Safari, Opera */
-  transform: rotate(-15deg);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 5;
 }
-main .hero .headlineCon blockquote h1 {
-  margin: 0;
-  font-size: 48px;
-  font-family: 'Fredericka the Great', cursive;
+main .container {
+  width: 90%;
+  margin: auto;
+  padding: 20px 5px;
 }
-main .hero .headlineCon blockquote p {
-  margin: -5px 0 0 0;
-  font-size: 20px;
-  font-family: 'Fredericka the Great', cursive;
-}
-main .welcome {
+main .container .welcome {
   text-align: center;
   line-height: 1.2em;
   margin: 20px 0;
+  padding: 10px;
+}
+main .container .welcome h1 {
+  border-bottom: 3px solid #a32431;
+  display: table;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  text-align: center;
+  position: relative;
+  margin: 10px auto 35px;
 }
 main .available {
   text-align: center;
-  background-color: #dbdbdb;
-  margin: 20px 0 0;
+  margin: 30px auto;
 }
-main .courseCon .firstAid {
-  text-align: left;
+main .available h2 {
+  text-align: center;
+  display: inline-block;
+}
+main .courseCon {
+  width: calc(49% - 16px);
+  height: 280px;
+  background-color: #e4e4e4;
+  margin: 20px 10px;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 2px 2px 7px #343333;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  transition: .5s;
+}
+main .courseCon h2 {
+  transition: .5s;
+  color: #fff;
+  text-shadow: 0;
+}
+main .courseCon span {
+  display: none;
+  text-transform: none;
+}
+main .courseCon:before {
+  content: '';
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  width: 0%;
+  height: 0%;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 7;
+  transform: rotate(45deg);
+  transition: width .5s length .5s;
+}
+main .courseCon:hover h2 {
+  font-size: 18px;
+  text-transform: none;
+}
+main .courseCon:hover span {
+  display: block;
+}
+main .courseCon:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 5;
+}
+main .courseCon .classIcon {
+  position: relative;
+  z-index: 10;
+}
+main .courseCon:hover .classIcon {
+  margin-top: 25px;
+  width: 50px;
+}
+main .courseCon:hover:before {
+  content: '';
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  width: 90%;
+  height: 90%;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 7;
+  transform: rotate(0deg);
+  transition: .5s;
+}
+main .courseCon .classTitle {
+  padding: 7px;
+  margin: -30px auto 0;
+  text-transform: lowercase;
+  color: #a32431;
+  font-weight: bold;
+  position: relative;
+  z-index: 10;
 }
 main .courseCon .firstAid .btnFirstAid {
   width: 82px;
@@ -268,10 +500,6 @@ main .courseCon .firstAid .btnFirstAid {
   border: 2px solid #a32431;
   border-radius: 3px;
   transition: .25s;
-}
-main .courseCon .cpr {
-  text-align: right;
-  background-color: #fff;
 }
 main .courseCon .cpr #center {
   position: relative;
@@ -284,55 +512,239 @@ main .courseCon .cpr .btnCpr {
   border-radius: 3px;
   transition: .25s;
 }
-main .courseCon .pathogens {
-  text-align: left;
-  background-color: #dbdbdb;
-}
-main .courseCon .pathogens .btnPath {
+main .courseCon .btnPath {
   width: 82px;
   padding: 10px 25px;
   border: 2px solid #a32431;
   border-radius: 3px;
   transition: .25s;
 }
-main .picCon {
+main .overlay:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 5;
+  transition: .25s;
+}
+
+.picCon {
   width: 100%;
 }
 
-.footer {
-  background-color: #272727;
-  width: 100%;
-  padding: 20px;
+.aboutPhoto {
+  background-color: #343333;
+  overflow: hidden;
+  position: relative;
 }
-.footer .footNav {
+.aboutPhoto:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.8;
+  background-image: url("../images/no-ppl-cpr.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 40%;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.aboutHero {
+  height: 50vh;
+  margin-top: 65px;
+}
+
+main .container {
+  width: 90%;
+  margin: auto;
+}
+main .container .company h2 {
+  margin: 10px auto 35px;
+}
+main .container .img-con {
+  width: 100%;
+}
+main .container .img-con .bioPic {
+  width: 350px;
+  margin: auto;
+}
+main .container .jimmy {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+main .container .jimmy h2 {
+  margin: 10px auto 35px;
+}
+main .container .jimmy p {
+  padding: 15px;
+  text-align: left;
+}
+main .container .christy {
+  width: 50%;
+  float: right;
+  text-align: center;
+}
+main .container .christy h2 {
+  margin: 10px auto 35px;
+}
+main .container .christy p {
+  padding: 15px;
+  text-align: left;
+}
+
+.courseHero {
+  height: 45vh;
+}
+
+.cpr .coursePhoto {
+  background-color: #343333;
+  overflow: hidden;
+  position: relative;
+}
+.cpr .coursePhoto:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.8;
+  background-image: url("../images/firstAid4.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.firstAid .coursePhoto {
+  background-color: #343333;
+  overflow: hidden;
+  position: relative;
+}
+.firstAid .coursePhoto:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.8;
+  background-image: url("../images/cpr-page-hero.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.survival-wilderness {
+  background-color: #343333;
+  overflow: hidden;
+  position: relative;
+}
+.survival-wilderness:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.8;
+  background-image: url("../images/cpr-page-hero.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.pathogens .coursePhoto {
+  background-color: #343333;
+  overflow: hidden;
+  position: relative;
+}
+.pathogens .coursePhoto:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.8;
+  background-image: url("../images/cpr-page-hero.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+footer {
+  margin: 50px auto 0;
+  padding: 15px 5%;
+  background-color: #eee;
+}
+footer a {
+  color: #272727;
+  font-weight: bold;
+}
+footer .footNav {
   float: left;
 }
-.footer .footNav .nav {
+footer .footNav .nav {
   display: inline-block;
 }
-.footer .footNav .nav a {
+footer .footNav .nav a {
   padding: 4px 15px;
 }
-.footer .contain-contact {
+footer .contain-contact {
   float: right;
 }
-.footer .contain-contact li {
+footer .contain-contact li {
   list-style-type: none;
 }
-
-.sub-footer {
+footer .sub-footer {
   width: 100%;
-  background-color: #272727;
-  text-align: center;
+  text-align: left;
   color: #565656;
 }
-.sub-footer .robros {
+footer .sub-footer .robros {
   text-align: center;
 }
-.sub-footer .robros:before {
+footer .sub-footer .robros:before {
   content: '';
   display: table;
 }
-.sub-footer .robros:after {
+footer .sub-footer .robros:after {
   border: 1px solid #bfe1f1;
 }

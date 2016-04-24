@@ -1,0 +1,78 @@
+.aboutPhoto{
+	background-color: $text;
+	overflow: hidden;
+	position: relative;
+	
+	&:before {
+		content: ' ';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		opacity: 0.8;
+		background-image: url('../images/no-ppl-cpr.jpg');
+		background-repeat: no-repeat;
+		background-position: 50% 40%;
+		-ms-background-size: cover;
+		-o-background-size: cover;
+		-moz-background-size: cover;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	
+}
+
+.aboutHero{
+	height: 50vh;
+	margin-top: 65px;	
+}
+
+main{
+	.container{
+		width:90%;
+		margin: auto; 
+		
+		.company{
+			h2{
+				margin: 10px auto 35px;
+			}
+		}
+		.img-con{
+			width:100%;
+			
+			.bioPic{
+					width: 350px;
+					margin: auto;
+			} 
+		}
+		.jimmy{
+			width:50%;
+			float:left;
+			text-align: center;
+			h2{
+				margin: 10px auto 35px;
+			}
+			p{
+				padding: 15px;
+				text-align: left;
+			}
+			
+		}
+		.christy{
+			width:50%;
+			float: right;
+			text-align: center;
+			h2{
+				margin: 10px auto 35px;
+			}
+			
+			p{
+				padding: 15px;
+				text-align: left;
+			}
+		}
+	}
+}
