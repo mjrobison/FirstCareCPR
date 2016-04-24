@@ -1,0 +1,119 @@
+.courseHero{
+	height: 45vh;
+	}
+
+.cpr {
+	.coursePhoto{
+		background-color: $text;
+		overflow: hidden;
+		position: relative;
+		
+		&:before {
+			content: ' ';
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+			opacity: 0.8;
+			background-image: url('../images/firstAid4.jpg');
+			background-repeat: no-repeat;
+			background-position: 50% 0;
+			-ms-background-size: cover;
+			-o-background-size: cover;
+			-moz-background-size: cover;
+			-webkit-background-size: cover;
+			background-size: cover;
+		}
+		
+	}
+	
+}
+
+.firstAid {
+	.coursePhoto{
+		background-color: $text;
+		overflow: hidden;
+		position: relative;
+		
+		&:before {
+			content: ' ';
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+			opacity: 0.8;
+			background-image: url('../images/cpr-page-hero.jpg');
+			background-repeat: no-repeat;
+			background-position: 50% 0;
+			-ms-background-size: cover;
+			-o-background-size: cover;
+			-moz-background-size: cover;
+			-webkit-background-size: cover;
+			background-size: cover;
+		}
+		
+	}
+}
+
+.survival-wilderness {
+	background-color: $text;
+		overflow: hidden;
+		position: relative;
+		
+		&:before {
+			content: ' ';
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+			opacity: 0.8;
+			background-image: url('../images/cpr-page-hero.jpg');
+			background-repeat: no-repeat;
+			background-position: 50% 0;
+			-ms-background-size: cover;
+			-o-background-size: cover;
+			-moz-background-size: cover;
+			-webkit-background-size: cover;
+			background-size: cover;
+		}
+		
+	}
+
+
+.pathogens {
+	.coursePhoto{
+	background-color: $text;
+		overflow: hidden;
+		position: relative;
+		
+		&:before {
+			content: ' ';
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+			opacity: 0.8;
+			background-image: url('../images/cpr-page-hero.jpg');
+			background-repeat: no-repeat;
+			background-position: 50% 0;
+			-ms-background-size: cover;
+			-o-background-size: cover;
+			-moz-background-size: cover;
+			-webkit-background-size: cover;
+			background-size: cover; 
+		}
+		
+	}
+}

@@ -17,41 +17,73 @@
 	<header>
 		<div class="contentCon">
 		<div class="logo">
-			<img src="../images/logo.png" alt="First Care CPR Training" />
+			<img src="../images/logo-red-no-font.png" alt="First Care CPR Training" />
+			<h1>First Care CPR Training</h1>
 		</div>
 		<nav>
-			<ul class="nav">
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a href="#">Online Courses</a></li>
-				<li><a href="/registration/">Registration</a></li>
-			</ul>
+			<div class="nav">
+				<div class="menuItem"><a href="/about.html">About</a></div>
+				<div class="menuItem"><a href="/contact.html">Contact</a></div>
+				<div class="menuItem dropdown">
+					<a class="dropbtn" href="#">Online Courses</a>
+						<div class="dropdown-content">
+							<div class="itemCon">
+								<div class="dropdownItem">
+									<a href="/first-aid.html">
+										<div class="menuPicCon firstAidPic">
+											
+										</div>
+										First Aid
+									</a>
+								</div>
+								<div class="dropdownItem">
+									<a href="/cpr.html">
+										<div class="menuPicCon cprPic">
+											
+										</div>
+										CPR &amp; AED
+									</a>
+								</div>
+								<div class="dropdownItem">
+									<a href="/pathogens.html">
+										<div class="menuPicCon pathPic">
+												
+										</div>
+										Bloodborne Pathogens
+									</a>
+								</div>
+								<div class="dropdownItem">
+									<a href="/wilderness.html">
+										<div class="menuPicCon survivalPic">
+											</div>
+										Survival/Wilderness
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				<div class="menuItem"><a href="/registration.html">Registration</a></div>
+			</div>
 		</nav>
 		</div>
 	</header>
 	<main>
-		<div class="bg-photo hero">
-			<!--<div class="row">
-				<div class="headlineCon col-sm-offset-5">
-					<blockquote>
-						<h1>1st Care CPR</h1>
-						<p>Rescuing Nashville <em>one</em> Class at a Time</p>
-					</blockquote>
-				</div>
-			</div>-->
+		<div class="bg-photo hero hero-overlay">
 		</div>
 			<div class="container">
 				<section class="welcome">
 						<h1>First Care CPR</h1>
+						<p>Our Mission...</p>
 						<p>We instruct on the Life saving methods of CPR, AED, & First Aid. Certification is for two years. We teach these classes for the professional and for the average person just wanting to know how to help in an emergency. </p>
 						<p>We teach First Aid, CPR, AED, & Blood Born Pathogens. We have regular classes scheduled throughout the week and occasionally on Saturday morning.  We are willing to travel to businesses or homes to accommodate our students.</p>
 				</section>
 			
 			<section class="available">
+					<h2>Available Courses</h2>
 				<div class="row">
 					<div class="courseCon">
 						<article class="firstAid">
-							<div class="firstAidPic">
+							<div class="firstAidPic overlay">
 								<img class="classIcon" src="./images/firstAidLogo.png" />
 								<!--<img class="picCon" src="./images/firstAidPic.png" alt="First Aid Picture"/>-->
 							
@@ -66,9 +98,9 @@
 					</div>
 					<div class="courseCon">
 						<article class="cpr">
-							<div class="cprPic">
+							<div class="cprPic overlay">
 								<!--<img src="./images/cprPic.png" alt=""/>-->
-							<img class="classIcon" src="./images/firstAidLogo.png" />
+							<img class="classIcon" src="./images/cprLogo.png" />
 							<div class="classTitle">
 								<!--<div class="textCon">-->
 									<h2>CPR &amp; AED</h2>
@@ -84,9 +116,9 @@
 				<div class="row">
 					<div class="courseCon">
 						<article class="pathogens">
-							<div class="pathPic background-image ">
+							<div class="pathPic background-image overlay">
 								<!--<img src="./images/pathPic.png" alt=""/>-->
-									<img class="classIcon" src="./images/firstAidLogo.png" />
+									<img class="classIcon" src="./images/bloodborneLogo.png" />
 								<!--<div class="content">
 									<h3>BloodBorne Pathogens Goals</h3>
 									<p>Bacon ipsum dolor amet venison frankfurter ham filet mignon t-bone shank</p>
@@ -102,8 +134,8 @@
 					</div>		
 					<div class="courseCon">
 						<article class="survival">
-							<div class="survivalPic">
-								<img class="classIcon" src="./images/surviveLogo.png" />
+							<div class="survivalPic overlay">
+								<img class="classIcon" src="./images/survivalLogo.png" />
 								<!--<img class="picCon" src="./images/wilderness.jpg" alt="First Aid Picture"/> -->
 							
 							<div class="classTitle">
@@ -151,6 +183,7 @@
 							<li><a href="#">Contact</a></li>
 							<li><a href="#">Online Courses</a></li>
 							<li><a href="#">Pay Registration</a></li>
+							<li>list classes</li>
 						</ul>
 					</div>
 					<div class="contain-contact">
@@ -175,9 +208,13 @@
 				if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
 				$("header").css("background-color", "#fff");
 				$("header").css("box-shadow", "0px 0px 3px #aaa"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+				$(".nav").css("border-bottom", "0px");
+				$(".nav a").css("color", "#272727");
 				} else {
 				$("header").css("background-color", "transparent");
 				$("header").css("box-shadow", "none"); // if not, change it back to transparent
+				$(".nav").css("border-bottom", "2px solid #eee");
+				$(".nav a").css("color", "#eee");
 				}
 			});
 			});

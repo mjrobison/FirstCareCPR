@@ -73,11 +73,6 @@ html {
   font-family: 'coves', Arial, Helvetica, sans-serif;
 }
 
-body {
-  background: linear-gradient(-90deg, rgba(0, 0, 0, 0.1) 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(rgba(0, 0, 0, 0.1) 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(-90deg, rgba(0, 0, 0, 0.05) 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(rgba(0, 0, 0, 0.05) 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(rgba(0, 0, 0, 0) 3px, rgba(0, 0, 0, 0) 3px, rgba(0, 0, 0, 0) 78px, rgba(0, 0, 0, 0) 78px), linear-gradient(-90deg, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(-90deg, rgba(0, 0, 0, 0) 3px, rgba(0, 0, 0, 0) 3px, rgba(0, 0, 0, 0) 78px, rgba(0, 0, 0, 0) 78px), linear-gradient(rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 1px), transparent;
-  background-size: 30px 30px, 30px 30px, 10px 10px, 10px 10px, 10px 10px, 10px 10px, 10px 10px, 10px 10px;
-}
-
 a {
   text-decoration: none;
   color: #AAA;
@@ -95,6 +90,11 @@ h2 {
   font-weight: bold;
   margin: 23px;
   font-family: 'coves', Arial, Helvetica, sans-serif;
+  border-bottom: 3px solid #a32431;
+  display: table;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  position: relative;
 }
 
 h3 {
@@ -139,23 +139,6 @@ p {
   background-size: cover;
 }
 
-.pathPic:hover:after {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.pathPic:hover .content {
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
-  opacity: 1;
-}
-
 .textCon {
   -webkit-transform: skewX(155deg);
   -ms-transform: skewX(155deg);
@@ -193,113 +176,222 @@ p {
   clear: both;
 }
 
+.overlay:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 5;
+  transition: .25s;
+  overflow: hidden;
+}
+
+.firstAidPic {
+  overflow: hidden;
+  background-image: url("../images/firstAid3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60% bottom;
+  height: 280px;
+  width: 100%;
+}
+
+.cprPic {
+  overflow: hidden;
+  background-image: url("../images/no-ppl-cpr.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60% 0%;
+  height: 280px;
+  width: 100%;
+}
+
+.pathPic {
+  background-image: url("../images/pathPic.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60% bottom;
+  overflow: hidden;
+  height: 280px;
+  width: 100%;
+}
+
+.survivalPic {
+  background-image: url("../images/wilderness.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60% bottom;
+  height: 280px;
+  width: 100%;
+  position: relative;
+}
+
 header {
-  background: transparent;
+  background: #fff;
   position: fixed;
   top: 0;
   left: 0;
   display: block;
   z-index: 10;
   width: 100%;
-  height: 87px;
-  overflow: hidden;
+  height: 65px;
   transition-duration: 1s;
   z-index: 100;
+  border-bottom: 2px solid #777;
 }
 header .contentCon {
   width: 88%;
   margin: auto;
 }
 header .logo {
-  float: left;
   margin-left: 70px;
-  width: 30%;
   position: absolute;
-  left: 40px;
+  left: 100px;
 }
 header .logo img {
-  width: 64%;
-  padding-top: 10px;
+  height: 60px;
+  padding-top: 4px;
+}
+header .logo h1 {
+  width: 450px;
+  position: absolute;
+  top: -4px;
+  left: 16px;
 }
 header .nav {
   float: right;
 }
-header .nav li {
+header .nav .menuItem {
   display: block;
   list-style-type: none;
   float: left;
-  margin: 15px 5px;
-  padding: 15px 5px;
+  margin-top: 10px;
+  padding-left: 10px;
   text-decoration: none;
   font-size: 16px;
   line-height: 100%;
   background-color: transparent;
 }
-header .nav li:hover a {
+header .nav .menuItem:hover a {
   color: #a32431;
   background-color: transparent;
-  font-size: 20px;
-  margin: -6px;
 }
-header .nav li a {
-  padding: 0;
+header .nav .menuItem a {
   color: #272727;
   text-decoration: none;
-  transition: .25s;
+  transition: .15s;
   font-weight: bold;
+  display: block;
+  text-align: center;
+  padding: 17px 16px;
+  text-decoration: none;
+}
+header .nav .dropbtn {
+  display: inline-block;
+  text-align: center;
+  padding: 17px 16px;
+  text-decoration: none;
+}
+header .nav .menuItem a, header .nav .dropdown .dropbtn {
+  display: inline-block;
+}
+header .nav .menuItem a:after, header .nav .dropdown .dropbtn:after {
+  content: '';
+  display: block;
+  margin-top: 10px;
+  margin-bottom: -10px;
+  height: 2px;
+  width: 0;
+  background: transparent;
+  transition: width .3s ease, background-color .5s ease;
+}
+header .nav .menuItem a:hover:after, header .nav .dropdown .dropbtn:hover:after {
+  width: 100%;
+  background: #a32431;
+}
+header .nav menuItem.dropdown {
+  display: inline-block;
+}
+header .nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #dbdbdb;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  left: 0;
+  width: 100%;
+}
+header .nav .dropdown-content:hover {
+  width: 100%;
+}
+header .nav .dropdown-content .itemCon {
+  width: 90%;
+  margin: auto;
+}
+header .nav .dropdown-content .dropdownItem {
+  float: left;
+  padding: 10px 0;
+  width: 25%;
+  color: #373737;
+}
+header .nav .dropdown-content .dropdownItem .menuPicCon {
+  text-align: center;
+  width: 75%;
+  margin: auto;
+  width: 250px;
+  height: 150px;
+}
+header .nav .dropdown-content a {
+  color: black;
+  text-decoration: none;
+}
+header .nav .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+header .nav .dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /*************** main *****************/
 main {
   width: 100%;
   overflow: hidden;
+  box-shadow: 0, -5px, 14px, 1px #373333;
 }
 main .bg-photo {
-  background-image: url("../images/hero.png");
+  background-image: url("../images/firstCareHero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
 }
 main .hero {
-  height: 90vh;
+  height: 80vh;
 }
-main .hero .headlineCon blockquote {
-  border-top: 2px solid #272727;
-  border-bottom: 2px solid #272727;
+main .hero:before {
+  content: '';
   position: absolute;
-  top: 266px;
-  left: 222px;
-  text-align: center;
-  padding: 21px;
-  font-weight: bold;
-  -ms-transform: rotate(-15deg);
-  /* IE 9 */
-  -webkit-transform: rotate(-15deg);
-  /* Chrome, Safari, Opera */
-  transform: rotate(-15deg);
-}
-main .hero .headlineCon blockquote h1 {
-  margin: 0;
-  font-size: 48px;
-  font-family: 'Fredericka the Great', cursive;
-}
-main .hero .headlineCon blockquote p {
-  margin: -5px 0 0 0;
-  font-size: 20px;
-  font-family: 'Fredericka the Great', cursive;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 5;
 }
 main .container {
   width: 90%;
   margin: auto;
-  background-color: #eee;
   padding: 20px 5px;
 }
 main .container .welcome {
   text-align: center;
   line-height: 1.2em;
   margin: 20px 0;
-  background-color: #eee;
   padding: 10px;
 }
 main .container .welcome h1 {
@@ -310,11 +402,14 @@ main .container .welcome h1 {
   text-align: center;
   position: relative;
   margin: 10px auto 35px;
-  text-shadow: 2px 2px #ccc;
 }
 main .available {
   text-align: center;
   margin: 30px auto;
+}
+main .available h2 {
+  text-align: center;
+  display: inline-block;
 }
 main .courseCon {
   width: calc(49% - 16px);
@@ -328,6 +423,11 @@ main .courseCon {
   position: relative;
   vertical-align: top;
   transition: .5s;
+}
+main .courseCon h2 {
+  transition: .5s;
+  color: #fff;
+  text-shadow: 0;
 }
 main .courseCon span {
   display: none;
@@ -351,7 +451,7 @@ main .courseCon:hover h2 {
   text-transform: none;
 }
 main .courseCon:hover span {
-  display: inline-block;
+  display: block;
 }
 main .courseCon:after {
   content: '';
@@ -387,21 +487,12 @@ main .courseCon:hover:before {
 }
 main .courseCon .classTitle {
   padding: 7px;
-  margin-top: -30px;
+  margin: -30px auto 0;
   text-transform: lowercase;
   color: #a32431;
   font-weight: bold;
   position: relative;
   z-index: 10;
-}
-main .courseCon .firstAid .firstAidPic {
-  overflow: hidden;
-  background-image: url("../images/firstAidPic.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 60% bottom;
-  height: 280px;
-  width: 100%;
 }
 main .courseCon .firstAid .btnFirstAid {
   width: 82px;
@@ -421,24 +512,6 @@ main .courseCon .cpr .btnCpr {
   border-radius: 3px;
   transition: .25s;
 }
-main .courseCon .cpr .cprPic {
-  overflow: hidden;
-  background-image: url("../images/cprPic.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 60% bottom;
-  height: 280px;
-  width: 100%;
-}
-main .courseCon .pathogens .pathPic {
-  background-image: url("../images/pathPic.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 60% bottom;
-  overflow: hidden;
-  height: 280px;
-  width: 100%;
-}
 main .courseCon .btnPath {
   width: 82px;
   padding: 10px 25px;
@@ -446,23 +519,200 @@ main .courseCon .btnPath {
   border-radius: 3px;
   transition: .25s;
 }
-main .survivalPic {
-  background-image: url("../images/wilderness.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 60% bottom;
-  height: 280px;
+main .overlay:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  position: relative;
+  height: 100%;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 5;
+  transition: .25s;
 }
 
 .picCon {
   width: 100%;
 }
 
+.aboutPhoto {
+  background-color: #343333;
+  overflow: hidden;
+  position: relative;
+}
+.aboutPhoto:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.8;
+  background-image: url("../images/no-ppl-cpr.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 40%;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.aboutHero {
+  height: 50vh;
+  margin-top: 65px;
+}
+
+main .container {
+  width: 90%;
+  margin: auto;
+}
+main .container .company h2 {
+  margin: 10px auto 35px;
+}
+main .container .img-con {
+  width: 100%;
+}
+main .container .img-con .bioPic {
+  width: 350px;
+  margin: auto;
+}
+main .container .jimmy {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+main .container .jimmy h2 {
+  margin: 10px auto 35px;
+}
+main .container .jimmy p {
+  padding: 15px;
+  text-align: left;
+}
+main .container .christy {
+  width: 50%;
+  float: right;
+  text-align: center;
+}
+main .container .christy h2 {
+  margin: 10px auto 35px;
+}
+main .container .christy p {
+  padding: 15px;
+  text-align: left;
+}
+
+.courseHero {
+  height: 45vh;
+}
+
+.cpr .coursePhoto {
+  background-color: #343333;
+  overflow: hidden;
+  position: relative;
+}
+.cpr .coursePhoto:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.8;
+  background-image: url("../images/firstAid4.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.firstAid .coursePhoto {
+  background-color: #343333;
+  overflow: hidden;
+  position: relative;
+}
+.firstAid .coursePhoto:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.8;
+  background-image: url("../images/cpr-page-hero.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.survival-wilderness {
+  background-color: #343333;
+  overflow: hidden;
+  position: relative;
+}
+.survival-wilderness:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.8;
+  background-image: url("../images/cpr-page-hero.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.pathogens .coursePhoto {
+  background-color: #343333;
+  overflow: hidden;
+  position: relative;
+}
+.pathogens .coursePhoto:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.8;
+  background-image: url("../images/cpr-page-hero.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
 footer {
   margin: 50px auto 0;
-  width: 90%;
+  padding: 15px 5%;
+  background-color: #eee;
 }
 footer a {
   color: #272727;

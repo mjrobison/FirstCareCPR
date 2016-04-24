@@ -1,0 +1,125 @@
+<!DOCTYPE  html>
+<html lang="en-US">
+<head>
+	  <meta charset="utf-8">
+	  <title>Nashville CPR Certification | A Life Saving Education</title>
+	  
+	  <link rel="stylesheet" href="/css/style.css">
+	  <link href='https://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>
+	  
+      <meta name="viewport" content="width=device-width">
+	  <meta name="viewport" content="width=100%, initial-scale=1, user-scalable=no">
+	
+	  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>	
+</head>
+<body class="contact">
+	
+	<header>
+		<div class="contentCon">
+		<div class="logo">
+			<img src="../images/logo.png" alt="First Care CPR Training" />
+		</div>
+		<nav>
+			<div class="nav">
+				<div class="menuItem"><a href="#">About</a></div>
+				<div class="menuItem"><a href="#">Contact</a></div>
+				<div class="menuItem dropdown">
+					<a class="dropbtn" href="#">Online Courses</a>
+						<div class="dropdown-content">
+							<div class="dropdownItem">
+								<a href="#">
+									<div class="menuPicCon">
+										<img src="../images/firstAidPic.png" alt="First Aid Picture"/>
+										First Aid
+									</div>
+								</a>
+							</div>
+							<div class="dropdownItem">
+								<a href="#">
+									<div class="menuPicCon">
+										<img src="../images/firstAidPic.png" alt="First Aid Picture"/>
+										CPR &amp; AED
+									</div>
+								</a>
+							</div>
+							<div class="dropdownItem">
+								<a href="#">
+									<div class="menuPicCon">
+										<img src="../images/firstAidPic.png" alt="First Aid Picture"/>
+										Bloodborne Pathogens
+									</div>
+								</a>
+							</div>
+							<div class="dropdownItem">
+								<a href="#">
+									<div class="menuPicCon">
+										<img src="../images/firstAidPic.png" alt="First Aid Picture"/>
+										Survival/Wilderness
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				<div class="menuItem"><a href="/registration/">Registration</a></div>
+			</div>
+		</nav>
+		</div>
+	</header>
+	<main>
+		<div class="coursePhoto courseHero"></div>
+		<div class="container">
+			<div class="company">
+				<h2>First Care CPR</h2>
+				<p> First Care CPR was founded in...</p>
+			</div>
+			<div class="jimmy">
+				<h2> James Tucker</h2> 
+				<img class="bioPic" src="../images/cpr.jpg" alt="Jimmy Performing CPR on a dummy" />
+				<p>James Tucker is a First Aid, CPR, & AED Instructor. He has been in the medical field off and on for over 20 years. He was a Physical Therapist Assistant for 15 years.</p>
+			</div>
+			<div class="christy">
+				<h2>Christy Tucker</h2>
+				<img class="bioPic" src="../images/girl-cpr.jpg" alt="Jimmy Performing CPR on a dummy" />
+				<p>Christy Tucker is a First Aid, CPR, & AED Instuctor. She has been a CPR/First Aid instructor for over 12 years. She has been a teacher for more than 17 years.  She has trained students for many businesses in the Davidson, Sumner, and Roberston Counties.  She has trained the Leaders & Camp Directors at Boxwell Boy Scout Camp for  years. First Care is locally owned and Family operated.</p>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="clearfix">
+			<div class="footNav">
+				<ul class="nav">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Online Courses</a></li>
+					<li><a href="#">Pay Registration</a></li>
+				</ul>
+			</div>
+			<div class="contain-contact">
+				<section class="contact">
+					<ul>
+						<li class="email"><a href="mailto:firstcarecpr@gmail.com">firstcarecpr@gmail.com</a></li>
+						<li class="phone"><a href="tel:615-260-4758">(615)260-4758</a></li>
+						<li class="phone"><a href="tel:615-473-9746">(615)473-9746</a></li>
+					</ul>
+				</section>
+			</div>
+		</div>
+		<div class="sub-footer">
+			<div class="robros">&copy; <!--set year dynamically with PHP -->2016 Nashville First Care CPR | Powered By: &#60;Robros/&#62; </div>
+		</div>
+	</footer>
+	<script>
+		$(document).ready(function(){
+		$(window).scroll(function() { // check if scroll event happened
+			if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
+			$("header").css("background-color", "#fff");
+			$("header").css("box-shadow", "0px 0px 3px #aaa"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+			} else {
+			$("header").css("background-color", "transparent");
+			$("header").css("box-shadow", "none"); // if not, change it back to transparent
+			}
+		});
+		});
+	</script>
+</body>
+</html>
