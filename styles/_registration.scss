@@ -1,0 +1,25 @@
+.registrationform{
+    margin-top: 68px;
+    
+    label{
+        display: inline-block;
+        float: left;
+        clear: left;
+        width: 130px;
+        text-align: right;
+    }
+    
+    input[type="text"]{
+        width: 150px;
+    }
+    input[type="date"]{
+        width: 150px;
+    }
+    input[type="checkbox"]{
+        margin-left: 135px;
+    }
+    input[type="submit"]{
+        width: 115px;
+        margin-left: 165px;
+    }
+}

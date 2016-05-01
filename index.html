@@ -1,5 +1,71 @@
-
-<?php require_once('header.html'); ?>
+<!DOCTYPE  html>
+<html lang="en-US">
+<head>
+	  <meta charset="utf-8">
+	  <title>Nashville CPR Certification | A Life Saving Education</title>
+	  
+	  <link rel="stylesheet" href="./css/style.css">
+	  <link href='https://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>
+	  
+      <meta name="viewport" content="width=device-width">
+	  <meta name="viewport" content="width=100%, initial-scale=1, user-scalable=no">
+	
+	  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>	
+</head>
+<body>
+	<header>
+		<div class="contentCon">
+		<div class="logo">
+			<img src="./images/logo-red-no-font.png" alt="First Care CPR Training" />
+			<h1>First Care CPR Training</h1>
+		</div>
+		<nav>
+			<div class="nav">
+				<div class="menuItem"><a href="/about.html">About</a></div>
+				<div class="menuItem"><a href="/contact.html">Contact</a></div>
+				<div class="menuItem dropdown">
+					<a class="dropbtn" href="#">Online Courses</a>
+						<div class="dropdown-content">
+							<div class="itemCon">
+								<div class="dropdownItem">
+									<a href="/first-aid.html">
+										<div class="menuPicCon firstAidPic">
+											
+										</div>
+										First Aid
+									</a>
+								</div>
+								<div class="dropdownItem">
+									<a href="/cpr.html">
+										<div class="menuPicCon cprPic">
+											
+										</div>
+										CPR &amp; AED
+									</a>
+								</div>
+								<div class="dropdownItem">
+									<a href="/pathogens.html">
+										<div class="menuPicCon pathPic">
+												
+										</div>
+										Bloodborne Pathogens
+									</a>
+								</div>
+								<div class="dropdownItem">
+									<a href="/wilderness.html">
+										<div class="menuPicCon survivalPic">
+											</div>
+										Survival/Wilderness
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				<div class="menuItem"><a href="./registration.php">Registration</a></div>
+			</div>
+		</nav>
+		</div>
+	</header>
 	<main>
 		<div class="bg-photo hero hero-overlay">
 		</div>
@@ -108,5 +174,50 @@
 			</section>-->
 			</div>
 			</main>
-
-<?php require_once('footer.html') ?>
+			<footer>
+				<div class="clearfix">
+					<div class="footNav">
+						<ul class="nav">
+							<li><a href="#">About</a></li>
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">Online Courses</a></li>
+							<li><a href="#">Pay Registration</a></li>
+							<li>list classes</li>
+						</ul>
+					</div>
+					<div class="contain-contact">
+						<section class="contact">
+							<ul>
+								<li class="email"><a href="mailto:firstcarecpr@gmail.com">firstcarecpr@gmail.com</a></li>
+								<li class="phone"><a href="tel:615-260-4758">(615)260-4758</a></li>
+								<li class="phone"><a href="tel:615-473-9746">(615)473-9746</a></li>
+							</ul>
+						</section>
+					</div>
+				</div>
+			<!--</div>-->
+				<div class="sub-footer">
+					<div class="robros">&copy; <!--set year dynamically with PHP -->2016 Nashville First Care CPR | Powered By: &#60;Robros/&#62; </div>
+				</div>
+			<!--</div>-->
+		</footer>
+		<script>
+			$(document).ready(function(){
+			$(window).scroll(function() { // check if scroll event happened
+				if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
+				$("header").css("background-color", "#fff");
+				$("header").css("box-shadow", "0px 0px 3px #aaa"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+				$(".nav").css("border-bottom", "0px");
+				$(".nav a").css("color", "#272727");
+				} else {
+				$("header").css("background-color", "transparent");
+				$("header").css("box-shadow", "none"); // if not, change it back to transparent
+				$(".nav").css("border-bottom", "2px solid #eee");
+				$(".nav a").css("color", "#eee");
+				}
+			});
+			});
+		</script>
+	
+</body>
+</html>

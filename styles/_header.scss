@@ -163,6 +163,63 @@ header {
 		
 		.dropdown:hover .dropdown-content {
 			display: block;
-		}
+        }
+        .menu-icon{
+            visibility: hidden;
+            //background: url(./images/mobilemenubutton.png);
+        }
 	}
 }
+
+@media screen and (max-width: 800px){
+    header{
+        right: 6px;
+        padding-right: 0px;
+        
+        .contentCon{
+            width: 95%;
+            margin-right: 5px;
+            .logo{
+                left: 20px;
+                margin-left: 5px;
+            }
+            nav{
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+ header{
+          
+     .contentCon{
+         float: left;
+         .logo{
+             float: left;
+             left: 20px;
+             margin-left: 5px;
+         }
+         h1{
+             visibility: hidden;
+         }
+         nav{
+             .menuItem{
+                 visibility: hidden;
+         }
+            &:hover ul{
+                display: block;
+            }
+        }
+        .menu-icon{
+            img{
+                visibility: visible;
+                margin-top: 10px;
+                height: 40px;
+                float: right;
+            }
+        }
+ 
+    }
+ }
+}   
