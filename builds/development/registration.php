@@ -1,6 +1,6 @@
 <?php require_once('header.html'); ?>
 	<main>
-       
+       <div class = "registrationform">
             <p id="note">Use the calendar below to find an opening in our schedule.  To schedule a class during the workday we need some lead time.
                 When you click submit you will be taken to a second site where you can place your $20 non refundable fee.  This fee holds your spot in the classes you select below.  
             </p>

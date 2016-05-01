@@ -60,6 +60,7 @@ gulp.task('watch', function() {
   gulp.watch(jsSources, ['js']);
   gulp.watch(['styles/*.scss'], ['compass']);
   gulp.watch('builds/development/*.html', ['html']);
+  gulp.watch('./*.php', ['php']);
 });
 
 gulp.task('connect', function() {
@@ -76,10 +77,18 @@ gulp.task('html', function() {
     .pipe(connect.reload())
 });
 
+gulp.task('php', function() {
+  gulp.src('builds/development/*.php')
+    .pipe(gulpif(env === 'production', minifyHTML()))
+    .pipe(gulpif(env === 'development', gulp.dest(outputDir)))
+    .pipe(connect.reload())
+});
+
+
 // Copy images to production
 gulp.task('move', function() {
   gulp.src('builds/development/images/**/*.*')
   .pipe(gulpif(env === 'production', gulp.dest(outputDir+'images')))
 });
 
-gulp.task('default', ['watch', 'html', 'js', 'compass', 'move', 'connect']);
+gulp.task('default', ['watch', 'html', 'js', 'compass', 'move', 'connect', 'php']);
