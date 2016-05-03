@@ -1,9 +1,11 @@
 .courseHero{
-	height: 45vh;
+	height: 55vh;
 	}
 
-.cpr {
+#cpr {
+	
 	.coursePhoto{
+		margin-top:65px;
 		background-color: $text;
 		overflow: hidden;
 		position: relative;
@@ -18,9 +20,9 @@
 			height: 100%;
 			z-index: 1;
 			opacity: 0.8;
-			background-image: url('../images/firstAid4.jpg');
+			background-image: url('../images/no-ppl-cpr.jpg');
 			background-repeat: no-repeat;
-			background-position: 50% 0;
+			background-position: 50%;
 			-ms-background-size: cover;
 			-o-background-size: cover;
 			-moz-background-size: cover;
@@ -32,8 +34,8 @@
 	
 }
 
-.firstAid {
-	.coursePhoto{
+.firstAidCourse {
+	margin-top:65px;
 		background-color: $text;
 		overflow: hidden;
 		position: relative;
@@ -48,9 +50,9 @@
 			height: 100%;
 			z-index: 1;
 			opacity: 0.8;
-			background-image: url('../images/cpr-page-hero.jpg');
+			background-image: url('../images/firstAid3.jpg');
 			background-repeat: no-repeat;
-			background-position: 50% 0;
+			background-position: 50%;
 			-ms-background-size: cover;
 			-o-background-size: cover;
 			-moz-background-size: cover;
@@ -59,9 +61,10 @@
 		}
 		
 	}
-}
+
 
 .survival-wilderness {
+	margin-top:65px;
 	background-color: $text;
 		overflow: hidden;
 		position: relative;
@@ -76,9 +79,9 @@
 			height: 100%;
 			z-index: 1;
 			opacity: 0.8;
-			background-image: url('../images/cpr-page-hero.jpg');
+			background-image: url('../images/wilderness.jpg');
 			background-repeat: no-repeat;
-			background-position: 50% 0;
+			background-position: 50%;
 			-ms-background-size: cover;
 			-o-background-size: cover;
 			-moz-background-size: cover;
@@ -89,12 +92,13 @@
 	}
 
 
-.pathogens {
-	.coursePhoto{
+.path {
+	margin-top:65px;
 	background-color: $text;
-		overflow: hidden;
-		position: relative;
-		
+	overflow: hidden;
+	position: relative;
+	
+	
 		&:before {
 			content: ' ';
 			display: block;
@@ -105,9 +109,9 @@
 			height: 100%;
 			z-index: 1;
 			opacity: 0.8;
-			background-image: url('../images/cpr-page-hero.jpg');
+			background-image: url('../images/pathPic.png');
 			background-repeat: no-repeat;
-			background-position: 50% 0;
+			background-position: center;
 			-ms-background-size: cover;
 			-o-background-size: cover;
 			-moz-background-size: cover;
@@ -116,4 +120,3 @@
 		}
 		
 	}
-}

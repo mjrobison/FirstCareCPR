@@ -17,13 +17,13 @@ h1 {
 }
 
  h2 {
-    font-size: 28px;
+    font-size: 25px;
     font-weight: bold;
     margin: 23px;
     font-family: 'coves', Arial, Helvetica, sans-serif;
     border-bottom: 3px solid #a32431;
     display: table;
-    text-transform: uppercase;
+    text-transform: capitalize;;
     padding-bottom: 10px;
     position: relative;
  }
@@ -181,3 +181,9 @@ p {
     width: 100%;
     position: relative;  
 }
+
+#contact, .about, #contact, #firstAid, #path, #registration, #survival{
+    header{
+        border-bottom: 1px solid #272727;
+    }
+} 

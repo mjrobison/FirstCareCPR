@@ -1,0 +1,73 @@
+@media screen and (max-width: 960px){
+	
+}
+
+@media screen and (max-width: 766px){
+	.nav {
+		display: none;
+	}
+	
+	footer .contain-contact {
+		float: none;
+		margin-bottom: 15px;
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+	
+	footer .footImgCon{
+			display: block;
+			clear: both;
+			width: 100%;
+			text-align: center;
+			
+			img{
+				width: 125px;
+				position: static;
+			}
+		}
+		
+	footer .contain-contact .contact {
+		display: inline-block;
+		width: 70%;
+		margin: auto;
+	}
+	
+	footer .contain-contact .contact .email, footer .contain-contact .contact .phone {
+		line-height: 1.2em;
+		display: inline-block;
+		margin-right: 25px;
+		text-align: left;	
+	}
+}
+
+@media screen and (max-width: 620px){
+	.courseCon{
+		margin: 20px auto !important;
+	}
+	footer{
+		.footNav{
+			float: none;
+			width: 50%;
+			display: inline-block;
+			
+		}	
+		
+		.courses {
+			float: left;
+			display: inline-block;
+			width: 50%;
+			font-size: 14px;
+			text-align: left;
+			
+			h3{
+				text-align: left;
+				width: 82px;
+			}
+		}
+		
+
+		
+		
+	}	
+}

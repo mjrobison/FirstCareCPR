@@ -86,13 +86,13 @@ h1 {
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 25px;
   font-weight: bold;
   margin: 23px;
   font-family: 'coves', Arial, Helvetica, sans-serif;
   border-bottom: 3px solid #a32431;
   display: table;
-  text-transform: uppercase;
+  text-transform: capitalize;
   padding-bottom: 10px;
   position: relative;
 }
@@ -230,6 +230,10 @@ p {
   position: relative;
 }
 
+#contact header, .about header, #contact header, #firstAid header, #path header, #registration header, #survival header {
+  border-bottom: 1px solid #272727;
+}
+
 header {
   background: #fff;
   position: fixed;
@@ -241,14 +245,13 @@ header {
   height: 65px;
   transition-duration: 1s;
   z-index: 100;
-  border-bottom: 2px solid #777;
 }
 header .contentCon {
   width: 88%;
   margin: auto;
 }
 header .logo {
-  margin-left: 70px;
+  margin-left: 1%;
   position: absolute;
   left: 100px;
 }
@@ -257,10 +260,14 @@ header .logo img {
   padding-top: 4px;
 }
 header .logo h1 {
-  width: 450px;
+  width: 166px;
   position: absolute;
   top: -4px;
   left: 16px;
+  line-height: .6em;
+}
+header .logo h1 span {
+  font-size: 20px;
 }
 header .nav {
   float: right;
@@ -351,6 +358,7 @@ header .nav .dropdown-content a {
 }
 header .nav .dropdown-content a:hover {
   background-color: #f1f1f1;
+  color: #272727;
 }
 header .nav .dropdown:hover .dropdown-content {
   display: block;
@@ -413,6 +421,7 @@ main .available h2 {
 }
 main .courseCon {
   width: calc(49% - 16px);
+  min-width: 280px;
   height: 280px;
   background-color: #e4e4e4;
   margin: 20px 10px;
@@ -575,6 +584,8 @@ main .container .company h2 {
 }
 main .container .img-con {
   width: 100%;
+  height: 230px;
+  overflow: hidden;
 }
 main .container .img-con .bioPic {
   width: 350px;
@@ -606,15 +617,16 @@ main .container .christy p {
 }
 
 .courseHero {
-  height: 45vh;
+  height: 55vh;
 }
 
-.cpr .coursePhoto {
+#cpr .coursePhoto {
+  margin-top: 65px;
   background-color: #343333;
   overflow: hidden;
   position: relative;
 }
-.cpr .coursePhoto:before {
+#cpr .coursePhoto:before {
   content: ' ';
   display: block;
   position: absolute;
@@ -624,9 +636,9 @@ main .container .christy p {
   height: 100%;
   z-index: 1;
   opacity: 0.8;
-  background-image: url("../images/firstAid4.jpg");
+  background-image: url("../images/no-ppl-cpr.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: 50%;
   -ms-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -634,12 +646,13 @@ main .container .christy p {
   background-size: cover;
 }
 
-.firstAid .coursePhoto {
+.firstAidCourse {
+  margin-top: 65px;
   background-color: #343333;
   overflow: hidden;
   position: relative;
 }
-.firstAid .coursePhoto:before {
+.firstAidCourse:before {
   content: ' ';
   display: block;
   position: absolute;
@@ -649,9 +662,9 @@ main .container .christy p {
   height: 100%;
   z-index: 1;
   opacity: 0.8;
-  background-image: url("../images/cpr-page-hero.jpg");
+  background-image: url("../images/firstAid3.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: 50%;
   -ms-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -660,6 +673,7 @@ main .container .christy p {
 }
 
 .survival-wilderness {
+  margin-top: 65px;
   background-color: #343333;
   overflow: hidden;
   position: relative;
@@ -674,9 +688,9 @@ main .container .christy p {
   height: 100%;
   z-index: 1;
   opacity: 0.8;
-  background-image: url("../images/cpr-page-hero.jpg");
+  background-image: url("../images/wilderness.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: 50%;
   -ms-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -684,12 +698,13 @@ main .container .christy p {
   background-size: cover;
 }
 
-.pathogens .coursePhoto {
+.path {
+  margin-top: 65px;
   background-color: #343333;
   overflow: hidden;
   position: relative;
 }
-.pathogens .coursePhoto:before {
+.path:before {
   content: ' ';
   display: block;
   position: absolute;
@@ -699,9 +714,9 @@ main .container .christy p {
   height: 100%;
   z-index: 1;
   opacity: 0.8;
-  background-image: url("../images/cpr-page-hero.jpg");
+  background-image: url("../images/pathPic.png");
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: center;
   -ms-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -720,18 +735,64 @@ footer a {
 }
 footer .footNav {
   float: left;
+  width: 250px;
+}
+footer .footNav h3 {
+  font-size: 21px;
+  font-weight: bold;
+  margin: 12px 14px;
+  font-family: 'coves', Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid #a32431;
+  width: 143px;
 }
 footer .footNav .nav {
   display: inline-block;
 }
 footer .footNav .nav a {
   padding: 4px 15px;
+  line-height: 1.4em;
+}
+footer .courses {
+  float: left;
+}
+footer .courses h3 {
+  font-size: 21px;
+  font-weight: bold;
+  margin: 12px 14px;
+  font-family: 'coves', Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid #a32431;
+  width: 82px;
+}
+footer .courses .nav {
+  display: inline-block;
+}
+footer .courses .nav a {
+  padding: 4px 15px;
+  line-height: 1.4em;
+}
+footer .footImgCon img {
+  width: 125px;
+  /* margin-left: -119px; */
+  margin-top: 20px;
+  position: absolute;
+  right: 240px;
 }
 footer .contain-contact {
   float: right;
 }
-footer .contain-contact li {
-  list-style-type: none;
+footer .contain-contact .contact {
+  display: inline-block;
+}
+footer .contain-contact .contact .email, footer .contain-contact .contact .phone {
+  line-height: 1.2em;
+}
+footer .contain-contact .contact .email h3, footer .contain-contact .contact .phone h3 {
+  font-size: 21px;
+  font-weight: bold;
+  margin: 8px 0;
+  font-family: 'coves', Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid #a32431;
+  width: 82px;
 }
 footer .sub-footer {
   width: 100%;
@@ -747,4 +808,64 @@ footer .sub-footer .robros:before {
 }
 footer .sub-footer .robros:after {
   border: 1px solid #bfe1f1;
+}
+
+@media screen and (max-width: 766px) {
+  .nav {
+    display: none;
+  }
+
+  footer .contain-contact {
+    float: none;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+  }
+
+  footer .footImgCon {
+    display: block;
+    clear: both;
+    width: 100%;
+    text-align: center;
+  }
+  footer .footImgCon img {
+    width: 125px;
+    position: static;
+  }
+
+  footer .contain-contact .contact {
+    display: inline-block;
+    width: 70%;
+    margin: auto;
+  }
+
+  footer .contain-contact .contact .email, footer .contain-contact .contact .phone {
+    line-height: 1.2em;
+    display: inline-block;
+    margin-right: 25px;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 620px) {
+  .courseCon {
+    margin: 20px auto !important;
+  }
+
+  footer .footNav {
+    float: none;
+    width: 50%;
+    display: inline-block;
+  }
+  footer .courses {
+    float: left;
+    display: inline-block;
+    width: 50%;
+    font-size: 14px;
+    text-align: left;
+  }
+  footer .courses h3 {
+    text-align: left;
+    width: 82px;
+  }
 }
