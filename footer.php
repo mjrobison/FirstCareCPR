@@ -21,7 +21,7 @@
                 </div>
             <!--</div>-->
                 <div class="sub-footer">
-                    <div class="robros">&copy; <!--set year dynamically with PHP -->2016 Nashville First Care CPR | Powered By: &#60;Robros/&#62; </div>
+                    <div class="robros">&copy; <?php echo date('Y'); ?>  Nashville First Care CPR | Powered By: &#60;Robros/&#62; </div>
                 </div>
             <!--</div>-->
         </footer>
@@ -30,20 +30,20 @@
                 $(window).scroll(function() { // check if scroll event happened
                     var scrollVar = $(window).scrollTop(); //Determine the pixels moved.
                     var height = $('.hero').height();
-                    console.log('Scroll:'+scrollVar);
-                    console.log('height:'+height);
-                    console.log('Opacity Setting:'+((height-scrollVar)/height));
+                    console.log(scrollVar);
                     $('.bg-photo').css({'opacity': ((740-scrollVar)/740) });  //Adjust the opacity of the image               
                     if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
                         $("header").css("background-color", "#fff");
                         $("header").css("box-shadow", "0px 0px 3px #aaa"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
                         $(".nav").css("border-bottom", "0px");
-                        $(".nav a").css("color", "#272727");
+                        $(".nav dropdownItem a").css("color", "green");
+                        $(".nav menuItem a").css("color", "#000000");
                     } else {
                         $("header").css("background-color", "transparent");
                         $("header").css("box-shadow", "none"); // if not, change it back to transparent
                         $(".nav").css("border-bottom", "2px solid #eee");
-                        $(".nav a").css("color", "#eee");
+                        $(".nav menuItem dropdown a").css("color", "#fff");
+                        $(".nav .menuItem a").css("color", "#272727");
                     }
                 });
             });

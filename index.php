@@ -79,6 +79,26 @@
 								
 							</div></div>
 						</article>	
+					</div>	
+                    <div class="row">
+					<div class="courseCon">
+						<article class="osha">
+							<div class="oshaPic background-image overlay">
+								<!--<img src="./images/pathPic.png" alt=""/>-->
+									<img class="classIcon" src="./images/bloodborneLogo.png" />
+								<!--<div class="content">
+									<h3>BloodBorne Pathogens Goals</h3>
+									<p>Bacon ipsum dolor amet venison frankfurter ham filet mignon t-bone shank</p>
+								</div>-->
+							
+							<div class="classTitle">
+								<h2>OSHA</h2>
+								<span><p>This course is designed to...</p>
+										<div class="btnAvail"><a href="#">Learn More</a></div>
+										</span>
+							</div></div>
+						</article>	
+					</div>		
 					</div>		
 				</div>
 			</section>
@@ -109,4 +129,4 @@
 			</div>
 			</main>
 
-<?php require_once('footer.html') ?>
+<?php require_once('footer.php') ?>

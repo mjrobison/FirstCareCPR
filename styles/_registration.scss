@@ -1,5 +1,11 @@
 .registrationform{
+    width: 90%;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 20px;
+    padding-left: 5px;
     margin-top: 68px;
+    margin-left: auto;
     
     label{
         display: inline-block;
@@ -22,4 +28,9 @@
         width: 115px;
         margin-left: 165px;
     }
+}
+#note{
+ margin-top: 10px;
+ margin-bottom: 15px;
+ line-height: 1.2em;   
 }

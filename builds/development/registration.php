@@ -22,4 +22,4 @@
         </div>
     </main>
    
-<?php require_once('footer.html'); ?>
+<?php require_once('footer.php'); ?>
