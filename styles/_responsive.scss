@@ -1,3 +1,17 @@
+@media screen and (min-width: 767px){
+	.nav-menu-wrap{
+		display: none;
+		visibility: hidden; 
+	}
+	.nav-menu-toggle{
+		display: none;
+		visibility: hidden;
+	}
+	.nav-menu-background{
+		display: none;
+		visibility: hidden; 	
+	}
+}
 @media screen and (max-width: 960px){
 	
 }
@@ -6,13 +20,21 @@
 	.nav {
 		display: none;
 	}
-	
+
+	footer {
+	 	.footNavCon {
+			 display: block;
+			 float: none;
+			.center {
+				text-align:center;
+			}
+		 }
+	}
 	footer .contain-contact {
 		float: none;
-		margin-bottom: 15px;
-		text-align: center;
-		width: 100%;
-		display: inline-block;
+		margin-bottom: 31px;
+		width: 78px;
+		margin: 0 auto 15px;
 	}
 	
 	footer .footImgCon{
@@ -29,7 +51,7 @@
 		
 	footer .contain-contact .contact {
 		display: inline-block;
-		width: 70%;
+		width: 171px;
 		margin: auto;
 	}
 	
@@ -42,32 +64,48 @@
 }
 
 @media screen and (max-width: 620px){
+	
+	header .logo {
+		margin-left: 1%;
+		position: absolute;
+		left: 37px;
+	} 
 	.courseCon{
 		margin: 20px auto !important;
 	}
-	footer{
-		.footNav{
-			float: none;
-			width: 50%;
-			display: inline-block;
+	
+	.jimmy{
+		float: none !important;
+		width: 100% !important;
+	}
+	
+	.christy{
+		float: none !important;
+		width: 100% !important;
+	}
+	// footer{
+	// 	.footNav{
+	// 		float: none;
+	// 		width: 50%;
+	// 		display: inline-block;
 			
-		}	
+	// 	}	
 		
-		.courses {
-			float: left;
-			display: inline-block;
-			width: 50%;
-			font-size: 14px;
-			text-align: left;
+	// 	.courses {
+	// 		float: left;
+	// 		display: inline-block;
+	// 		width: 50%;
+	// 		font-size: 14px;
+	// 		text-align: left;
 			
-			h3{
-				text-align: left;
-				width: 82px;
-			}
-		}
+	// 		h3{
+	// 			text-align: left;
+	// 			width: 82px;
+	// 		}
+	// 	}
 		
 
 		
 		
-	}	
+	
 }
