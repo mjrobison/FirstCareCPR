@@ -21,5 +21,12 @@
             </form>	
         </div>
     </main>
-   
+   <script>
+        $(document).ready(function(){
+            val = $('checkbox').checked().value()
+            if val == OSHATraining{
+                
+            }    
+    }
+   </script>
 <?php require_once('footer.php'); ?>

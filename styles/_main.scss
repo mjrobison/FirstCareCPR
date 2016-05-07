@@ -69,6 +69,7 @@ main {
     }
     .courseCon {
         width: calc(49% - 16px);
+        min-width: 280px;
         height: 280px;
         background-color: #e4e4e4;
         margin: 20px 10px;

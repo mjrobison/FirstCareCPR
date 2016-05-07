@@ -41,7 +41,10 @@ main{
 			}
 		}
 		.img-con{
-			width:100%;
+			width: 100%;
+			height: 230px;
+			overflow: hidden;
+			padding: 10px;
 			
 			.bioPic{
 					width: 350px;
