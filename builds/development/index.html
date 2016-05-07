@@ -16,15 +16,38 @@
 	<header>
 		<div class="contentCon">
 		<div class="logo">
-			<img src="./images/logo-red-no-font.png" alt="First Care CPR Training" />
-			<h1>First Care CPR Training</h1>
+			<img src="../images/logo-red-no-font.png" alt="First Care CPR Training" />
+			<h1>First Care <span class="logoFont">CPR Training</span></h1>
+		</div>
+		<nav class="nav-menu-wrap">
+			<ul class="nav-menu menu">
+				<li class="close">
+					<div>Close Menu <i class="fa icon fa-times"></i></li>
+				<li><a href="/">Home</a></li>
+				<li><a href="/about.html">About</a></li>
+				<li><a href="/contact.html">Contact</a></li>
+				<li><a href="/registration.html">Registration</a></li>
+				<li><div class="mobileCourses">Courses</div>
+					<ul class="sub-menu menu">
+						<li><a href="/first-aid.html"><img class="mobileMenuIcon" src="./images/firstAidLogo.png" />First Aid</a></li>
+						<li><a href="/cpr.html"><img class="mobileMenuIcon" src="./images/cprLogo.png" />CPR &amp; AED</a></li>
+						<li><a href="/pathogens.html"><img class="mobileMenuIcon" src="./images/bloodborneLogo.png" />Bloodborne Pathogens</a></li>
+						<li><a href="/wilderness.html"><img class="mobileMenuIcon" src="./images/survivalLogo.png" />Wilderness</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		
+		<div class="nav-menu-background"></div>    
+		<div class="nav-menu-toggle box-shadow-menu">
+			<i class="fa fa-bars toggle"></i>
 		</div>
 		<nav>
 			<div class="nav">
 				<div class="menuItem"><a href="/about.html">About</a></div>
 				<div class="menuItem"><a href="/contact.html">Contact</a></div>
 				<div class="menuItem dropdown">
-					<a class="dropbtn" href="#">Online Courses</a>
+					<a class="dropbtn" href="#">Courses</a>
 						<div class="dropdown-content">
 							<div class="itemCon">
 								<div class="dropdownItem">
@@ -32,7 +55,7 @@
 										<div class="menuPicCon firstAidPic">
 											
 										</div>
-										First Aid
+										<p>First Aid</p>
 									</a>
 								</div>
 								<div class="dropdownItem">
@@ -40,7 +63,7 @@
 										<div class="menuPicCon cprPic">
 											
 										</div>
-										CPR &amp; AED
+										<p>CPR &amp; AED</p>
 									</a>
 								</div>
 								<div class="dropdownItem">
@@ -48,14 +71,14 @@
 										<div class="menuPicCon pathPic">
 												
 										</div>
-										Bloodborne Pathogens
+										<p>Bloodborne Pathogens</p>
 									</a>
 								</div>
 								<div class="dropdownItem">
 									<a href="/wilderness.html">
 										<div class="menuPicCon survivalPic">
 											</div>
-										Survival/Wilderness
+										<p>Survival/Wilderness</p>
 									</a>
 								</div>
 							</div>
@@ -66,13 +89,19 @@
 		</nav>
 		</div>
 	</header>
+	<div class="nav-menu-background"></div>    
+	<main class="main-container"><section>
+      <div class="nav-menu-toggle">
+        <i class="fa fa-bars toggle"></i>
+      </div>
+    </section>
 	<main>
 		<div class="bg-photo hero hero-overlay">
 		</div>
 			<div class="container">
 				<section class="welcome">
 						<h1>First Care CPR</h1>
-						<p>Our Mission...</p>
+						<p>Our Mission? Why choose the First Care CPR?</p>
 						<p>We instruct on the Life saving methods of CPR, AED, & First Aid. Certification is for two years. We teach these classes for the professional and for the average person just wanting to know how to help in an emergency. </p>
 						<p>We teach First Aid, CPR, AED, & Blood Born Pathogens. We have regular classes scheduled throughout the week and occasionally on Saturday morning.  We are willing to travel to businesses or homes to accommodate our students.</p>
 				</section>
@@ -81,15 +110,15 @@
 					<h2>Available Courses</h2>
 				<div class="row">
 					<div class="courseCon">
-						<article class="firstAid">
+						<article class="firstAid"><a class="mobileLink" href="/first-aid.html"></a>
 							<div class="firstAidPic overlay">
 								<img class="classIcon" src="./images/firstAidLogo.png" />
 								<!--<img class="picCon" src="./images/firstAidPic.png" alt="First Aid Picture"/>-->
 							
 								<div class="classTitle">
 									<h2>First Aid</h2>
-									<span><p>This course is designed to...</p>
-										<div class="btnAvail"><a href="#">Learn More</a></div>
+									<span><p>This course teaches...</p>
+										<div class="btnAvail"><a href="/first-aid.html">Learn More</a></div>
 										</span>
 								</div>
 							</div>
@@ -103,8 +132,8 @@
 							<div class="classTitle">
 								<!--<div class="textCon">-->
 									<h2>CPR &amp; AED</h2>
-									<span><p>This course is designed to...Infant Child and Adult</p>
-									<div class="btnAvail"><a href="#">Learn More</a></div>
+									<span><p>This course teaches...Infant Child and Adult</p>
+									<div class="btnAvail"><a href="/cpr.html">Learn More</a></div>
 									</span>
 									<!--<div class="btnCpr">Sign Up Now</div>-->
 								<!--</div>-->
@@ -125,8 +154,8 @@
 							
 							<div class="classTitle">
 								<h2>Blood Born Pathogens</h2>
-								<span><p>This course is designed to...</p>
-										<div class="btnAvail"><a href="#">Learn More</a></div>
+								<span><p>This course teaches...</p>
+										<div class="btnAvail"><a href="/pathogens.html">Learn More</a></div>
 										</span>
 							</div></div>
 						</article>	
@@ -139,8 +168,8 @@
 							
 							<div class="classTitle">
 								<h2>Wilderness/Survival</h2>
-								<span><p>This course is designed to...</p>
-										<div class="btnAvail"><a href="#">Learn More</a></div>
+								<span><p>This course teaches...</p>
+										<div class="btnAvail"><a href="/wilderness.html">Learn More</a></div>
 										</span>
 								
 							</div></div>
@@ -176,26 +205,52 @@
 			</main>
 			<footer>
 				<div class="clearfix">
-					<div class="footNav">
-						<ul class="nav">
-							<li><a href="#">About</a></li>
-							<li><a href="#">Contact</a></li>
-							<li><a href="#">Online Courses</a></li>
-							<li><a href="#">Pay Registration</a></li>
-							<li>list classes</li>
-						</ul>
+					<div class="footNavCon">
+						<div class="center">
+							<div class="footNav">
+								<h3>First Care CPR</h3>
+								<ul class="nav">
+									<li><a href="/about.html">About</a></li>
+									<li><a href="/contact.html">Contact</a></li>
+									<li><a href="/registration.html">Pay Registration</a></li>
+								</ul>
+							</div>
+							<div class="courses">
+								<h3>Courses</h3>
+								<ul class="nav">
+									<li><a href="/cpr.html">CPR &amp; AED</a></li>
+									<li><a href="/first-aid.html">First Aid</a></li>
+									<li><a href="/pathogens.html">Pathogens</a></li>
+									<li><a href="/survival.html">Survival</a></li>
+								</ul>
+							</div>
+						</div>
 					</div>
-					<div class="contain-contact">
-						<section class="contact">
-							<ul>
-								<li class="email"><a href="mailto:firstcarecpr@gmail.com">firstcarecpr@gmail.com</a></li>
-								<li class="phone"><a href="tel:615-260-4758">(615)260-4758</a></li>
-								<li class="phone"><a href="tel:615-473-9746">(615)473-9746</a></li>
-							</ul>
-						</section>
+					<div class="footerRight">
+						<div class="footImgCon">
+							<img src="../images/firstCareLogo.png" />
+						</div>
+						<div class="contain-contact">
+							
+							<section class="contact">
+								
+									<div class="email">
+										<h3>Email</h3>
+										<a href="mailto:firstcarecpr@gmail.com">firstcarecpr@gmail.com</a>
+									</div>
+									<div class="phone">
+										<h3>James</h3>
+										<a href="tel:615-260-4758">(615)260-4758</a>
+									</div>
+									<div class="phone">
+										<h3>Christy</h3>
+										<a href="tel:615-473-9746">(615)473-9746</a>
+									</div>
+								
+							</section>
+						</div>
 					</div>
 				</div>
-			<!--</div>-->
 				<div class="sub-footer">
 					<div class="robros">&copy; <!--set year dynamically with PHP -->2016 Nashville First Care CPR | Powered By: &#60;Robros/&#62; </div>
 				</div>
@@ -217,6 +272,57 @@
 				}
 			});
 			});
+		</script>
+		<script>
+$(document).ready(function() {
+
+  //GLOBALS
+  var nav_menu = $('.nav-menu');
+  var nav_menu_wrap = $('.nav-menu-wrap');
+  var nav_menu_background = $('.nav-menu-background');
+
+  //toggle the active states
+  function toggle_menu() {
+    nav_menu_wrap.toggleClass('active');
+    nav_menu_background.toggleClass('active');
+  }
+
+  //toggling activate state when interacting with elements
+  $('.nav-menu-toggle, .nav-menu-background, .nav-menu .close').on('click', function() {
+    toggle_menu();
+  });
+
+  //sets the height of the menu to be the same height as the body
+  function set_menu_height() {
+    var body_height = $(window).height();
+    nav_menu.height(body_height);
+  }
+  set_menu_height();
+
+  //if we change orientation or resize, reculate menu
+  $(window).resize(function() {
+    set_menu_height();
+  })
+
+  //INDENTING
+  //go through the menu and add indenting 
+  function add_menu_depth() {
+
+    var menus = $('.menu');
+    //set depth width to be 5% of the nav menu
+    var pad_depth = (nav_menu.outerWidth() / 20);
+
+    //if we have menus
+    if (menus.length != 0) {
+      $.each(menus, function() {
+        var depth_count = $(this).parents('.menu').length + 1;
+        var child_elements = $(this).find('li > a');
+
+      })
+    }
+  }
+  add_menu_depth();
+});
 		</script>
 	
 </body>

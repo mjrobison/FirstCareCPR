@@ -3,29 +3,97 @@ footer {
     padding: 15px 5%;
     background-color: #eee;
 	
-	a{
-		color: #272727;
-		font-weight: bold;
-	}
-	.footNav{
-		float:left;
+.footNavCon {
+    text-align: left;
+    margin: auto;
+	display: inline-block;
+	float: left;
+
+		.footNav{
+		display: inline-block;
+		vertical-align: top;
+		text-align: left;
+		
+		h3{
+		    font-size: 21px;
+			font-weight: bold;
+			margin: 12px 14px;
+			font-family: 'coves', Arial, Helvetica, sans-serif;
+			border-bottom: 1px solid $red;
+			width: 143px;
+		}
 		
 		.nav{
 			display: inline-block;
 			
 			a{
 				padding: 4px 15px;
+				line-height: 1.4em;
 			} 
+		}
+	}
+	
+	.courses{
+		display: inline-block;
+		vertical-align: top;
+		text-align: left;
+		
+		h3{
+		    font-size: 21px;
+			font-weight: bold;
+			margin: 12px 14px;
+			font-family: 'coves', Arial, Helvetica, sans-serif;
+			border-bottom: 1px solid $red;
+			width: 82px;
+		}
+		
+		.nav{
+			display: inline-block;
+			
+			a{
+				padding: 4px 15px;
+				line-height: 1.4em;
+			} 
+		}
+	}
+}	
+	a{
+		color: #272727;
+		font-weight: bold;
+	}
+
+//.footerRight{
+	//display: inline-block;
+	.footImgCon{
+		img{
+			width: 125px;
+			/* margin-left: -119px; */
+			margin-top: 20px;
+			position: absolute;
+			right: 240px;
 		}
 	}
 
 	.contain-contact {
 		float: right;
-		 
-		li {
-			list-style-type: none;
+				
+		.contact{
+			display: inline-block;
+			.email, .phone {
+				line-height: 1.2em;
+				
+				h3{
+					font-size: 21px;
+					font-weight: bold;
+					margin: 8px 0;
+					font-family: 'coves', Arial, Helvetica, sans-serif;
+					border-bottom: 1px solid $red;
+					width: 82px;
+				}
+			}
 		}
 	}
+//}
 
 
 .sub-footer {
