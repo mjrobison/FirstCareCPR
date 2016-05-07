@@ -545,7 +545,52 @@ header .nav .dropdown-content a:hover {
 header .nav .dropdown:hover .dropdown-content {
   display: block;
 }
+header .nav .menu-icon {
+  visibility: hidden;
+}
 
+@media screen and (max-width: 800px) {
+  header {
+    right: 6px;
+    padding-right: 0px;
+  }
+  header .contentCon {
+    width: 95%;
+    margin-right: 5px;
+  }
+  header .contentCon .logo {
+    left: 20px;
+    margin-left: 5px;
+  }
+  header .contentCon nav {
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  header .contentCon {
+    float: left;
+  }
+  header .contentCon .logo {
+    float: left;
+    left: 20px;
+    margin-left: 5px;
+  }
+  header .contentCon h1 {
+    visibility: hidden;
+  }
+  header .contentCon nav .menuItem {
+    visibility: hidden;
+  }
+  header .contentCon nav:hover ul {
+    display: block;
+  }
+  header .contentCon .menu-icon img {
+    visibility: visible;
+    margin-top: 10px;
+    height: 40px;
+    float: right;
+  }
+}
 /*************** main *****************/
 main {
   width: 100%;
@@ -557,6 +602,7 @@ main .bg-photo {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   width: 100%;
 }
 main .hero {
@@ -725,6 +771,30 @@ main .overlay:after {
 
 .picCon {
   width: 100%;
+}
+
+.registrationform {
+  margin-top: 68px;
+}
+.registrationform label {
+  display: inline-block;
+  float: left;
+  clear: left;
+  width: 130px;
+  text-align: right;
+}
+.registrationform input[type="text"] {
+  width: 150px;
+}
+.registrationform input[type="date"] {
+  width: 150px;
+}
+.registrationform input[type="checkbox"] {
+  margin-left: 135px;
+}
+.registrationform input[type="submit"] {
+  width: 115px;
+  margin-left: 165px;
 }
 
 .aboutPhoto {
