@@ -13,60 +13,72 @@
 	  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>	
 </head>
 <body>
-	
 	<header>
 		<div class="contentCon">
 		<div class="logo">
 			<a href="./index.php"><img src="./images/logo-red-no-font.png" alt="First Care CPR Training" /></a>
-			<h1>First Care CPR Training</h1>
+			<h1>First Care <span class="logoFont">CPR Training</span></h1>
 		</div>
-        
+		<nav class="nav-menu-wrap">
+			<ul class="nav-menu menu">
+				<li class="close">
+					<div>Close Menu <i class="fa icon fa-times"></i></li>
+				<li><a href="./">Home</a></li>
+				<li><a href="./about.html">About</a></li>
+				<li><a href="./contact.html">Contact</a></li>
+				<li><a href="./registration.html">Registration</a></li>
+				<li><div class="mobileCourses">Courses</div>
+					<ul class="sub-menu menu">
+						<li><a href="./first-aid.html"><img class="mobileMenuIcon" src="./images/firstAidLogo.png" />First Aid</a></li>
+						<li><a href="./cpr.html"><img class="mobileMenuIcon" src="./images/cprLogo.png" />CPR &amp; AED</a></li>
+						<li><a href="./pathogens.html"><img class="mobileMenuIcon" src="./images/bloodborneLogo.png" />Bloodborne Pathogens</a></li>
+						<li><a href="./wilderness.html"><img class="mobileMenuIcon" src="./images/survivalLogo.png" />Wilderness</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		
+		<div class="nav-menu-background"></div>    
+		<div class="nav-menu-toggle box-shadow-menu">
+			<i class="fa fa-bars toggle"></i>
+		</div>
 		<nav>
-            
 			<div class="nav">
-				<div class="menuItem"><a href="./about.php">About</a></div>
-				<div class="menuItem"><a href="./contact.php">Contact</a></div>
+				<div class="menuItem"><a href="./about.html">About</a></div>
+				<div class="menuItem"><a href="./contact.html">Contact</a></div>
 				<div class="menuItem dropdown">
-					<a class="dropbtn" href="#">Online Courses</a>
+					<a class="dropbtn" href="#">Courses</a>
 						<div class="dropdown-content">
 							<div class="itemCon">
 								<div class="dropdownItem">
-									<a href="./first-aid.php">
+									<a href="./first-aid.html">
 										<div class="menuPicCon firstAidPic">
 											
 										</div>
-										First Aid
+										<p>First Aid</p>
 									</a>
 								</div>
 								<div class="dropdownItem">
-									<a href="./cpr.php">
+									<a href="./cpr.html">
 										<div class="menuPicCon cprPic">
 											
 										</div>
-										CPR &amp; AED
+										<p>CPR &amp; AED</p>
 									</a>
 								</div>
 								<div class="dropdownItem">
-									<a href="./pathogens.php">
+									<a href="./pathogens.html">
 										<div class="menuPicCon pathPic">
 												
 										</div>
-										Bloodborne Pathogens
+										<p>Bloodborne Pathogens</p>
 									</a>
 								</div>
 								<div class="dropdownItem">
-									<a href="./wilderness.php">
+									<a href="./wilderness.html">
 										<div class="menuPicCon survivalPic">
 											</div>
-										Survival/Wilderness
-									</a>
-								</div>
-                                <div class="dropdownItem" >
-									<a href="osha" target="_blank">
-										<div class="menuPicCon osha">
-											
-										</div>
-										OSHA
+										<p>Survival/Wilderness</p>
 									</a>
 								</div>
 							</div>
