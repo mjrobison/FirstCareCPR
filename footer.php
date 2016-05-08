@@ -5,18 +5,18 @@
 							<div class="footNav">
 								<h3>First Care CPR</h3>
 								<ul class="nav">
-									<li><a href="./about.html">About</a></li>
-									<li><a href="./contact.html">Contact</a></li>
-									<li><a href="./registration.html">Pay Registration</a></li>
+									<li><a href="./about.php">About</a></li>
+									<li><a href="./contact.php">Contact</a></li>
+									<li><a href="./registration.php">Pay Registration</a></li>
 								</ul>
 							</div>
 							<div class="courses">
 								<h3>Courses</h3>
 								<ul class="nav">
-									<li><a href="./cpr.html">CPR &amp; AED</a></li>
-									<li><a href="./first-aid.html">First Aid</a></li>
-									<li><a href="./pathogens.html">Pathogens</a></li>
-									<li><a href="./survival.html">Survival</a></li>
+									<li><a href="./cpr.php">CPR &amp; AED</a></li>
+									<li><a href="./first-aid.php">First Aid</a></li>
+									<li><a href="./pathogens.php">Pathogens</a></li>
+									<li><a href="./survival.php">Survival</a></li>
 								</ul>
 							</div>
 						</div>
@@ -53,22 +53,23 @@
 		</footer>
 		<script>
 			$(document).ready(function(){
-			$(window).scroll(function() { // check if scroll event happened
-				if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
-                    $("header").css("background-color", "#fff");
-                    $("header").css("box-shadow", "0px 0px 3px #aaa"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
-                    $(".nav").css("border-bottom", "0px");
-                    $(".nav a").css("color", "#272727");
-				} else {
-                    $("header").css("background-color", "transparent");
-                    $("header").css("box-shadow", "none"); // if not, change it back to transparent
-                    $(".nav").css("border-bottom", "2px solid #eee");
-                    $(".nav a").css("color", "#eee");
-				}
-                var scrollVar = $(window).scrollTop(); //Determine the pixels moved.
-                var height = $('.hero').height();
-                $('.bg-photo').css({'opacity': ((740-scrollVar)/740) });  //Adjust the opacity of the image
-			});
+                $(window).scroll(function() { // check if scroll event happened
+                    if ($(document).scrollTop() > 500) { // check if user scrolled more than 50 from top of the browser window
+                        $("header").css("background-color", "#fff");
+                        $("header").css("box-shadow", "0px 0px 3px #aaa"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                        $(".nav").css("border-bottom", "0px");
+                        $(".nav a").css("color", "#272727");
+                    } else {
+                        $("header").css("background-color", "transparent");
+                        $("header").css("box-shadow", "none"); // if not, change it back to transparent
+                        $(".nav").css("border-bottom", "2px solid #eee");
+                        $(".nav a").css("color", "#eee");
+                    }
+                    var scrollVar = $(window).scrollTop(); //Determine the pixels moved.
+                    //console.log(scrollVar);
+                    var height = $('.hero').height();
+                    $('.bg-photo').css({'opacity': ((740-scrollVar)/740) });  //Adjust the opacity of the image
+                });
 			});
 		</script>
 

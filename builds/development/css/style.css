@@ -411,7 +411,7 @@ p {
 }
 
 header {
-  background: transparent;
+  background: #fff;
   position: fixed;
   top: 0;
   left: 0;
@@ -421,7 +421,6 @@ header {
   height: 65px;
   transition-duration: 1s;
   z-index: 100;
-  box-shadow: none;
 }
 header .contentCon {
   width: 88%;
@@ -448,7 +447,6 @@ header .logo h1 span {
 }
 header .nav {
   float: right;
-  border-bottom: 2px solid #eee;
 }
 header .nav .menuItem {
   display: block;
@@ -466,7 +464,7 @@ header .nav .menuItem:hover a {
   background-color: transparent;
 }
 header .nav .menuItem a {
-  color: #eee;
+  color: #272727;
   text-decoration: none;
   transition: .15s;
   font-weight: bold;
@@ -779,39 +777,54 @@ main .overlay:after {
 }
 
 .registrationform {
-  width: 90%;
+  width: 88%;
   padding-top: 5px;
   padding-right: 5px;
   padding-bottom: 20px;
-  padding-left: 5px;
+  padding-left: 1%;
   margin-top: 68px;
-  margin-left: auto;
+  margin-left: 1%;
+}
+.registrationform p {
+  margin-left: 1%;
+}
+.registrationform #note {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  line-height: 1.2em;
 }
 .registrationform label {
   display: inline-block;
   float: left;
   clear: left;
   width: 130px;
-  text-align: right;
+  padding: 3px;
 }
-.registrationform input[type="text"] {
+.registrationform input {
   width: 150px;
+  -moz-transition: padding .25s;
+  -webkit-transition: padding .25s;
+  -o-transition: padding .25s;
+  transition: padding .25s;
 }
-.registrationform input[type="date"] {
-  width: 150px;
+.registrationform input:invalid {
+  border-color: red;
+}
+.registrationform input:valid {
+  border-color: green;
 }
 .registrationform input[type="checkbox"] {
-  margin-left: 135px;
+  width: 50px;
+  margin-left: 110px;
 }
-.registrationform input[type="submit"] {
-  width: 115px;
-  margin-left: 165px;
+.registrationform button.submit {
+  width: 175px;
+  margin-left: 105px;
+  border-radius: 3px;
 }
-
-#note {
-  margin-top: 10px;
-  margin-bottom: 15px;
-  line-height: 1.2em;
+.registrationform button.submit:hover {
+  opacity: .5;
+  cursor: pointer;
 }
 
 .aboutPhoto {

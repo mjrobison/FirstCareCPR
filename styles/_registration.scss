@@ -1,36 +1,55 @@
 .registrationform{
-    width: 90%;
+    width: 88%;
     padding-top: 5px;
     padding-right: 5px;
     padding-bottom: 20px;
-    padding-left: 5px;
+    padding-left: 1%;
     margin-top: 68px;
-    margin-left: auto;
+    margin-left: 1%;
     
+    p{
+        margin-left: 1%;
+    }
+    #note{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    line-height: 1.2em;   
+    }
     label{
         display: inline-block;
         float: left;
         clear: left;
         width: 130px;
-        text-align: right;
+        padding: 3px;
     }
     
-    input[type="text"]{
+    input{
         width: 150px;
-    }
-    input[type="date"]{
-        width: 150px;
+        -moz-transition: padding .25s; 
+        -webkit-transition: padding .25s; 
+        -o-transition: padding .25s;
+        transition: padding .25s;
+        
+        &:invalid{
+            border-color: red;
+        }
+        &:valid{
+            border-color: green;
+        }
     }
     input[type="checkbox"]{
-        margin-left: 135px;
+        width: 50px;
+        margin-left: 110px;
     }
-    input[type="submit"]{
-        width: 115px;
-        margin-left: 165px;
+    button.submit{
+        width: 175px;
+        margin-left: 105px;
+        border-radius: 3px;
+        
+        &:hover{
+           opacity: .5;
+           cursor: pointer; 
+        }
     }
-}
-#note{
- margin-top: 10px;
- margin-bottom: 15px;
- line-height: 1.2em;   
+    
 }

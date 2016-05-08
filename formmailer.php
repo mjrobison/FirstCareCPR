@@ -1,6 +1,6 @@
 <?php
 require_once('header.html');
-
+/*
 $servername = "localhost"
 $username = ""
 $password = ""
@@ -46,6 +46,8 @@ catch
 }
 
 $conn = null
+--
+*/
 header("Location:https://squareup.com/market/first-care-cpr/cpr-class-registration-fee?square_lead=item_embed");
 require_once('footer.html');
 ?>
