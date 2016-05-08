@@ -788,31 +788,43 @@ main .overlay:after {
 .registrationform p {
   margin-left: 1%;
 }
+.registrationform #note {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  line-height: 1.2em;
+}
 .registrationform label {
   display: inline-block;
   float: left;
   clear: left;
   width: 130px;
-  text-align: right;
+  padding: 3px;
 }
-.registrationform input[type="text"] {
+.registrationform input {
   width: 150px;
+  -moz-transition: padding .25s;
+  -webkit-transition: padding .25s;
+  -o-transition: padding .25s;
+  transition: padding .25s;
 }
-.registrationform input[type="date"] {
-  width: 150px;
+.registrationform input:invalid {
+  border-color: red;
+}
+.registrationform input:valid {
+  border-color: green;
 }
 .registrationform input[type="checkbox"] {
-  margin-left: 135px;
+  width: 50px;
+  margin-left: 110px;
 }
-.registrationform input[type="submit"] {
-  width: 115px;
-  margin-left: 165px;
+.registrationform button.submit {
+  width: 175px;
+  margin-left: 105px;
+  border-radius: 3px;
 }
-
-#note {
-  margin-top: 10px;
-  margin-bottom: 15px;
-  line-height: 1.2em;
+.registrationform button.submit:hover {
+  opacity: .5;
+  cursor: pointer;
 }
 
 .aboutPhoto {
