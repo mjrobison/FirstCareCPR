@@ -230,6 +230,16 @@ p {
   position: relative;
 }
 
+.ashiPic {
+    background-image: url('http://www.osmanager4.com/images/summit250X250.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60% bottom;
+    overflow: hidden;
+    height: 280px;
+    width: 100%;
+}
+
 #contact header, .about header, #contact header, #firstAid header, #path header, #registration header, #survival header {
   border-bottom: 1px solid #272727;
 }
@@ -972,6 +982,31 @@ main .container .christy p {
   z-index: 1;
   opacity: 0.8;
   background-image: url("../images/wilderness.jpg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.ashi {
+  margin-top: 65px;
+  background-color: #343333;
+  overflow: hidden;
+  position: relative;
+}
+.ashi:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.8;
+  background-image: url("http://www.osmanager4.com/images/summit970X250.png");
   background-repeat: no-repeat;
   background-position: 50%;
   -ms-background-size: cover;

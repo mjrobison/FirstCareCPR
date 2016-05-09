@@ -181,6 +181,18 @@ p {
     width: 100%;
     position: relative;  
 }
+.ashiPic {
+    background-image: url('http://www.osmanager4.com/images/summit250X250.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60% bottom;
+    overflow: hidden;
+    //  position: relative;
+    //  box-sizing: border-box;
+    //  padding: 25px;
+    height: 280px;
+    width: 100%;
+}
 
 #contact, .about, #contact, #firstAid, #path, #registration, #survival{
     header{

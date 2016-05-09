@@ -82,19 +82,19 @@
 					</div>	
                     <div class="row">
 					<div class="courseCon">
-						<article class="osha">
-							<div class="oshaPic background-image overlay">
+						<article class="ashi">
+							<div class="ashiPic background-image overlay">
 								<!--<img src="./images/pathPic.png" alt=""/>-->
-									<img class="classIcon" src="./images/bloodborneLogo.png" />
+									<img class="classIcon" src="" />
 								<!--<div class="content">
 									<h3>BloodBorne Pathogens Goals</h3>
 									<p>Bacon ipsum dolor amet venison frankfurter ham filet mignon t-bone shank</p>
 								</div>-->
 							
 							<div class="classTitle">
-								<h2>OSHA</h2>
-								<span><p>This course is designed to...</p>
-										<div class="btnAvail"><a href="#">Learn More</a></div>
+								<h2>EH&S Training</h2>
+								<span><p>Online Environmental Health & Safety Compliance</p>
+										<div class="btnAvail"><a href="http://osmanager4.com/summit/landing.aspx?id=25856" target="_blank">Learn More</a></div>
 										</span>
 							</div></div>
 						</article>	
