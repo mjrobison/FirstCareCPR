@@ -70,7 +70,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /************** global *****************/
 html {
-  font-family: 'coves', Arial, Helvetica, sans-serif;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -82,14 +82,14 @@ h1 {
   font-size: 34px;
   font-weight: bold;
   margin: 23px;
-  font-family: 'coves', Arial, Helvetica, sans-serif;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
 h2 {
   font-size: 25px;
   font-weight: bold;
   margin: 23px;
-  font-family: 'coves', Arial, Helvetica, sans-serif;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
   border-bottom: 3px solid #a32431;
   display: table;
   text-transform: capitalize;
@@ -101,14 +101,14 @@ h3 {
   font-size: 21px;
   font-weight: bold;
   margin: 23px;
-  font-family: 'coves', Arial, Helvetica, sans-serif;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
 p {
   margin: 10px 0 15px;
   line-height: 1.2em;
   font-size: 16px;
-  font-family: 'coves', Arial, Helvetica, sans-serif;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
 .btnAvail {
@@ -231,13 +231,13 @@ p {
 }
 
 .ashiPic {
-    background-image: url('http://www.osmanager4.com/images/summit250X250.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 60% bottom;
-    overflow: hidden;
-    height: 280px;
-    width: 100%;
+  background-image: url("http://www.osmanager4.com/images/summit250X250.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60% bottom;
+  overflow: hidden;
+  height: 280px;
+  width: 100%;
 }
 
 #contact header, .about header, #contact header, #firstAid header, #path header, #registration header, #survival header {
@@ -990,6 +990,7 @@ main .container .christy p {
   -webkit-background-size: cover;
   background-size: cover;
 }
+
 .ashi {
   margin-top: 65px;
   background-color: #343333;
@@ -1062,7 +1063,7 @@ footer .footNavCon .footNav h3 {
   font-size: 21px;
   font-weight: bold;
   margin: 12px 14px;
-  font-family: 'coves', Arial, Helvetica, sans-serif;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
   border-bottom: 1px solid #a32431;
   width: 143px;
 }
@@ -1082,7 +1083,7 @@ footer .footNavCon .courses h3 {
   font-size: 21px;
   font-weight: bold;
   margin: 12px 14px;
-  font-family: 'coves', Arial, Helvetica, sans-serif;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
   border-bottom: 1px solid #a32431;
   width: 82px;
 }
@@ -1117,7 +1118,7 @@ footer .contain-contact .contact .email h3, footer .contain-contact .contact .ph
   font-size: 21px;
   font-weight: bold;
   margin: 8px 0;
-  font-family: 'coves', Arial, Helvetica, sans-serif;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
   border-bottom: 1px solid #a32431;
   width: 82px;
 }
