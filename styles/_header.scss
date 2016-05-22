@@ -53,6 +53,7 @@ header {
 		//border-bottom: 2px solid #eee;
 		
 		.menuItem{
+			li{
 			display: block;
 			list-style-type: none;
 			float: left;
@@ -88,6 +89,7 @@ header {
                     color: #000;
                 }
 			}
+		}
 		}
 		.dropbtn {
 			display: inline-block;

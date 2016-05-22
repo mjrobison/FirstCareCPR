@@ -467,7 +467,7 @@ header .logo h1 span {
 header .nav {
   float: right;
 }
-header .nav .menuItem {
+header .nav .menuItem li {
   display: block;
   list-style-type: none;
   float: left;
@@ -478,11 +478,11 @@ header .nav .menuItem {
   line-height: 100%;
   background-color: transparent;
 }
-header .nav .menuItem:hover a {
+header .nav .menuItem li:hover a {
   color: #a32431;
   background-color: transparent;
 }
-header .nav .menuItem a {
+header .nav .menuItem li a {
   color: #272727;
   text-decoration: none;
   transition: .15s;
@@ -492,7 +492,7 @@ header .nav .menuItem a {
   padding: 17px 16px;
   text-decoration: none;
 }
-header .nav .menuItem a p {
+header .nav .menuItem li a p {
   color: #000;
 }
 header .nav .dropbtn {
