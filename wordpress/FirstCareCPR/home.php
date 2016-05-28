@@ -1,12 +1,12 @@
-
-<?php require_once('header.html'); ?>
-	<main>
+<?php get_header(); ?>
+<main>
 		<div class="bg-photo hero hero-overlay">
 		</div>
 			<div class="container">
 				<section class="welcome">
 						<h1>First Care CPR</h1>
-						<p>Our Mission...</p>
+						<p>Our goal is provide every customer with a quality lifesaving education by using the most experienced and well educated instructors coupled with the utmost technologically advanced equipment.</p>
+						<p>We have a passion for providing guidance to the community so that every person who leaves our class has the confidence and expertise to save a life. </p>
 						<p>We instruct on the Life saving methods of CPR, AED, & First Aid. Certification is for two years. We teach these classes for the professional and for the average person just wanting to know how to help in an emergency. </p>
 						<p>We teach First Aid, CPR, AED, & Blood Born Pathogens. We have regular classes scheduled throughout the week and occasionally on Saturday morning.  We are willing to travel to businesses or homes to accommodate our students.</p>
 				</section>
@@ -23,7 +23,7 @@
 								<div class="classTitle">
 									<h2>First Aid</h2>
 									<span><p>This course is designed to...</p>
-										<div class="btnAvail"><a href="#">Learn More</a></div>
+										<div class="btnAvail"><a href="first-aid">Learn More</a></div>
 										</span>
 								</div>
 							</div>
@@ -38,7 +38,7 @@
 								<!--<div class="textCon">-->
 									<h2>CPR &amp; AED</h2>
 									<span><p>This course is designed to...Infant Child and Adult</p>
-									<div class="btnAvail"><a href="#">Learn More</a></div>
+									<div class="btnAvail"><a href="./cpr/">Learn More</a></div>
 									</span>
 									<!--<div class="btnCpr">Sign Up Now</div>-->
 								<!--</div>-->
@@ -58,9 +58,9 @@
 								</div>-->
 							
 							<div class="classTitle">
-								<h2>Blood Born Pathogens</h2>
+								<h2>Blood Borne Pathogens</h2>
 								<span><p>This course is designed to...</p>
-										<div class="btnAvail"><a href="#">Learn More</a></div>
+										<div class="btnAvail"><a href="./pathogens/">Learn More</a></div>
 										</span>
 							</div></div>
 						</article>	
@@ -74,7 +74,7 @@
 							<div class="classTitle">
 								<h2>Wilderness/Survival</h2>
 								<span><p>This course is designed to...</p>
-										<div class="btnAvail"><a href="#">Learn More</a></div>
+										<div class="btnAvail"><a href="./wilderness/">Learn More</a></div>
 										</span>
 								
 							</div></div>
@@ -92,8 +92,8 @@
 								</div>-->
 							
 							<div class="classTitle">
-								<h2>EH&S Training</h2>
-								<span><p>Online Environmental Health & Safety Compliance</p>
+								<h2>Online Environmental Health & Safety Compliance</h2>
+								<span><p>Online 10 & 30 Hour Training. Provided through Summit Training Source</p>
 										<div class="btnAvail"><a href="http://osmanager4.com/summit/landing.aspx?id=25856" target="_blank">Learn More</a></div>
 										</span>
 							</div></div>
@@ -129,4 +129,4 @@
 			</div>
 			</main>
 
-<?php require_once('footer.php') ?>
+<?php get_footer(); ?>

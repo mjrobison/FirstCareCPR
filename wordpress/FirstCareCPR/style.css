@@ -1,3 +1,13 @@
+/*
+Theme Name: First Care CPR
+Author: <ro-bros />
+Description: Built for First Care CPR
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: 
+*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,29 +64,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/*
-Theme Name: First Care CPR
-Author: <ro-bros />
-Description: Built for First Care CPR
-Version: 1.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: 
-*/
 /****  Colors ****/
-/**** Fonts ****/
-@font-face {
-  font-family: coves;
-  src: url("../covesTypeface/CovesLight.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: coves;
-  src: url("../covesTypeface/CovesBold.otf") format("opentype");
-  font-weight: bold;
-  font-style: normal;
-}
 /************** global *****************/
 html {
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
@@ -201,7 +189,7 @@ p {
 
 .firstAidPic {
   overflow: hidden;
-  background-image: url("../images/firstAid3.jpg");
+  background-image: url("images/firstAid3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 60% bottom;
@@ -211,7 +199,7 @@ p {
 
 .cprPic {
   overflow: hidden;
-  background-image: url("../images/no-ppl-cpr.jpg");
+  background-image: url("images/no-ppl-cpr.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 60% 0%;
@@ -220,7 +208,7 @@ p {
 }
 
 .pathPic {
-  background-image: url("../images/pathPic.png");
+  background-image: url("images/pathPic.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 60% bottom;
@@ -230,7 +218,7 @@ p {
 }
 
 .survivalPic {
-  background-image: url("../images/wilderness.jpg");
+  background-image: url("images/wilderness.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 60% bottom;
@@ -467,7 +455,7 @@ header .logo h1 span {
 header .nav {
   float: right;
 }
-header .nav .menuItem li {
+header .nav .menuItem {
   display: block;
   list-style-type: none;
   float: left;
@@ -478,11 +466,11 @@ header .nav .menuItem li {
   line-height: 100%;
   background-color: transparent;
 }
-header .nav .menuItem li:hover a {
+header .nav .menuItem:hover a {
   color: #a32431;
   background-color: transparent;
 }
-header .nav .menuItem li a {
+header .nav .menuItem a {
   color: #272727;
   text-decoration: none;
   transition: .15s;
@@ -492,7 +480,7 @@ header .nav .menuItem li a {
   padding: 17px 16px;
   text-decoration: none;
 }
-header .nav .menuItem li a p {
+header .nav .menuItem a p {
   color: #000;
 }
 header .nav .dropbtn {
@@ -620,7 +608,7 @@ main {
   box-shadow: 0, -5px, 14px, 1px #373333;
 }
 main .bg-photo {
-  background-image: url("../images/firstCareHero.jpg");
+  background-image: url("images/firstCareHero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -861,7 +849,7 @@ main .overlay:after {
   height: 100%;
   z-index: 1;
   opacity: 0.8;
-  background-image: url("../images/no-ppl-cpr.jpg");
+  background-image: url("images/no-ppl-cpr.jpg");
   background-repeat: no-repeat;
   background-position: 50% 40%;
   -ms-background-size: cover;
@@ -879,6 +867,7 @@ main .overlay:after {
 main .container {
   width: 90%;
   margin: auto;
+  margin-top:65px; 
 }
 main .container .company h2 {
   margin: 10px auto 35px;
@@ -938,7 +927,7 @@ main .container .christy p {
   height: 100%;
   z-index: 1;
   opacity: 0.8;
-  background-image: url("../images/no-ppl-cpr.jpg");
+  background-image: url("images/no-ppl-cpr.jpg");
   background-repeat: no-repeat;
   background-position: 50%;
   -ms-background-size: cover;
@@ -964,7 +953,7 @@ main .container .christy p {
   height: 100%;
   z-index: 1;
   opacity: 0.8;
-  background-image: url("../images/firstAid3.jpg");
+  background-image: url("images/firstAid3.jpg");
   background-repeat: no-repeat;
   background-position: 50%;
   -ms-background-size: cover;
@@ -990,7 +979,7 @@ main .container .christy p {
   height: 100%;
   z-index: 1;
   opacity: 0.8;
-  background-image: url("../images/wilderness.jpg");
+  background-image: url("images/wilderness.jpg");
   background-repeat: no-repeat;
   background-position: 50%;
   -ms-background-size: cover;
@@ -1042,7 +1031,7 @@ main .container .christy p {
   height: 100%;
   z-index: 1;
   opacity: 0.8;
-  background-image: url("../images/pathPic.png");
+  background-image: url("images/pathPic.png");
   background-repeat: no-repeat;
   background-position: center;
   -ms-background-size: cover;
