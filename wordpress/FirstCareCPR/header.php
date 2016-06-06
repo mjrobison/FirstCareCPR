@@ -31,8 +31,8 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
-	<link href='https://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?> ">
+	<!--<link href='https://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'> -->
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	 
 	<meta name="viewport" content="width=device-width">
@@ -60,17 +60,19 @@
 			<ul class="nav-menu menu">
 				<li class="close">
 					<div>Close Menu <i class="fa icon fa-times"></i></li>
-				<li><a href="./">Home</a></li>
-				<li><a href="./about/">About</a></li>
-				<li><a href="./contact/">Contact</a></li>
-				<li><a href="./registration/">Registration</a></li>
+				<li><a href="<?php echo get_option('home'); ?>">Home</a></li>
+				<li><a href="<?php echo get_page_link(80);?>">About</a></li>
+				<li><a href="<?php echo get_page_link(53);?>">Contact</a></li>
+				<li><a href="<?php echo get_page_link(56);?>">Registration</a></li>
 				<li><div class="mobileCourses">Courses</div>
 					<ul class="sub-menu menu">
-						<li><a href="./first-aid/"><img class="mobileMenuIcon" src="<?php echo site_url(); ?>/images/firstAidLogo.png" />First Aid</a></li>
-						<li><a href="./cpr/"><img class="mobileMenuIcon" src="<?php echo site_url(); ?>/images/cprLogo.png" />CPR &amp; AED</a></li>
-						<li><a href="./pathogens/"><img class="mobileMenuIcon" src="<?php echo site_url(); ?>/images/bloodborneLogo.png" />Bloodborne Pathogens</a></li>
-						<li><a href="./wilderness"><img class="mobileMenuIcon" src="<?php echo site_url(); ?>/images/survivalLogo.png" />Wilderness</a></li>
-                                                <li><a href="http://osmanager4.com/summit/landing.aspx?id=25856"><img class="mobileMenuIcon" src="test.jpg" />Wilderness</a></li>
+						<li><a href="<?php echo get_page_link(99);?>"><img class="mobileMenuIcon" src="<?php echo site_url(); ?>/images/firstAidLogo.png" />First Aid</a></li>
+						<li><a href="<?php echo get_page_link(96);?>"><img class="mobileMenuIcon" src="<?php echo site_url(); ?>/images/cprLogo.png" />CPR &amp; AED</a></li>
+						<li><a href="<?php echo get_page_link(103);?>"><img class="mobileMenuIcon" src="<?php echo site_url(); ?>/images/bloodborneLogo.png" />Bloodborne Pathogens</a></li>
+						<li><a href="<?php echo get_page_link(101);?>"><img class="mobileMenuIcon" src="<?php echo site_url(); ?>/images/survivalLogo.png" />Wilderness</a></li>
+                        <li><a href="http://osmanager4.com/summit/landing.aspx?id=25856"><img class="mobileMenuIcon" src="<?php echo site_url(); ?>/test.jpg" />OSHA</a></li>
+						<li><a href="<?php echo get_page_link(150);?>"><img class="mobileMenuIcon" src="<?php echo site_url(); ?>/images/healthcareLogo.png" />Health Care CPR</a></li>
+						<li><a href="<?php echo get_page_link(152);?>"><img class="mobileMenuIcon" src="<?php echo site_url(); ?>/images/earlychildhoodLogo.png" />Early Childhood Emergency</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -82,14 +84,14 @@
 		</div>
 		<nav>
 			<div class="nav">				
-				 <div class="menuItem"><a href="./about/">About</a></div>
-				<div class="menuItem"><a href="./contact/">Contact</a></div>
+				 <div class="menuItem"><a href="<?php echo get_page_link(80);?>">About</a></div>
+				<div class="menuItem"><a href="<?php echo get_page_link(53);?>">Contact</a></div>
 				<div class="menuItem dropdown">
 					<a class="dropbtn" href="#">Courses</a>
 						<div class="dropdown-content">
 							<div class="itemCon">
 								<div class="dropdownItem">
-									<a href="./first-aid/">
+									<a href="<?php echo get_page_link(99);?>">
 										<div class="menuPicCon firstAidPic">
 											
 										</div>
@@ -97,7 +99,7 @@
 									</a>
 								</div>
 								<div class="dropdownItem">
-									<a href="./cpr/">
+									<a href="<?php echo get_page_link(96);?>">
 										<div class="menuPicCon cprPic">
 											
 										</div>
@@ -105,7 +107,7 @@
 									</a>
 								</div>
 								<div class="dropdownItem">
-									<a href="./pathogens/">
+									<a href="<?php echo get_page_link(103);?>">
 										<div class="menuPicCon pathPic">
 												
 										</div>
@@ -113,7 +115,7 @@
 									</a>
 								</div>
 								<div class="dropdownItem">
-									<a href="./wilderness/">
+									<a href="<?php echo get_page_link(101);?>/">
 										<div class="menuPicCon survivalPic">
 											</div>
 										<p>Survival/Wilderness</p>
@@ -123,13 +125,27 @@
 									<a href="http://osmanager4.com/summit/landing.aspx?id=25856" target="_blank">
 										<div class="menuPicCon ashiPic ">
 											</div>
-										<p>EH & S</p>
+										<p>OSHA 10/30hr</p>
+									</a>
+								</div>
+								<div class="dropdownItem">
+									<a href="<?php echo get_page_link(150);?>/">
+										<div class="menuPicCon HealthCareProvider">
+											</div>
+										<p>Health Care Provider CPR</p>
+									</a>
+								</div>
+								<div class="dropdownItem">
+									<a href="<?php echo get_page_link(152);?>/">
+										<div class="menuPicCon EarlyChildhoodEmergency">
+											</div>
+										<p>Early Childhood Emergency</p>
 									</a>
 								</div>
 							</div>
 						</div>
 					</div>
-				<div class="menuItem"><a href="./registration/">Registration</a></div>
+				<div class="menuItem"><a href="<?php echo get_page_link(56);?>">Registration</a></div>
 			</div>
 		</nav>
 		</div>

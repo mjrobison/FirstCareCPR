@@ -50,12 +50,8 @@
 					<div class="courseCon">
 						<article class="pathogens">
 							<div class="pathPic background-image overlay">
-								<!--<img src="./images/pathPic.png" alt=""/>-->
 									<img class="classIcon" src="./images/bloodborneLogo.png" />
-								<!--<div class="content">
-									<h3>BloodBorne Pathogens Goals</h3>
-									<p>Bacon ipsum dolor amet venison frankfurter ham filet mignon t-bone shank</p>
-								</div>-->
+
 							
 							<div class="classTitle">
 								<h2>Blood Borne Pathogens</h2>
@@ -69,7 +65,6 @@
 						<article class="survival">
 							<div class="survivalPic overlay">
 								<img class="classIcon" src="./images/survivalLogo.png" />
-								<!--<img class="picCon" src="./images/wilderness.jpg" alt="First Aid Picture"/> -->
 							
 							<div class="classTitle">
 								<h2>Wilderness/Survival</h2>
@@ -81,25 +76,50 @@
 						</article>	
 					</div>	
                     <div class="row">
-					<div class="courseCon">
-						<article class="ashi">
-							<div class="ashiPic background-image overlay">
-								<!--<img src="./images/pathPic.png" alt=""/>-->
-									<img class="classIcon" src="" />
-								<!--<div class="content">
-									<h3>BloodBorne Pathogens Goals</h3>
-									<p>Bacon ipsum dolor amet venison frankfurter ham filet mignon t-bone shank</p>
-								</div>-->
-							
-							<div class="classTitle">
-								<h2>Online Environmental Health & Safety Compliance</h2>
-								<span><p>Online 10 & 30 Hour Training. Provided through Summit Training Source</p>
-										<div class="btnAvail"><a href="http://osmanager4.com/summit/landing.aspx?id=25856" target="_blank">Learn More</a></div>
+						<div class="courseCon">
+							<article class="ashi">
+								<div class="ashiPic background-image overlay">
+										<img class="classIcon" src="" />
+								
+									<div class="classTitle">
+										<h2>Online Environmental Health & Safety Compliance</h2>
+										<span><p>Online 10 & 30 Hour Training. Provided through Summit Training Source</p>
+												<div class="btnAvail"><a href="http://osmanager4.com/summit/landing.aspx?id=25856" target="_blank">Learn More</a></div>
 										</span>
-							</div></div>
-						</article>	
-					</div>		
-					</div>		
+									</div>
+								</div>
+							</article>	
+						</div>
+						<div class="courseCon">
+							<article class="HealthCareCPR">
+								<div class="HealthCareCPR overlay">
+									<img class="classIcon" src="" />
+								
+								<div class="classTitle">
+									<h2>Health Care Provider CPR</h2>
+									<span><p>This course is designed to...</p>
+											<div class="btnAvail"><a href="./wilderness/">Learn More</a></div>
+											</span>
+									
+								</div></div>
+							</article>	
+						</div>		
+					</div>
+					                    <div class="row">
+						<div class="courseCon">
+							<article class="EarlyChildhoodEmergency">
+								<div class="EarlyChildhood background-image overlay">
+										<img class="classIcon" src="" />
+								
+									<div class="classTitle">
+										<h2>Early Childhood Emergency</h2>
+										<span><p>This course is designed to...</p>
+												<div class="btnAvail"><a href="" target="_blank">Learn More</a></div>
+										</span>
+									</div>
+								</div>
+							</article>	
+						</div>		
 				</div>
 			</section>
 			<!--<section class="contact">

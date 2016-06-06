@@ -662,6 +662,9 @@ main .container .em-calendar-wrapper thead td {
   font-weight: bold;
   font-size: 2em;
 }
+main .container .em-calendar-wrapper tbody tr {
+  height: 18%;
+}
 main .container .em-calendar-wrapper tbody tr td {
   width: 14.3%;
   text-align: center;
@@ -1137,7 +1140,7 @@ footer .footImgCon img {
   /* margin-left: -119px; */
   margin-top: 20px;
   position: absolute;
-  right: 240px;
+  right: 16.5em;
 }
 footer .contain-contact {
   float: right;
