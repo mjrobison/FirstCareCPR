@@ -1,0 +1,1731 @@
+/*
+Theme Name: First Care CPR
+Author: <ro-bros />
+Description: Built for First Care CPR
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: 
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/****  Colors ****/
+/************** global *****************/
+html {
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #AAA;
+}
+
+h1 {
+  font-size: 34px;
+  font-weight: bold;
+  margin: 23px;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 23px;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  border-bottom: 3px solid #a32431;
+  display: table;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+h3 {
+  font-size: 21px;
+  font-weight: bold;
+  margin: 23px;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+p {
+  margin: 10px 0 15px;
+  line-height: 1.2em;
+  font-size: 16px;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+.btnAvail {
+  background-color: #a32431;
+  width: 165px;
+  padding: 10px 0px;
+  border: 2px solid #a32431;
+  border-radius: 3px;
+  transition: .25s;
+  margin: auto;
+  margin-bottom: 15px;
+  box-shadow: 1px 2px 2px 0px #272727;
+}
+.btnAvail:hover {
+  box-shadow: 0px 3px 5px 2px #272727;
+}
+.btnAvail a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.background-image {
+  background: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.textCon {
+  -webkit-transform: skewX(155deg);
+  -ms-transform: skewX(155deg);
+  transform: skewX(155deg);
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+
+.classIcon {
+  width: 75px;
+  margin-top: 100px;
+  transition: .5s;
+}
+
+.row {
+  position: relative;
+  display: block;
+}
+.row:before, .row:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.row:after {
+  clear: both;
+}
+
+.overlay:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 5;
+  transition: .25s;
+  overflow: hidden;
+}
+
+.firstAidPic {
+  overflow: hidden;
+  background-image: url("images/firstAid3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60% bottom;
+  height: 280px;
+  width: 100%;
+}
+
+.cprPic {
+  overflow: hidden;
+  background-image: url("images/no-ppl-cpr.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60% 0%;
+  height: 280px;
+  width: 100%;
+}
+
+.pathPic {
+  background-image: url("images/pathPic.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60% bottom;
+  overflow: hidden;
+  height: 280px;
+  width: 100%;
+}
+
+.survivalPic {
+  background-image: url("images/wilderness.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60% bottom;
+  height: 280px;
+  width: 100%;
+  position: relative;
+}
+
+.ashiPic {
+  background-image: url("http://www.osmanager4.com/images/summit250X250.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 10% -56% bottom;
+  overflow: hidden;
+  height: 280px;
+  width: 100%;
+}
+.healthCareCPRPic {
+  background-image: url("images/healthcarecpr.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60% 75% bottom;
+  overflow: hidden;
+  height: 280px;
+  width: 100%;
+}
+
+.earlyChildhoodEmergency {
+  background-image: url("images/earlychildhoodemergency.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60% 55% bottom;
+  overflow: hidden;
+  height: 280px;
+  width: 100%;
+}
+
+
+#contact header, .about header, #contact header, #firstAid header, #path header, #registration header, #survival header {
+  border-bottom: 1px solid #272727;
+}
+
+/*border box layout*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*main container for content*/
+.main-container {
+  z-index: 1;
+  position: relative;
+}
+
+/*container for the nav*/
+.nav-menu-wrap {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 100%;
+  width: 74%;
+  -webkit-transition: all 450ms ease-in-out;
+  -moz-transition: all 450ms ease-in-out;
+  transition: all 450ms ease-in-out;
+  z-index: 3;
+  -moz-transform: translate3d(-100%, 0px, 0px) rotate(90deg);
+  -webkit-transform: translate3d(-100%, 0px, 0px) rotate(90deg);
+  -ms-transform: translate(-100%, 0%) rotate(90deg);
+  -o-transform: translate(-100%, 0%) rotate(90deg);
+  transform: translate3d(-100%, 0px, 0px) rotate(90deg);
+  -moz-transform-origin: 0% 0%;
+  -webkit-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+}
+
+.nav-menu-wrap.active {
+  -moz-transform: translate3d(0%, 0px, 0px) rotate(0deg);
+  -webkit-transform: translate3d(0%, 0px, 0px) rotate(0deg);
+  -ms-transform: translate(0%, 0%) rotate(0deg);
+  -o-transform: translate(0%, 0%) rotate(0deg);
+  transform: translate3d(0%, 0px, 0px) rotate(0deg);
+}
+
+/*nav menu background*/
+.nav-menu-background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  background: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in-out;
+  -moz-transition: opacity 400ms ease-in-out;
+  -o-transition: opacity 400ms ease-in-out;
+  transition: opacity 400ms ease-in-out;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  z-index: 0;
+}
+
+.nav-menu-background.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.menu {
+  margin: 0px;
+  padding: 0px;
+  height: auto;
+}
+
+.nav-menu {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  background: #eee;
+}
+
+.nav-menu li {
+  list-style-type: none;
+  display: block;
+  position: relative;
+}
+
+.nav-menu li > a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  padding: 9px 11px;
+  border-top: solid 1px #ccc;
+  position: relative;
+  background: #eee;
+  -moz-transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.nav-menu li > a:hover,
+.nav-menu li > a:active {
+  background: #ccc;
+}
+
+/*Nav menu toggle*/
+.nav-menu-toggle {
+  border: solid 1px #ddd;
+  background: #ccc;
+  height: 35px;
+  width: 35px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 15px;
+  z-index: 999;
+  position: absolute;
+  right: 10%;
+  top: 15px;
+}
+
+.nav-menu-toggle .toggle {
+  color: #fff;
+  line-height: 35px;
+  font-size: 150%;
+}
+
+/*Close menu items*/
+.nav-menu .close div, .mobileCourses {
+  padding: 10px 15px;
+  cursor: pointer;
+  background: #ccc;
+  -moz-transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.nav-menu .close div:hover,
+.nav-menu .close div:active,
+.mobileCourses:hover,
+.mobileCourses:active {
+  background: #aaa;
+}
+
+.nav-menu .close div i {
+  float: right;
+}
+
+.box-shadow-menu:before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 11px;
+  width: 1em;
+  height: 0.15em;
+  background: black;
+  box-shadow: 0 0.25em 0 0 black, 0 0.5em 0 0 black;
+}
+
+.mobileMenuIcon {
+  width: 50px;
+  vertical-align: middle;
+  margin-right: 11px;
+  margin-left: 11px;
+}
+
+header {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: 10;
+  width: 100%;
+  height: 65px;
+  transition-duration: 1s;
+  z-index: 100;
+}
+header .contentCon {
+  width: 88%;
+  margin: auto;
+}
+header .logo {
+  margin-left: 1%;
+  position: absolute;
+  left: 100px;
+}
+header .logo img {
+  height: 60px;
+  padding-top: 4px;
+}
+header .logo h1 {
+  width: 166px;
+  position: absolute;
+  top: -11px;
+  left: 16px;
+  line-height: .6em;
+}
+header .logo h1 span {
+  font-size: 20px;
+}
+header .nav {
+  float: right;
+  
+}
+header .nav .menuItem {
+  display: block;
+  list-style-type: none;
+  float: left;
+  margin-top: 10px;
+  padding-left: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 100%;
+  background-color: transparent;
+}
+header .nav .menuItem:hover a {
+  color: #a32431;
+  background-color: transparent;
+}
+header .nav .menuItem a {
+  color: #272727;
+  text-decoration: none;
+  transition: .15s;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  padding: 17px 16px;
+  text-decoration: none;
+}
+header .nav .menuItem a p {
+  color: #000;
+}
+header .nav .dropbtn {
+  display: inline-block;
+  text-align: center;
+  padding: 17px 16px;
+  text-decoration: none;
+}
+header .nav .menuItem a, header .nav .dropdown .dropbtn {
+  display: inline-block;
+}
+header .nav .menuItem a:after, header .nav .dropdown .dropbtn:after {
+  content: '';
+  display: block;
+  margin-top: 10px;
+  margin-bottom: -10px;
+  height: 2px;
+  width: 0;
+  background: transparent;
+  transition: width .3s ease, background-color .5s ease;
+}
+header .nav .menuItem a:hover:after, header .nav .dropdown .dropbtn:hover:after {
+  width: 100%;
+  background: #a32431;
+}
+header .nav menuItem.dropdown {
+  display: inline-block;
+}
+header .nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #dbdbdb;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  left: 0;
+  width: 100%;
+}
+header .nav .dropdown-content:hover {
+  width: 100%;
+}
+header .nav .dropdown-content .itemCon {
+  width: 90%;
+  margin: auto;
+}
+header .nav .dropdown-content .dropdownItem {
+  float: left;
+  padding: 10px 0;
+  width: 25%;
+  color: #373737;
+  overflow: hidden;
+}
+header .nav .dropdown-content .dropdownItem a {
+  overflow: hidden;
+  width: 100%;
+}
+header .nav .dropdown-content .dropdownItem a .menuPicCon {
+  text-align: center;
+  width: 75%;
+  margin: auto;
+  overflow: hidden;
+  width: 250px;
+  height: 150px;
+}
+header .nav .dropdown-content a {
+  color: black;
+  text-decoration: none;
+}
+header .nav .dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: #272727;
+}
+header .nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+header .nav .menu-icon {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    right: 6px;
+    padding-right: 0px;
+  }
+  header .contentCon {
+    width: 95%;
+    margin-right: 5px;
+  }
+  header .contentCon .logo {
+    left: 20px;
+    margin-left: 5px;
+  }
+  header .contentCon nav {
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  header .contentCon {
+    float: left;
+  }
+  header .contentCon .logo {
+    float: left;
+    left: 20px;
+    margin-left: 5px;
+  }
+  header .contentCon h1 {
+    visibility: hidden;
+  }
+  header .contentCon nav .menuItem {
+    visibility: hidden;
+  }
+  header .contentCon nav:hover ul {
+    display: block;
+  }
+  header .contentCon .menu-icon img {
+    visibility: visible;
+    margin-top: 10px;
+    height: 40px;
+    float: right;
+  }
+}
+/*************** main *****************/
+main {
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0, -5px, 14px, 1px #373333;
+}
+main .bg-photo {
+  background-image: url("images/firstCareHero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+}
+main .hero {
+  height: 80vh;
+}
+main .hero:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 5;
+}
+main .container {
+  width: 90%;
+  margin: auto;
+  padding: 20px 5px;
+}
+main .container .welcome {
+  text-align: center;
+  line-height: 1.2em;
+  margin: 20px 0;
+  padding: 10px;
+}
+main .container .welcome h1 {
+  border-bottom: 3px solid #a32431;
+  display: table;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  text-align: center;
+  position: relative;
+  margin: 10px auto 35px;
+}
+main .available {
+  text-align: center;
+  margin: 30px auto;
+}
+main .available h2 {
+  text-align: center;
+  display: inline-block;
+}
+main .courseCon {
+  width: calc(49% - 16px);
+  min-width: 280px;
+  height: 280px;
+  background-color: #e4e4e4;
+  margin: 20px 10px;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 2px 2px 7px #343333;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  transition: .5s;
+}
+main .courseCon h2 {
+  transition: .5s;
+  color: #fff;
+  text-shadow: 0;
+}
+main .courseCon span {
+  display: none;
+  text-transform: none;
+}
+main .courseCon:before {
+  content: '';
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  width: 0%;
+  height: 0%;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 7;
+  transform: rotate(45deg);
+  transition: width .5s length .5s;
+}
+main .courseCon:hover h2 {
+  font-size: 18px;
+  text-transform: none;
+  padding: 0px 15px;
+  color: #121212;
+}
+main .courseCon:hover span {
+  display: block;
+}
+main .courseCon:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 5;
+}
+main .courseCon .classIcon {
+  position: relative;
+  z-index: 10;
+}
+main .courseCon:hover .classIcon {
+  margin-top: 25px;
+  width: 50px;
+}
+main .courseCon:hover:before {
+  content: '';
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  width: 90%;
+  height: 90%;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 7;
+  transform: rotate(0deg);
+  transition: .5s;
+}
+main .courseCon .classTitle {
+  padding: 7px;
+  margin: -30px auto 0;
+  text-transform: lowercase;
+  color: #a32431;
+  font-weight: bold;
+  position: relative;
+  z-index: 10;
+}
+main .courseCon .firstAid .btnFirstAid {
+  width: 82px;
+  padding: 10px 25px;
+  border: 2px solid #a32431;
+  border-radius: 3px;
+  transition: .25s;
+}
+main .courseCon .cpr #center {
+  position: relative;
+  left: 332px;
+}
+main .courseCon .cpr .btnCpr {
+  width: 82px;
+  padding: 10px 25px;
+  border: 2px solid #a32431;
+  border-radius: 3px;
+  transition: .25s;
+}
+main .courseCon .btnPath {
+  width: 82px;
+  padding: 10px 25px;
+  border: 2px solid #a32431;
+  border-radius: 3px;
+  transition: .25s;
+}
+main .courseCon p {
+    max-width: 80%;
+    margin:auto;
+}
+main .overlay:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 5;
+  transition: .25s;
+}
+
+.picCon {
+  width: 100%;
+}
+
+.registrationform {
+  width: 88%;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 20px;
+  padding-left: 1%;
+  margin-top: 68px;
+  margin-left: 1%;
+}
+.registrationform p {
+  margin-left: 1%;
+}
+.registrationform #note {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  line-height: 1.2em;
+}
+.registrationform label {
+  display: inline-block;
+  float: left;
+  clear: left;
+  width: 130px;
+  padding: 3px;
+}
+.registrationform input {
+  width: 150px;
+  -moz-transition: padding .25s;
+  -webkit-transition: padding .25s;
+  -o-transition: padding .25s;
+  transition: padding .25s;
+}
+.registrationform input:invalid {
+  border-color: red;
+}
+.registrationform input:valid {
+  border-color: green;
+}
+.registrationform input[type="checkbox"] {
+  width: 50px;
+  margin-left: 110px;
+}
+.registrationform button.submit {
+  width: 175px;
+  margin-left: 105px;
+  border-radius: 3px;
+}
+.registrationform button.submit:hover {
+  opacity: .5;
+  cursor: pointer;
+}
+
+.aboutPhoto {
+  background-color: #343333;
+  overflow: hidden;
+  position: relative;
+}
+.aboutPhoto:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.8;
+  background-image: url("images/no-ppl-cpr.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 40%;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.aboutHero {
+  height: 50vh;
+  margin-top: 65px;
+}
+
+main .container {
+  width: 90%;
+  margin: auto;
+  margin-top:65px; 
+}
+main .container .company h2 {
+  margin: 10px auto 35px;
+}
+main .container .img-con {
+  width: 100%;
+  height: 230px;
+  overflow: hidden;
+  padding: 10px;
+}
+main .container .img-con .bioPic {
+  width: 350px;
+  margin: auto;
+}
+main .container .jimmy {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+main .container .jimmy h2 {
+  margin: 10px auto 35px;
+}
+main .container .jimmy p {
+  padding: 15px;
+  text-align: left;
+}
+main .container .christy {
+  width: 50%;
+  float: right;
+  text-align: center;
+}
+main .container .christy h2 {
+  margin: 10px auto 35px;
+}
+main .container .christy p {
+  padding: 15px;
+  text-align: left;
+}
+
+.courseHero {
+  height: 55vh;
+}
+
+main .container .em-calendar-wrapper table {
+  margin: auto;
+  width: 60vw;
+  float:left;
+}
+main .container .em-calendar-wrapper thead td {
+  text-align: center;
+  font-weight:bold;
+  font-size: 2em;
+}
+main .container .em-calendar-wrapper tbody tr{
+  height: 5.1em;
+  text-align: center;
+}
+
+main .container .em-calendar-wrapper tbody tr > td{
+  width: 3em;
+  text-align: center;
+}
+
+main .container .em-calendar-wrapper tbody .eventless-pre,
+main .container .em-calendar-wrapper tbody .eventless-post {
+   background-color: #eee;
+   color: #a32431;
+}
+
+main .container .em-calendar-wrapper tbody .eventless:hover,
+main .container .em-calendar-wrapper tbody .eventful:hover,
+main .container .em-calendar-wrapper tbody .eventful-today:hover{
+   background-color: #a32431;
+   color: #eee;
+}
+
+main .container .nextCourses{
+  float:left;
+  margin:auto;
+  padding: 0px 0px 0px 2.5em;
+}
+main .container .nextCourses h3{
+  font-size: 1em;
+  font-weight: bold;
+  text-align:center;
+}
+main .container .nextCourses h4{
+  font-size: .80em;
+  font-weight: bold;
+}
+main .container .nextCourses p{
+  font-size: .70em;
+}
+
+main .container .upcoming{
+  float:left;
+  width: 50%;
+}
+main .categorycalendar{
+  float:left;
+  width:50%;
+  padding: 0px 0px 0px 20px;
+  align-content: center;
+}
+main .categorycalendar .em-calendar-wrapper table{
+  margin:auto; 
+}
+main .categorycalendar .em-calendar-wrapper thead td{
+  font-size:1em;
+  text-align: center;  
+}
+main .categorycalendar .em-calendar-wrapper thead .month_name{
+  font-size:1.2em;
+  text-align:center;
+}
+main .categorycalendar .em-calendar-wrapper tbody td{
+  width:2em;
+  height:2em;
+  font-size:1em;  
+  font-weight:bold;
+  text-align:center;
+}
+main .categorycalendar .em-calendar-wrapper .eventful,
+main .categorycalendar .em-calendar-wrapper .eventful-today{
+  background:#a32431;
+}
+main .categorycalendar .em-calendar-wrapper .eventful a,
+main .categorycalendar .em-calendar-wrapper .eventful-today a{
+  color:#eee;
+}
+
+main .categorycalendar .em-calendar-wrapper .eventless-post, 
+main .categorycalendar .em-calendar-wrapper .eventless-pre{
+  background:#eee;
+  color:#a32431;
+}
+ 
+main .container .classlink{
+  margin: 1.25em 2px;
+  padding: 2px 2px;
+  width: 20vw;
+  text-align:center;
+  box-shadow: 1px 2px 2px 0px #272727;
+  background-color: #eee;
+  border-radius: 3px;
+}
+main .container .classlink a {
+  color: #a32431;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+main .containerfooter .wpcf7-submit{
+  margin: 1.25em 2px;
+  padding: 2px 2px;
+  width: 20vw;
+  text-align:center;
+  box-shadow: 1px 2px 2px 0px #272727;
+  background-color: #eee;
+  border-radius: 3px;
+  color: #a32431;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+main .container .classlink:hover{
+  opacity: .5;
+  cursor: pointer;
+}
+
+main  .eventmap{ 
+   /*margin:0px 0px 15px 15px;*/
+   width: 100vw !important;
+   height: 40vh !important;
+}
+
+main .eventmap .em-location-map,
+main .eventmap .em-location-map-container{ 
+   /*margin:0px 0px 15px 15px;*/
+   width: 100vw !important;
+   height: 40vh !important;
+}
+
+main .container .eventinformation{
+  width: 50vw;
+  float:left;
+}
+main .container .eventinformation > h3{
+  margin: 10px 0px
+}
+
+main .container .registrationform{
+  margin: 0px 25px 25px;
+  background-color:#eee;
+  width: 35vw;
+  float: left;
+}
+main .container .registrationform > h3{
+  text-align: center;
+}
+main .container .css-my-bookings .em-my-bookings table{
+  width: 30vw !important;  
+}
+main .container .css-my-bookings .em-my-bookings thead th{
+  width: 20% !important;
+  font-size: 1.2em !important;
+  font-weight: bold !important;
+  text-align:center;
+  padding-bottom: 10px  
+}
+main .container .css-my-bookings .em-my-bookings tbody td{
+  width:2em !important;
+  font-size: 1.1em;
+  text-align: center;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.cprCoursePhoto {
+  /*margin-top: 65px;*/
+  background-color: #343333;
+  overflow: hidden;
+  position: relative;
+}
+.cprCoursePhoto:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.8;
+  background-image: url("images/no-ppl-cpr.jpg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.firstAidCourse {
+  margin-top: 65px;
+  background-color: #343333;
+  overflow: hidden;
+  position: relative;
+}
+.firstAidCourse:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.8;
+  background-image: url("images/firstAid3.jpg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.survival-wilderness {
+  margin-top: 65px;
+  background-color: #343333;
+  overflow: hidden;
+  position: relative;
+}
+.survival-wilderness:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.8;
+  background-image: url("images/wilderness.jpg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.ashi {
+  /*margin-top: 65px;*/
+  background-color: #343333;
+  overflow: hidden;
+  /*position: relative;*/
+  /*width: 100%;*/
+  /*height: 100%;*/
+}
+.ashi:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.8;
+  /*background-image: url("http://www.osmanager4.com/images/summit300X600.png");*/
+  background-image: url("images/summit970X250.png");
+  background-repeat: no-repeat;
+  background-position: 50% -10%;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.path {
+  margin-top: 65px;
+  background-color: #343333;
+  overflow: hidden;
+  position: relative;
+}
+.path:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.8;
+  background-image: url("images/pathPic.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+footer {
+  margin: 50px auto 0;
+  padding: 15px 5%;
+  background-color: #eee;
+}
+footer .footNavCon {
+  text-align: left;
+  margin: auto;
+  display: inline-block;
+  float: left;
+}
+footer .footNavCon .footNav {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+}
+footer .footNavCon .footNav h3 {
+  font-size: 19px;
+  font-weight: bold;
+  margin: 12px 14px;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid #a32431;
+  width: 143px;
+}
+footer .footNavCon .footNav .nav {
+  display: inline-block;
+}
+footer .footNavCon .footNav .nav a {
+  padding: 4px 15px;
+  line-height: 1.4em;
+}
+footer .footNavCon .courses {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  width: 44%;
+}
+footer .footNavCon .courses h3 {
+  font-size: 19px;
+  font-weight: bold;
+  margin: 12px 14px;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid #a32431;
+  width: 82px;
+}
+footer .footNavCon .courses .nav {
+  display: inline-block;
+}
+footer .footNavCon .courses .nav li {
+  float:left;
+  width:50%;
+}
+
+footer .footNavCon .courses .nav a {
+  padding: 4px 15px;
+  line-height: 1.4em;
+}
+
+footer a {
+  color: #272727;
+  font-weight: bold;
+}
+footer .footImgCon img {
+  width: 125px;
+  /* margin-left: -119px; */
+  margin-top: 20px;
+  position: absolute;
+  right: 16.5em;
+}
+footer .contain-contact {
+  float: right;
+}
+footer .contain-contact .contact {
+  display: inline-block;
+}
+footer .contain-contact .contact .email, footer .contain-contact .contact .phone {
+  line-height: 1.2em;
+}
+footer .contain-contact .contact .email h3, footer .contain-contact .contact .phone h3 {
+  font-size: 21px;
+  font-weight: bold;
+  margin: 8px 0;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid #a32431;
+  width: 82px;
+}
+footer .sub-footer {
+  width: 100%;
+  text-align: left;
+  color: #565656;
+}
+footer .sub-footer .robros {
+  text-align: center;
+}
+footer .sub-footer .robros:before {
+  content: '';
+  display: table;
+}
+footer .sub-footer .robros:after {
+  border: 1px solid #bfe1f1;
+}
+
+.page-id-77 #page-wrap{
+  height: calc(100vh - 265px);
+}
+
+@media screen and (min-width: 767px) {
+  .nav-menu-wrap {
+    display: none;
+    visibility: hidden;
+  }
+
+  .nav-menu-toggle {
+    display: none;
+    visibility: hidden;
+  }
+
+  .nav-menu-background {
+    display: none;
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 766px) {
+  .nav {
+    display: none;
+  }
+  footer {
+    margin: 10px 0 0 0;
+    padding: 15px 5%;
+  }
+  footer .footNavCon {
+    display: block;
+    float: none;
+  }
+  
+  footer .footNavCon .center {
+    text-align: center;
+  }
+
+  footer .contain-contact {
+    float: none;
+    margin-bottom: 31px;
+    width: 78px;
+    margin: 0 auto 15px;
+  }
+
+  footer .footImgCon {
+    display: block;
+    clear: both;
+    width: 100%;
+    text-align: center;
+  }
+  footer .footImgCon img {
+    width: 125px;
+    position: static;
+  }
+
+  footer .contain-contact .contact {
+    display: inline-block;
+    width: 171px;
+    margin: auto;
+  }
+
+  footer .contain-contact .contact .email, footer .contain-contact .contact .phone {
+    line-height: 1.2em;
+    display: inline-block;
+    margin-right: 25px;
+    text-align: left;
+  }
+  main .container .em-calendar-wrapper table{
+    height: 45vh;
+    width: 85vw;
+  }
+  
+  footer .footNavCon .courses .nav li {
+    float:none;
+    width:100%;
+  }
+  main .container .eventmap .em-location-map-container{
+   float:none; 
+   margin:0px 0px 15px 15px;
+   width: 85vw !important;
+   height: 45vh !important;
+  }
+  main .container .eventinformation{
+    margin: 10px 25px;
+    width: 55vw;
+  }
+  main .container .eventinformation > h3{
+    margin: 10px 0px
+  }
+
+  main .container .registrationform{
+    margin: 25px 25px;
+    background-color:#eee;
+    width: 55vw;
+  }
+  main .container .registrationform > h3{
+    text-align: center;
+  }
+  main .container .css-my-bookings .em-my-bookings table{
+    width: 90vw !important;
+    margin:auto;  
+  }
+  main .container .css-my-bookings .em-my-bookings thead th{
+    width: 20% !important;
+    font-size: 1.2em !important;
+    font-weight: bold !important;
+    text-align:center;
+    padding-bottom: 10px  
+  }
+  main .container .css-my-bookings .em-my-bookings tbody td{
+    width:2em !important;
+    font-size: 1.1em;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+  main .container .nextCourses{
+    float:left;
+    margin:auto auto auto 0px;
+    width: 85vw;
+    padding:0px;
+    
+  }
+  main .container .nextCourses h3{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align:center;
+    background-color: #a32431;
+    width: 96%;
+    padding: 4px 0px;
+  }
+  main .container .nextCourses h4{
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0px 0px 0px 2.5em;
+  }
+  main .container .nextCourses p{
+    font-size: 1em;
+    padding: 0px 0px 0px 3.8em;
+  }
+
+  main .container .upcoming{
+    float:left;
+    width: 100%;
+  }
+  main .categorycalendar{
+    float:left;
+    width:100%;
+    padding: 0px 0px 0px 20px;
+    margin: 30px auto;
+    align-content: center;
+  }
+  main .courseCon {
+    width: calc(80% - 16px);
+    min-width: 280px;
+    height: 280px;
+    background-color: #e4e4e4;
+    margin: 20px 10px;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 2px 2px 7px #343333;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    transition: .5s;
+  }
+
+  main .courseCon h2 {
+    transition: .5s;
+    color: #121212;
+    text-shadow: 0;
+    padding: 0px 15px;
+  }
+  main .courseCon span {
+    display: none;
+    text-transform: none;
+  }
+  main .courseCon:before {
+    content: '';
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 0%;
+    height: 0%;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 7;
+    transform: rotate(45deg);
+    transition: width .5s length .5s;
+  }
+  main .courseCon h2 {
+    font-size: 18px;
+    text-transform: none;
+    padding: 0px 1em;
+  }
+  main .courseCon span {
+    display: block;
+  }
+  main .courseCon:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 5;
+  }
+  main .courseCon .classIcon {
+    position: relative;
+    z-index: 10;
+  }
+  main .courseCon .classIcon {
+    margin-top: 25px;
+    width: 50px;
+  }
+  main .courseCon:before {
+    content: '';
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    height: 90%;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 7;
+    transform: rotate(0deg);
+    transition: .5s;
+  }
+  main .courseCon p {
+    max-width: 80%;
+    margin:auto;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  header .logo {
+    margin-left: 1%;
+    position: absolute;
+    left: 37px;
+  }
+  
+  footer {
+    margin: auto;
+    padding: 15px 5%;
+  }
+
+  .courseCon {
+    margin: 20px auto !important;
+  }
+
+  .jimmy {
+    float: none !important;
+    width: 100% !important;
+  }
+
+  .christy {
+    float: none !important;
+    width: 100% !important;
+  }
+  main .container .em-calendar-wrapper table{
+    height: 45vh;
+    width: 90vw;
+  }
+  main .container .upcoming{
+    float:left;
+    width: 85%;
+  }
+  main .container .nextCourses{
+    float:left;
+    margin:auto auto auto 0px;
+    width: 85vw;
+    padding: 0px 0px 0px 1em;
+  }
+  main .container .nextCourses h3{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align:center;
+    background-color: #a32431;
+    width: 96%;
+    padding: 4px 0px;
+  }
+  main .container .nextCourses h4{
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0px 0px 0px 2.5em;
+  }
+  main .container .nextCourses p{
+    font-size: 1em;
+    padding: 0px 0px 0px 3.8em;
+  }
+
+  main .container .upcoming{
+    float:left;
+    width: 100%;
+  }
+  main .courseCon {
+    width: calc(90% - 16px);
+    min-width: 280px;
+    height: 280px;
+    background-color: #e4e4e4;
+    margin: 20px 10px;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 2px 2px 7px #343333;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    transition: .5s;
+  }
+  main .courseCon h2 {
+    transition: .5s;
+    color: #121212;
+    text-shadow: 0;
+  }
+  main .courseCon span {
+    display: none;
+    text-transform: none;
+  }
+  main .courseCon:before {
+    content: '';
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 0%;
+    height: 0%;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 7;
+    transform: rotate(45deg);
+    transition: width .5s length .5s;
+  }
+  main .courseCon h2 {
+    font-size: 18px;
+    text-transform: none;
+    padding: 0px 15px;
+  }
+  main .courseCon span {
+    display: block;
+  }
+  main .courseCon:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 5;
+  }
+  main .courseCon .classIcon {
+    position: relative;
+    z-index: 10;
+  }
+  main .courseCon .classIcon {
+    margin-top: 25px;
+    width: 50px;
+  }
+  main .courseCon:before {
+    content: '';
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    height: 90%;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 7;
+    transform: rotate(0deg);
+    transition: .5s;
+  }
+  main .courseCon p {
+    max-width: 80%;
+    margin:auto;
+  }
+}
