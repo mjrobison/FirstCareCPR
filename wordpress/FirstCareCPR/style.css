@@ -882,6 +882,7 @@ main .container .img-con .bioPic {
   width: 350px;
   margin: auto;
 }
+
 main .container .jimmy {
   width: 50%;
   float: left;
@@ -903,6 +904,30 @@ main .container .christy h2 {
   margin: 10px auto 35px;
 }
 main .container .christy p {
+  padding: 15px;
+  text-align: left;
+}
+main .container .bryan {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+main .container .bryan h2 {
+  margin: 10px auto 35px;
+}
+main .container .bryan p {
+  padding: 15px;
+  text-align: left;
+}
+main .container .alice {
+  width: 50%;
+  float: right;
+  text-align: center;
+}
+main .container .alice h2 {
+  margin: 10px auto 35px;
+}
+main .container .alice p {
   padding: 15px;
   text-align: left;
 }
@@ -1184,6 +1209,9 @@ footer {
   margin: 50px auto 0;
   padding: 15px 5%;
   background-color: #eee;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
 }
 footer .footNavCon {
   text-align: left;
@@ -1339,7 +1367,8 @@ footer .sub-footer .robros:after {
     margin: auto;
   }
 
-  footer .contain-contact .contact .email, footer .contain-contact .contact .phone {
+  footer .contain-contact .contact .email, 
+  footer .contain-contact .contact .phone {
     line-height: 1.2em;
     display: inline-block;
     margin-right: 25px;
@@ -1398,6 +1427,15 @@ main .container .registrationform > h3{
   }
 
   .christy {
+    float: none !important;
+    width: 100% !important;
+  }
+   .bryan {
+    float: none !important;
+    width: 100% !important;
+  }
+
+  .alice {
     float: none !important;
     width: 100% !important;
   }

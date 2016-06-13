@@ -22,7 +22,7 @@
 							
 								<div class="classTitle">
 									<h2>First Aid</h2>
-									<span><p>This course is designed to...</p>
+									<span><p>This course is designed to teach the skills to react confidently in many emergency situations.</p>
 										<div class="btnAvail"><a href="first-aid">Learn More</a></div>
 										</span>
 								</div>
@@ -37,7 +37,7 @@
 							<div class="classTitle">
 								<!--<div class="textCon">-->
 									<h2>CPR &amp; AED</h2>
-									<span><p>This course is designed to...Infant Child and Adult</p>
+									<span><p>This course is designed to teach CPR for the lay person responder.</p>
 									<div class="btnAvail"><a href="./cpr/">Learn More</a></div>
 									</span>
 									<!--<div class="btnCpr">Sign Up Now</div>-->
@@ -55,7 +55,7 @@
 							
 							<div class="classTitle">
 								<h2>Blood Borne Pathogens</h2>
-								<span><p>This course is designed to...</p>
+								<span><p>This course provides students with OSHA required training on how to protect themselves from blood borne pathogens.</p>
 										<div class="btnAvail"><a href="./pathogens/">Learn More</a></div>
 										</span>
 							</div></div>
@@ -68,7 +68,7 @@
 							
 							<div class="classTitle">
 								<h2>Wilderness/Survival</h2>
-								<span><p>This course is designed to...</p>
+								<span><p>This course is designed to teach advanced first aid techniques.</p>
 										<div class="btnAvail"><a href="./wilderness/">Learn More</a></div>
 										</span>
 								
@@ -77,38 +77,8 @@
 					</div>	
                     <div class="row">
 						<div class="courseCon">
-							<article class="EarlyChildhoodEmergency">
-								<div class="earlyChildhoodEmergency background-image overlay">
-										<img class="classIcon" src="" />
-								
-									<div class="classTitle">
-										<h2>Early Childhood Emergency</h2>
-										<span><p>This course is designed to...</p>
-												<div class="btnAvail"><a href="./earlychildhoodemergency/" target="_blank">Learn More</a></div>
-										</span>
-									</div>
-								</div>
-							</article>	
-						</div>
-						<div class="courseCon">
-							<article class="HealthCareCPR">
-								<div class="healthCareCPRPic background-image overlay">
-									<img class="classIcon" src="" />
-								
-								<div class="classTitle">
-									<h2>Health Care Provider CPR</h2>
-									<span><p>This course is designed to...</p>
-											<div class="btnAvail"><a href="./healthcarecpr/">Learn More</a></div>
-											</span>
-									
-								</div></div>
-							</article>	
-						</div>		
-					</div>
-					<div class="row">
-						<div class="courseCon">
 							<article class="ashi">
-								<div class="ashi overlay">
+								<div class="ashiPic background-image overlay">
 										<img class="classIcon" src="" />
 								
 									<div class="classTitle">
@@ -120,7 +90,36 @@
 								</div>
 							</article>	
 						</div>
+						<div class="courseCon">
+							<article class="HealthCareCPR">
+								<div class="healthCareCPRPic overlay">
+									<img class="classIcon" src="" />
+								
+								<div class="classTitle">
+									<h2>Healthcare Provider CPR</h2>
+									<span><p>This course is designed to teach basic life support techniques for use in a healthcare setting</p>
+											<div class="btnAvail"><a href="./wilderness/">Learn More</a></div>
+											</span>
+									
+								</div></div>
+							</article>	
+						</div>		
 					</div>
+					                    <div class="row">
+						<div class="courseCon">
+							<article class="earlyChildhoodEmergency">
+								<div class="EarlyChildhood background-image overlay">
+										<img class="classIcon" src="" />
+								
+									<div class="classTitle">
+										<h2>Early Childhood Emergency</h2>
+										<span><p>This course is designed to provide parents with the knowledge the need to care for their infant or young child.</p>
+												<div class="btnAvail"><a href="" target="_blank">Learn More</a></div>
+										</span>
+									</div>
+								</div>
+							</article>	
+						</div>		
 				</div>
 			</section>
 			<!--<section class="contact">

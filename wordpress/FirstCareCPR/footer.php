@@ -41,10 +41,9 @@
 										<a href="tel:615-260-4758">(615)260-4758</a>
 									</div>
 									<div class="phone">
-										<h3>Christy</h3>
-										<a href="tel:615-473-9746">(615)473-9746</a>
+										<h3>Bryan</h3>
+										<a href="tel:615-612-8061">(615)612-8061</a>
 									</div>
-								
 							</section>
 						</div>
 					</div>

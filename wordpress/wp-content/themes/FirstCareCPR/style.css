@@ -527,6 +527,10 @@ header .nav .menuItem a:hover:after, header .nav .dropdown .dropbtn:hover:after 
   width: 100%;
   background: #a32431;
 }
+header .nav .dropdown .dropbtn:active:after {
+  width: 100%;
+  background: #a32431;
+}
 header .nav menuItem.dropdown {
   display: inline-block;
 }
