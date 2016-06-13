@@ -54,15 +54,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/*
-Theme Name: First Care CPR
-Author: <ro-bros />
-Description: Built for First Care CPR
-Version: 1.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: 
-*/
 /****  Colors ****/
 /**** Fonts ****/
 @font-face {
@@ -201,7 +192,7 @@ p {
 
 .firstAidPic {
   overflow: hidden;
-  background-image: url("../images/firstAid3.jpg");
+  background-image: url("images/firstAid3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 60% bottom;
@@ -211,7 +202,7 @@ p {
 
 .cprPic {
   overflow: hidden;
-  background-image: url("../images/no-ppl-cpr.jpg");
+  background-image: url("images/no-ppl-cpr.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 60% 0%;
@@ -220,7 +211,7 @@ p {
 }
 
 .pathPic {
-  background-image: url("../images/pathPic.png");
+  background-image: url("images/pathPic.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 60% bottom;
@@ -230,7 +221,7 @@ p {
 }
 
 .survivalPic {
-  background-image: url("../images/wilderness.jpg");
+  background-image: url("images/wilderness.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 60% bottom;
@@ -660,6 +651,43 @@ main .container .welcome h1 {
   text-align: center;
   position: relative;
   margin: 10px auto 35px;
+}
+main .container .em-calendar-wrapper table {
+  margin: auto;
+  height: 48vh;
+  width: 50vw;
+}
+main .container .em-calendar-wrapper thead td {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+}
+main .container .em-calendar-wrapper tbody tr {
+  height: 18%;
+}
+main .container .em-calendar-wrapper tbody tr td {
+  width: 14.3%;
+  text-align: center;
+}
+main .container .em-calendar-wrapper tbody .eventless-post {
+  background-color: #eee;
+  color: #a32431;
+}
+main .container .em-calendar-wrapper tbody .eventless-pre {
+  background-color: #eee;
+  color: #a32431;
+}
+main .container .em-calendar-wrapper tbody .eventless:hover {
+  background-color: #a32431;
+  color: #eee;
+}
+main .container .em-calendar-wrapper tbody .eventful:hover {
+  background-color: #a32431;
+  color: #eee;
+}
+main .container .em-calendar-wrapper tbody .eventful-today:hover {
+  background-color: #a32431;
+  color: #eee;
 }
 main .available {
   text-align: center;
@@ -1112,7 +1140,7 @@ footer .footImgCon img {
   /* margin-left: -119px; */
   margin-top: 20px;
   position: absolute;
-  right: 240px;
+  right: 16.5em;
 }
 footer .contain-contact {
   float: right;
@@ -1206,6 +1234,11 @@ footer .sub-footer .robros:after {
     margin-right: 25px;
     text-align: left;
   }
+
+  .container .em-calendar-wrapper table {
+    height: 33vh;
+    width: 45vw;
+  }
 }
 @media screen and (max-width: 620px) {
   header .logo {
@@ -1226,5 +1259,35 @@ footer .sub-footer .robros:after {
   .christy {
     float: none !important;
     width: 100% !important;
+  }
+
+  .container .em-calendar-wrapper table {
+    height: 33vh;
+    width: 75vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  header .contentCon {
+    float: left;
+  }
+  header .contentCon .logo {
+    float: left;
+    left: 20px;
+    margin-left: 5px;
+  }
+  header .contentCon h1 {
+    visibility: hidden;
+  }
+  header .contentCon nav .menuItem {
+    visibility: hidden;
+  }
+  header .contentCon nav:hover ul {
+    display: block;
+  }
+  header .contentCon .menu-icon img {
+    visibility: visible;
+    margin-top: 10px;
+    height: 40px;
+    float: right;
   }
 }

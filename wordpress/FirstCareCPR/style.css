@@ -882,6 +882,7 @@ main .container .img-con .bioPic {
   width: 350px;
   margin: auto;
 }
+
 main .container .jimmy {
   width: 50%;
   float: left;
@@ -906,18 +907,181 @@ main .container .christy p {
   padding: 15px;
   text-align: left;
 }
+main .container .bryan {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+main .container .bryan h2 {
+  margin: 10px auto 35px;
+}
+main .container .bryan p {
+  padding: 15px;
+  text-align: left;
+}
+main .container .alice {
+  width: 50%;
+  float: right;
+  text-align: center;
+}
+main .container .alice h2 {
+  margin: 10px auto 35px;
+}
+main .container .alice p {
+  padding: 15px;
+  text-align: left;
+}
 
 .courseHero {
   height: 55vh;
 }
 
-#cpr .coursePhoto {
+main .container .em-calendar-wrapper table {
+  margin: auto;
+  width: 60vw;
+  float:left;
+}
+main .container .em-calendar-wrapper thead td {
+  text-align: center;
+  font-weight:bold;
+  font-size: 2em;
+}
+main .container .em-calendar-wrapper tbody tr{
+  height: 5.1em;
+  text-align: center;
+}
+
+main .container .em-calendar-wrapper tbody tr > td{
+  width: 3em;
+  text-align: center;
+}
+
+main .container .em-calendar-wrapper tbody .eventless-pre {
+   background-color: #eee;
+   color: #a32431;
+}
+main .container .em-calendar-wrapper tbody .eventless-post {
+   background-color: #eee;
+   color: #a32431;
+}
+
+main .container .em-calendar-wrapper tbody .eventless:hover{
+   background-color: #a32431;
+   color: #eee;
+}
+main .container .em-calendar-wrapper tbody .eventful:hover{
+   background-color: #a32431;
+   color: #eee;
+}
+
+main .container .em-calendar-wrapper tbody .eventful-today:hover{
+   background-color: #a32431;
+   color: #eee;
+}
+main .container .nextCourses{
+  float:left;
+  margin:auto;
+  padding: 0px 0px 0px 2.5em;
+}
+main .container .nextCourses h3{
+  font-size: 1em;
+  font-weight: bold;
+  text-align:center;
+}
+main .container .nextCourses h4{
+  font-size: .80em;
+  font-weight: bold;
+}
+main .container .nextCourses p{
+  font-size: .70em;
+}
+
+main .container .upcoming{
+  float:left;
+  width: 50%;
+}
+main .categorycalendar{
+  float:left;
+  width:50%;
+  padding: 0px 0px 0px 20px;
+
+}
+main .categorycalendar .em-calendar-wrapper thead td{
+  font-size:1em;  
+}
+main .categorycalendar .em-calendar-wrapper thead .month_name{
+  font-size:1.2em;
+  text-align:center;
+}
+main .categorycalendar .em-calendar-wrapper tbody td{
+  width:2em;
+  height:2em;
+  font-size:1em;  
+  font-weight:bold;
+}
+main .categorycalendar .em-calendar-wrapper a{
+  color:#a32431;
+}
+  
+main .container .classlink{
+  margin: 1.25em 2px;
+  padding: 2px 2px;
+  width: 20vw;
+  text-align:center;
+  box-shadow: 1px 2px 2px 0px #272727;
+  background-color: #eee;
+  border-radius: 3px;
+}
+main .container .classlink a {
+  color: #a32431;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+main .containerfooter .wpcf7-submit{
+  margin: 1.25em 2px;
+  padding: 2px 2px;
+  width: 20vw;
+  text-align:center;
+  box-shadow: 1px 2px 2px 0px #272727;
+  background-color: #eee;
+  border-radius: 3px;
+  color: #a32431;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+main .container .classlink:hover{
+  opacity: .5;
+  cursor: pointer;
+}
+
+main .container .eventmap .em-location-map-container{
+   float:right; 
+   margin:0px 0px 15px 15px;
+   width: 45vw !important;
+   height: 45vh !important;
+}
+
+main .container .eventinformation > h3{
+  margin: 10px 0px
+}
+
+main .container .registrationform{
+  margin: 25px 25px;
+  background-color:#eee;
+  width: 35vw;
+}
+main .container .registrationform > h3{
+  text-align: center;
+}
+.cprCoursePhoto {
   margin-top: 65px;
   background-color: #343333;
   overflow: hidden;
   position: relative;
 }
-#cpr .coursePhoto:before {
+.cprCoursePhoto:before {
   content: ' ';
   display: block;
   position: absolute;
@@ -1045,6 +1209,9 @@ footer {
   margin: 50px auto 0;
   padding: 15px 5%;
   background-color: #eee;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
 }
 footer .footNavCon {
   text-align: left;
@@ -1058,7 +1225,7 @@ footer .footNavCon .footNav {
   text-align: left;
 }
 footer .footNavCon .footNav h3 {
-  font-size: 21px;
+  font-size: 19px;
   font-weight: bold;
   margin: 12px 14px;
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
@@ -1076,9 +1243,10 @@ footer .footNavCon .courses {
   display: inline-block;
   vertical-align: top;
   text-align: left;
+  width: 44%;
 }
 footer .footNavCon .courses h3 {
-  font-size: 21px;
+  font-size: 19px;
   font-weight: bold;
   margin: 12px 14px;
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
@@ -1088,10 +1256,16 @@ footer .footNavCon .courses h3 {
 footer .footNavCon .courses .nav {
   display: inline-block;
 }
+footer .footNavCon .courses .nav li {
+  float:left;
+  width:50%;
+}
+
 footer .footNavCon .courses .nav a {
   padding: 4px 15px;
   line-height: 1.4em;
 }
+
 footer a {
   color: #272727;
   font-weight: bold;
@@ -1101,7 +1275,7 @@ footer .footImgCon img {
   /* margin-left: -119px; */
   margin-top: 20px;
   position: absolute;
-  right: 240px;
+  right: 16.5em;
 }
 footer .contain-contact {
   float: right;
@@ -1156,11 +1330,15 @@ footer .sub-footer .robros:after {
   .nav {
     display: none;
   }
-
+  footer {
+    margin: 10px 0 0 0;
+    padding: 15px 5%;
+  }
   footer .footNavCon {
     display: block;
     float: none;
   }
+  
   footer .footNavCon .center {
     text-align: center;
   }
@@ -1189,18 +1367,54 @@ footer .sub-footer .robros:after {
     margin: auto;
   }
 
-  footer .contain-contact .contact .email, footer .contain-contact .contact .phone {
+  footer .contain-contact .contact .email, 
+  footer .contain-contact .contact .phone {
     line-height: 1.2em;
     display: inline-block;
     margin-right: 25px;
     text-align: left;
   }
+  main .container .em-calendar-wrapper table{
+    height: 45vh;
+    width: 85vw;
+  }
+  
+  footer .footNavCon .courses .nav li {
+    float:none;
+    width:100%;
+  }
+  main .container .eventmap .em-location-map-container{
+   float:none; 
+   margin:0px 0px 15px 15px;
+   width: 85vw !important;
+   height: 45vh !important;
+}
+main .container .eventinformation{
+  margin: 10px 25px
+}
+main .container .eventinformation > h3{
+  margin: 10px 0px
+}
+
+main .container .registrationform{
+  margin: 25px 25px;
+  background-color:#eee;
+  width: 85vw;
+}
+main .container .registrationform > h3{
+  text-align: center;
+}
 }
 @media screen and (max-width: 620px) {
   header .logo {
     margin-left: 1%;
     position: absolute;
     left: 37px;
+  }
+  
+  footer {
+    margin: auto;
+    padding: 15px 5%;
   }
 
   .courseCon {
@@ -1215,5 +1429,27 @@ footer .sub-footer .robros:after {
   .christy {
     float: none !important;
     width: 100% !important;
+  }
+   .bryan {
+    float: none !important;
+    width: 100% !important;
+  }
+
+  .alice {
+    float: none !important;
+    width: 100% !important;
+  }
+  main .container .em-calendar-wrapper table{
+    height: 45vh;
+    width: 90vw;
+  }
+  main .container .nextCourses{
+    float:left;
+    width: 85%;
+    padding: 0px 0px 0px 1em;
+  }
+  main .container .upcoming{
+    float:left;
+    width: 85%;
   }
 }

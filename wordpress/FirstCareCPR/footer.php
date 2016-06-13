@@ -5,18 +5,21 @@
 							<div class="footNav">
 								<h3>First Care CPR</h3>
 								<ul class="nav">
-									<li><a href="./about/">About</a></li>
-									<li><a href="./contact/">Contact</a></li>
-									<li><a href="./registration/">Pay Registration</a></li>
+									<li><a href="<?php echo get_page_link(80);?>">About</a></li>
+									<li><a href="<?php echo get_page_link(53);?>">Contact</a></li>
+									<li><a href="<?php echo get_page_link(56);?>">Pay Registration</a></li>
 								</ul>
 							</div>
 							<div class="courses">
 								<h3>Courses</h3>
 								<ul class="nav">
-									<li><a href="./cpr/">CPR &amp; AED</a></li>
-									<li><a href="./first-aid/">First Aid</a></li>
-									<li><a href="./pathogens/">Pathogens</a></li>
-									<li><a href="./survival/">Survival</a></li>
+									<li><a href="<?php echo get_page_link(96);?>">CPR &amp; AED</a></li>
+									<li><a href="<?php echo get_page_link(99);?>">First Aid</a></li>
+									<li><a href="<?php echo get_page_link(103);?>">Pathogens</a></li>
+									<li><a href="<?php echo get_page_link(101);?>">Survival</a></li>									
+									<li><a href="http://osmanager4.com/summit/landing.aspx?id=25856">OSHA</a></li>
+									<li><a href="<?php echo get_page_link(150);?>">Health Care Provider CPR</a></li>
+									<li><a href="<?php echo get_page_link(152);?>">Early Childhood Emergency</a></li>									
 								</ul>
 							</div>
 						</div>
@@ -38,10 +41,9 @@
 										<a href="tel:615-260-4758">(615)260-4758</a>
 									</div>
 									<div class="phone">
-										<h3>Christy</h3>
-										<a href="tel:615-473-9746">(615)473-9746</a>
+										<h3>Bryan</h3>
+										<a href="tel:615-612-8061">(615)612-8061</a>
 									</div>
-								
 							</section>
 						</div>
 					</div>
@@ -54,7 +56,7 @@
 		<script>
 			$(document).ready(function(){
                 $(window).scroll(function() { // check if scroll event happened
-                    if ($(document).scrollTop() > 500) { // check if user scrolled more than 50 from top of the browser window
+                    if ($(document).scrollTop() > 200) { // check if user scrolled more than 50 from top of the browser window
                         $("header").css("background-color", "#fff");
                         $("header").css("box-shadow", "0px 0px 3px #aaa"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
                         $(".nav").css("border-bottom", "0px");
@@ -125,7 +127,7 @@ $(document).ready(function() {
 });
 		</script>
 	
-	<!-- <?php wp_footer(); ?> -->
+ <!-- <php wp_footer(); ?> --> 
 	<!-- Don't forget analytics -->
 </body>
 </html>

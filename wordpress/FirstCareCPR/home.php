@@ -22,7 +22,7 @@
 							
 								<div class="classTitle">
 									<h2>First Aid</h2>
-									<span><p>This course is designed to...</p>
+									<span><p>This course is designed to teach the skills to react confidently in many emergency situations.</p>
 										<div class="btnAvail"><a href="first-aid">Learn More</a></div>
 										</span>
 								</div>
@@ -37,7 +37,7 @@
 							<div class="classTitle">
 								<!--<div class="textCon">-->
 									<h2>CPR &amp; AED</h2>
-									<span><p>This course is designed to...Infant Child and Adult</p>
+									<span><p>This course is designed to teach CPR for the lay person responder.</p>
 									<div class="btnAvail"><a href="./cpr/">Learn More</a></div>
 									</span>
 									<!--<div class="btnCpr">Sign Up Now</div>-->
@@ -50,16 +50,12 @@
 					<div class="courseCon">
 						<article class="pathogens">
 							<div class="pathPic background-image overlay">
-								<!--<img src="./images/pathPic.png" alt=""/>-->
 									<img class="classIcon" src="./images/bloodborneLogo.png" />
-								<!--<div class="content">
-									<h3>BloodBorne Pathogens Goals</h3>
-									<p>Bacon ipsum dolor amet venison frankfurter ham filet mignon t-bone shank</p>
-								</div>-->
+
 							
 							<div class="classTitle">
 								<h2>Blood Borne Pathogens</h2>
-								<span><p>This course is designed to...</p>
+								<span><p>This course provides students with OSHA required training on how to protect themselves from blood borne pathogens.</p>
 										<div class="btnAvail"><a href="./pathogens/">Learn More</a></div>
 										</span>
 							</div></div>
@@ -69,11 +65,10 @@
 						<article class="survival">
 							<div class="survivalPic overlay">
 								<img class="classIcon" src="./images/survivalLogo.png" />
-								<!--<img class="picCon" src="./images/wilderness.jpg" alt="First Aid Picture"/> -->
 							
 							<div class="classTitle">
 								<h2>Wilderness/Survival</h2>
-								<span><p>This course is designed to...</p>
+								<span><p>This course is designed to teach advanced first aid techniques.</p>
 										<div class="btnAvail"><a href="./wilderness/">Learn More</a></div>
 										</span>
 								
@@ -81,25 +76,50 @@
 						</article>	
 					</div>	
                     <div class="row">
-					<div class="courseCon">
-						<article class="ashi">
-							<div class="ashiPic background-image overlay">
-								<!--<img src="./images/pathPic.png" alt=""/>-->
-									<img class="classIcon" src="" />
-								<!--<div class="content">
-									<h3>BloodBorne Pathogens Goals</h3>
-									<p>Bacon ipsum dolor amet venison frankfurter ham filet mignon t-bone shank</p>
-								</div>-->
-							
-							<div class="classTitle">
-								<h2>Online Environmental Health & Safety Compliance</h2>
-								<span><p>Online 10 & 30 Hour Training. Provided through Summit Training Source</p>
-										<div class="btnAvail"><a href="http://osmanager4.com/summit/landing.aspx?id=25856" target="_blank">Learn More</a></div>
+						<div class="courseCon">
+							<article class="ashi">
+								<div class="ashiPic background-image overlay">
+										<img class="classIcon" src="" />
+								
+									<div class="classTitle">
+										<h2>Online Environmental Health & Safety Compliance</h2>
+										<span><p>Online 10 & 30 Hour Training. Provided through Summit Training Source</p>
+												<div class="btnAvail"><a href="http://osmanager4.com/summit/landing.aspx?id=25856" target="_blank">Learn More</a></div>
 										</span>
-							</div></div>
-						</article>	
-					</div>		
-					</div>		
+									</div>
+								</div>
+							</article>	
+						</div>
+						<div class="courseCon">
+							<article class="HealthCareCPR">
+								<div class="HealthCareCPR overlay">
+									<img class="classIcon" src="" />
+								
+								<div class="classTitle">
+									<h2>Healthcare Provider CPR</h2>
+									<span><p>This course is designed to teach basic life support techniques for use in a healthcare setting</p>
+											<div class="btnAvail"><a href="./wilderness/">Learn More</a></div>
+											</span>
+									
+								</div></div>
+							</article>	
+						</div>		
+					</div>
+					                    <div class="row">
+						<div class="courseCon">
+							<article class="EarlyChildhoodEmergency">
+								<div class="EarlyChildhood background-image overlay">
+										<img class="classIcon" src="" />
+								
+									<div class="classTitle">
+										<h2>Early Childhood Emergency</h2>
+										<span><p>This course is designed to provide parents with the knowledge the need to care for their infant or young child.</p>
+												<div class="btnAvail"><a href="" target="_blank">Learn More</a></div>
+										</span>
+									</div>
+								</div>
+							</article>	
+						</div>		
 				</div>
 			</section>
 			<!--<section class="contact">

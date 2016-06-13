@@ -36,5 +36,44 @@
 			'main_nav' => 'Main Nav Menu'
 		));
 	}
+	function my_login_logo() { ?>
+    <style type="text/css">
+        #login h1 a, .login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/logo-red-no-font.png);
+            padding-bottom: 30px;
+        }
+		body.login div#login form#loginform p.submit {
+			background-color: #a32431 !important;
+			
+		}
+		body.login div#login form#loginform p.submit input#wp-submit {
+			background-color: #a32431;
+			border-color: #a32431 !important;
+			text-shadow: 0px -1px 1px #565656, 1px 0px 1px #565656, 0px 1px 1px #565656, -1px 0px 1px #565656 !important;
+			box-shadow: 0px 1px 0px #565656 !important;
+		}
+		body.login div#login p.message {
+			border-left-color: #a32431 !important;
+		}
+		body.login div#login form#registerform p.submit input#wp-submit{
+			background-color: #a32431;
+			border-color: #a32431 !important;
+			text-shadow: 0px -1px 1px #565656, 1px 0px 1px #565656, 0px 1px 1px #565656, -1px 0px 1px #565656 !important;
+			box-shadow: 0px 1px 0px #565656 !important;
+		}
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
+function my_login_logo_url() {
+    return home_url();
+}
+add_filter( 'login_headerurl', 'my_login_logo_url' );
+
+function my_login_logo_url_title() {
+    return 'Your Site Name and Info';
+}
+add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+
 
 ?>

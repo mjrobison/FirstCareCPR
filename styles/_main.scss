@@ -54,6 +54,56 @@ main {
             margin: 10px auto 35px;   
         }
     }
+    .em-calendar-wrapper{
+        table{
+            margin:auto;
+            height: 48vh;
+            width: 50vw;
+        }
+        thead{
+            td{
+                text-align: center;
+                font-weight: bold;
+                font-size: 2em;
+            }
+        }
+        tbody{
+            tr{
+                height: 18%;
+                td{
+                    width: 14.3%;
+                    text-align: center;    
+                }
+            }
+            .eventless-post{
+                background-color: #eee;
+                color:#a32431;
+            }
+            .eventless-pre{
+                background-color: #eee;
+                color:#a32431;
+            }
+            
+            .eventless {
+                &:hover{
+                    background-color: #a32431;
+                    color: #eee; 
+                }
+            }
+            .eventful {
+                &:hover{
+                    background-color: #a32431;
+                    color: #eee; 
+                }
+            }
+            .eventful-today {
+                &:hover{
+                    background-color: #a32431;
+                    color: #eee; 
+                }
+            }
+        }
+    }
 }
 
     .available {

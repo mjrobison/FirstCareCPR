@@ -77,8 +77,6 @@ p {
     background-size: cover;
 }
 
-
-
 .textCon{
     -webkit-transform:skewX(155deg);
     -ms-transform:skewX(155deg);
@@ -139,9 +137,9 @@ p {
     }
 }
 
-        .firstAidPic{
+.firstAidPic{
             overflow: hidden;
-            background-image: url('../images/firstAid3.jpg');
+            background-image: url('images/firstAid3.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: 60% bottom;
@@ -151,7 +149,7 @@ p {
     
 .cprPic {
         overflow: hidden;
-        background-image: url('../images/no-ppl-cpr.jpg');
+        background-image: url('images/no-ppl-cpr.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 60% 0%;
@@ -160,7 +158,7 @@ p {
     }
     
 .pathPic {
-    background-image: url('../images/pathPic.png');
+    background-image: url('images/pathPic.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 60% bottom;
@@ -173,7 +171,7 @@ p {
 }
 
 .survivalPic{
-    background-image: url('../images/wilderness.jpg');
+    background-image: url('images/wilderness.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 60% bottom;
@@ -325,8 +323,6 @@ p {
   top: 15px;
 }
 
-
-
 .nav-menu-toggle .toggle {
   color: #fff;
   line-height: 35px;
@@ -352,8 +348,6 @@ p {
 .nav-menu .close div i{
   float: right;
 }
-
-
 
 .box-shadow-menu:before {
   content: "";
